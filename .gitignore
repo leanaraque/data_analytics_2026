@@ -45,3 +45,8 @@ secrets.*
 # *.csv
 # *.xlsx
 # datasets/**/raw/
+
+# ---- Notas de trabajo locales (NO se suben) ----
+PENDIENTES.md
+*.local.md
+NOTAS-*.md

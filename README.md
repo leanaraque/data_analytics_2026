@@ -14,7 +14,7 @@ Repositorio oficial del curso **Data Analytics** de Coderhouse. Aquí se compart
 | 2 | [Semana 2](./Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/) | Modelos y Diseños de Bases de Datos | ✅ |
 | 3 | [Semana 3](./Semana-03-Introduccion-a-SQL-y-Sublenguajes/) | Introducción a SQL y Sublenguajes | ✅ |
 | 4 | [Semana 4](./Semana-04-Sintaxis-SQL-y-Manipulacion-de-Datos/) | Sintaxis SQL y Manipulación de Datos | ✅ |
-| 5 | [Semana 5](./Semana-05-Consultas-SQL-con-Join-y-Union/) | Consultas SQL con Join y Union | 🚧 |
+| 5 | [Semana 5](./Semana-05-Consultas-SQL-con-Join-y-Union/) | Consultas SQL con Join y Union | ✅ |
 | 6 | [Semana 6](./Semana-06-Introduccion-a-Power-BI-y-Transformacion-de-Datos/) | Introducción a Power BI y Transformación de Datos | 🚧 |
 | 7 | [Semana 7](./Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/) | Visualización de Datos y Storytelling con Power BI | 🚧 |
 | 8 | [Semana 8](./Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/) | Modelado Analítico y Cálculos Avanzados con DAX | 🚧 |
