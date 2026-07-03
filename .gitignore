@@ -1,0 +1,47 @@
+# ---- Sistema operativo ----
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Linux
+*~
+.directory
+
+# ---- Archivos temporales de Office ----
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+.~lock.*#
+
+# ---- Power BI ----
+# Cachés y temporales de Power BI Desktop
+*.pbix.tmp
+TempSaves/
+
+# ---- SQL ----
+*.log
+*.bak
+
+# ---- Editores / IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Entornos y credenciales (NO subir) ----
+.env
+*.env
+credentials.json
+secrets.*
+
+# ---- Datos pesados (descomentar si aplica) ----
+# *.csv
+# *.xlsx
+# datasets/**/raw/
