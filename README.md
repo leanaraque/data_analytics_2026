@@ -20,9 +20,11 @@ Repositorio oficial del curso **Data Analytics** de Coderhouse. Aquí se compart
 | 8 | [Semana 8](./Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/) | Modelado Analítico y Cálculos Avanzados con DAX | ✅ |
 | 9 | [Semana 9](./Semana-09-IA-Aplicada-al-Trabajo-del-Analista-de-Datos/) | IA Aplicada al Trabajo del Analista de Datos | ✅ |
 | 10 | [Semana 10](./Semana-10-Medidas-de-Tendencia-Central-Estadistica-y-Publicacion-de-Dashboard/) | Medidas de Tendencia Central, Estadística y Publicación de Dashboard | ✅ |
-| 11 | [Semana 11](./Semana-11-Proyecto-Final/) | Proyecto Final | 🚧 |
+| 11 | [Semana 11](./Semana-11-Proyecto-Final/) | Proyecto Final | ✅ |
 
 **Leyenda de estado:** 🚧 En preparación · 🟡 En curso · ✅ Publicada
+
+> 🎉 **¡Las 11 semanas están publicadas!** El programa completo está disponible, de los fundamentos al proyecto integrador final.
 
 ---
 
