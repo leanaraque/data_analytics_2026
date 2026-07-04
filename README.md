@@ -19,7 +19,7 @@ Repositorio oficial del curso **Data Analytics** de Coderhouse. Aquí se compart
 | 7 | [Semana 7](./Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/) | Visualización de Datos y Storytelling con Power BI | ✅ |
 | 8 | [Semana 8](./Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/) | Modelado Analítico y Cálculos Avanzados con DAX | ✅ |
 | 9 | [Semana 9](./Semana-09-IA-Aplicada-al-Trabajo-del-Analista-de-Datos/) | IA Aplicada al Trabajo del Analista de Datos | ✅ |
-| 10 | [Semana 10](./Semana-10-Medidas-de-Tendencia-Central-Estadistica-y-Publicacion-de-Dashboard/) | Medidas de Tendencia Central, Estadística y Publicación de Dashboard | 🚧 |
+| 10 | [Semana 10](./Semana-10-Medidas-de-Tendencia-Central-Estadistica-y-Publicacion-de-Dashboard/) | Medidas de Tendencia Central, Estadística y Publicación de Dashboard | ✅ |
 | 11 | [Semana 11](./Semana-11-Proyecto-Final/) | Proyecto Final | 🚧 |
 
 **Leyenda de estado:** 🚧 En preparación · 🟡 En curso · ✅ Publicada
