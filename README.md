@@ -34,14 +34,14 @@ Cada semana vive en su propia carpeta (`Semana-XX-...`) y sigue una estructura c
 
 ```
 Semana-XX-Nombre-del-Tema/
-├── README.md          → Guía de la semana: objetivos, temario y recursos
-├── material/          → Teoría, diapositivas y apuntes de clase
-├── ejercicios/        → Actividades prácticas y sus soluciones
-├── datasets/          → Datos de ejemplo para practicar
-└── recursos/          → Enlaces, lecturas y material complementario
+├── README.md          → Guía de la semana: objetivos, temario y entregable
+├── material/          → Las unidades teóricas, numeradas (01-…, 02-…)
+├── ejercicios/        → Prácticas guiadas, scripts y repasos (si la semana los tiene)
+├── evaluacion/        → Quizzes / autoevaluaciones (si la semana los tiene)
+└── entregable/        → Consigna del entregable evaluable de la semana
 ```
 
-> 💡 Las subcarpetas se van creando a medida que se publica el contenido de cada semana, por lo que puede que aún no existan todas.
+> 💡 Todas las semanas tienen `README.md`, `material/` y `entregable/`. Las carpetas `ejercicios/` y `evaluacion/` aparecen solo en las semanas que las incluyen.
 
 La carpeta [`recursos/`](./recursos/) en la raíz contiene material transversal a todo el curso (instalaciones, cheatsheets, plantillas, etc.).
 
