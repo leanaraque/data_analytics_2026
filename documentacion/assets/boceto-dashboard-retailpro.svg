@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#f7f8fa" stroke="#c9ced6" stroke-width="2"/>
+
+  <!-- Encabezado -->
+  <rect x="0" y="0" width="900" height="60" fill="#1f3b57"/>
+  <text x="24" y="38" fill="#ffffff" font-size="22" font-weight="700">RetailPro — Dashboard Ejecutivo de Ventas</text>
+  <text x="720" y="24" fill="#aebfd0" font-size="12">Filtros:</text>
+  <rect x="720" y="30" width="75" height="20" rx="4" fill="#2d5075"/>
+  <text x="728" y="44" fill="#ffffff" font-size="11">Año ▾</text>
+  <rect x="805" y="30" width="75" height="20" rx="4" fill="#2d5075"/>
+  <text x="813" y="44" fill="#ffffff" font-size="11">Región ▾</text>
+
+  <!-- Zona de Oro: 4 KPIs -->
+  <g>
+    <rect x="24" y="78" width="200" height="80" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+    <text x="40" y="104" fill="#6b7683" font-size="13">Total Ventas</text>
+    <text x="40" y="138" fill="#1f3b57" font-size="26" font-weight="700">$ 2,45 M</text>
+
+    <rect x="240" y="78" width="200" height="80" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+    <text x="256" y="104" fill="#6b7683" font-size="13">Ticket Promedio</text>
+    <text x="256" y="138" fill="#1f3b57" font-size="26" font-weight="700">$ 1.180</text>
+
+    <rect x="456" y="78" width="200" height="80" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+    <text x="472" y="104" fill="#6b7683" font-size="13">Unidades Vendidas</text>
+    <text x="472" y="138" fill="#1f3b57" font-size="26" font-weight="700">18.320</text>
+
+    <rect x="672" y="78" width="204" height="80" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+    <text x="688" y="104" fill="#6b7683" font-size="13">Nº de Clientes</text>
+    <text x="688" y="138" fill="#1f3b57" font-size="26" font-weight="700">1.240</text>
+  </g>
+
+  <!-- Tendencia mensual (líneas) -->
+  <rect x="24" y="178" width="420" height="200" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+  <text x="40" y="202" fill="#1f3b57" font-size="14" font-weight="600">Evolución de ventas mes a mes</text>
+  <polyline points="50,350 100,330 150,340 200,300 250,310 300,270 350,250 400,230"
+            fill="none" stroke="#2d7dd2" stroke-width="3"/>
+  <line x1="48" y1="360" x2="420" y2="360" stroke="#c9ced6"/>
+  <line x1="48" y1="220" x2="48" y2="360" stroke="#c9ced6"/>
+
+  <!-- Comparación por región/categoría (barras) -->
+  <rect x="456" y="178" width="420" height="200" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+  <text x="472" y="202" fill="#1f3b57" font-size="14" font-weight="600">Ventas por región y categoría</text>
+  <rect x="490" y="290" width="40" height="70" fill="#2d7dd2"/>
+  <rect x="550" y="250" width="40" height="110" fill="#2d7dd2"/>
+  <rect x="610" y="300" width="40" height="60" fill="#2d7dd2"/>
+  <rect x="670" y="230" width="40" height="130" fill="#2d7dd2"/>
+  <rect x="730" y="280" width="40" height="80" fill="#2d7dd2"/>
+  <rect x="790" y="310" width="40" height="50" fill="#2d7dd2"/>
+  <line x1="486" y1="360" x2="860" y2="360" stroke="#c9ced6"/>
+
+  <!-- Tabla de detalle -->
+  <rect x="24" y="398" width="852" height="140" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+  <text x="40" y="422" fill="#1f3b57" font-size="14" font-weight="600">Detalle: Top productos y clientes</text>
+  <line x1="40" y1="435" x2="860" y2="435" stroke="#e2e6ec"/>
+  <line x1="40" y1="463" x2="860" y2="463" stroke="#e2e6ec"/>
+  <line x1="40" y1="491" x2="860" y2="491" stroke="#e2e6ec"/>
+  <line x1="40" y1="519" x2="860" y2="519" stroke="#e2e6ec"/>
+  <text x="48" y="453" fill="#6b7683" font-size="12">Producto            Categoría            Región            Unidades            Facturación</text>
+  <text x="48" y="481" fill="#3a4552" font-size="12">Notebook Pro 15     Computación          Norte             620                 $ 310.000</text>
+  <text x="48" y="509" fill="#3a4552" font-size="12">Monitor 27" 4K      Periféricos          Centro            540                 $ 189.000</text>
+
+  <text x="24" y="554" fill="#9aa4b0" font-size="11" font-style="italic">Boceto conceptual (wireframe) — layout en patrón Z: KPIs arriba, tendencia y comparación al medio, detalle abajo. Máx. 5–7 elementos por página.</text>
+</svg>
