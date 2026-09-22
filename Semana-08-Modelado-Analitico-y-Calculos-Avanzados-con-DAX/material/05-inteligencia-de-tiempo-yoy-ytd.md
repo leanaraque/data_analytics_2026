@@ -21,7 +21,7 @@ Ventas YTD = TOTALYTD([Total Ventas], 'Calendario'[Fecha])
 - `[Total Ventas]`: la medida base (ej. `SUM(Ventas[Monto])`).
 - `'Calendario'[Fecha]`: la columna de fechas de tu tabla calendario.
 
-> ⚠️ **Error común:** intentar crearlo como **columna calculada**. ¡No lo hagas! Como **medida**, se adapta al contexto: al filtrar por "Categoría", el acumulado se recalcula para esa categoría. Una columna quedaría estática y daría resultados falsos.
+> **Error común:** intentar crearlo como **columna calculada**. ¡No lo hagas! Como **medida**, se adapta al contexto: al filtrar por "Categoría", el acumulado se recalcula para esa categoría. Una columna quedaría estática y daría resultados falsos.
 
 ## 3. Comparativas: el YoY (Year-over-Year)
 El **YoY** compara una métrica del periodo actual con el **mismo periodo del año anterior**. Es la métrica reina para detectar crecimiento.
@@ -71,5 +71,5 @@ Comparar directo daría una caída del 37%… ¡pero es injusto! Estás comparan
 
 ---
 <p align="center">
-<a href="./04-tabla-de-medidas-y-calendario.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="./06-optimizacion-variables-y-dax-studio.md">Siguiente ➡️</a>
+<a href="./04-tabla-de-medidas-y-calendario.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="./06-optimizacion-variables-y-dax-studio.md">Siguiente</a>
 </p>

@@ -21,7 +21,7 @@ Power BI usa **RBAC** (*Role-Based Access Control*): en lugar de dar permisos ar
 | **Colaborador (Contributor)** | Crear, editar y eliminar informes; publicar desde Desktop | **El rol ideal del Analista de Datos**. No agrega personas |
 | **Espectador (Viewer)** | Ver e interactuar (filtros, segmentadores). No ve el modelo ni edita | Directivos y gerentes que solo consultan |
 
-> ⚖️ **Regla de oro — Principio de menor privilegio:** otorgá siempre el permiso **mínimo necesario**. Si alguien solo lee reportes, dale "Espectador", no "Colaborador" "para ahorrar tiempo". Un permiso de más es una puerta abierta a errores o fugas de datos.
+> **Regla de oro — Principio de menor privilegio:** otorgá siempre el permiso **mínimo necesario**. Si alguien solo lee reportes, dale "Espectador", no "Colaborador" "para ahorrar tiempo". Un permiso de más es una puerta abierta a errores o fugas de datos.
 
 ## 3. Guía paso a paso
 1. **Crear el workspace:** panel izquierdo → *Áreas de trabajo > Crear área de trabajo*. Usá una estructura clara: `[Departamento] - [Proyecto]` (ej. `Ventas - Reporte Trimestral 2026`). Poné el logo del departamento para navegar visualmente más rápido.
@@ -51,5 +51,5 @@ Cadena de supermercados con 50 sucursales:
 
 ---
 <p align="center">
-<a href="./06-power-bi-service-y-publicacion.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./08-seguridad-nivel-de-fila-rls.md">Siguiente ➡️</a>
+<a href="./06-power-bi-service-y-publicacion.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./08-seguridad-nivel-de-fila-rls.md">Siguiente</a>
 </p>

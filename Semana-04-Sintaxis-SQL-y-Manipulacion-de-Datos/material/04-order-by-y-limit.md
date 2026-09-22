@@ -46,9 +46,9 @@ LIMIT 3;
   5. `LIMIT`
 - **Confundir `ASC` y `DESC`.** `DESC` es para el "Top" (más caro, más reciente, mayor puntaje). `ASC` es para el "Bottom" (más barato, más antiguo, menor puntaje).
 
-> 📎 **Nota de motor:** `LIMIT` es la sintaxis de **PostgreSQL / MySQL**. En **SQL Server** el equivalente es `SELECT TOP N ...`.
+> **Nota de motor:** `LIMIT` es la sintaxis de **PostgreSQL / MySQL**. En **SQL Server** el equivalente es `SELECT TOP N ...`.
 
 ---
 <p align="center">
-<a href="./03-where-y-operadores-logicos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 4</a> · <a href="./05-funciones-de-agregacion.md">Siguiente ➡️</a>
+<a href="./03-where-y-operadores-logicos.md">Anterior</a> · <a href="../README.md">Semana 4</a> · <a href="./05-funciones-de-agregacion.md">Siguiente</a>
 </p>

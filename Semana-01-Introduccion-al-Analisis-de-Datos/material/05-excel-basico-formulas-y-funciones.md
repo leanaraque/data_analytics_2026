@@ -1,6 +1,6 @@
 # 5. Excel básico: fórmulas y funciones fundamentales
 
-> 🚧 **Contenido de clase pendiente.** El material específico de esta unidad se agrega cuando se dicte la clase. Mientras tanto, dejamos esta **guía de referencia rápida** con las funciones fundamentales que todo analista debería dominar.
+> **Contenido de clase pendiente.** El material específico de esta unidad se agrega cuando se dicte la clase. Mientras tanto, dejamos esta **guía de referencia rápida** con las funciones fundamentales que todo analista debería dominar.
 
 Excel es la "mesa de laboratorio" del analista: un lugar para limpiar datos, crear tus primeros modelos descriptivos y visualizar hallazgos.
 
@@ -32,9 +32,9 @@ Excel es la "mesa de laboratorio" del analista: un lugar para limpiar datos, cre
 - **Formato condicional:** resaltar valores según reglas.
 - **Gráficos:** columnas, líneas y circulares para una primera visualización.
 
-> 💡 Muchos conceptos de Excel (agregación, filtros, búsquedas) se traducen luego a **SQL** y **Power BI**. Dominarlos acá te da ventaja en los módulos siguientes.
+> Muchos conceptos de Excel (agregación, filtros, búsquedas) se traducen luego a **SQL** y **Power BI**. Dominarlos acá te da ventaja en los módulos siguientes.
 
 ---
 <p align="center">
-<a href="./04-rol-del-analista-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="./06-tecnologias-y-herramientas.md">Siguiente ➡️</a>
+<a href="./04-rol-del-analista-de-datos.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="./06-tecnologias-y-herramientas.md">Siguiente</a>
 </p>

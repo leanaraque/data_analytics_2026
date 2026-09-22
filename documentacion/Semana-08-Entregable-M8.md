@@ -11,7 +11,7 @@
 Todo lo de este documento se construye sobre la base **`RetailPro_DB`** en SQL Server. Si todavía no la tenés:
 
 1. Ejecutá [`recursos/base-de-datos/retailpro_db_sqlserver.sql`](../recursos/base-de-datos/retailpro_db_sqlserver.sql) completo en SSMS.
-2. Conectá Power BI Desktop siguiendo el [README de la base](../recursos/base-de-datos/README.md#-conectar-power-bi-desktop).
+2. Conectá Power BI Desktop siguiendo el [README de la base](../recursos/base-de-datos/README.md#conectar-power-bi-desktop).
 
 Con qué contás una vez conectado:
 
@@ -22,7 +22,7 @@ Con qué contás una vez conectado:
 | **Facturación** | 258.566,05 en 2023 · 304.006,15 en 2024 |
 | **Dimensiones** | 40 clientes · 22 productos · 5 categorías · 4 territorios |
 
-> 📅 Que el período cubra **años calendario completos** no es un detalle: es lo que hace que `TOTALYTD` y `SAMEPERIODLASTYEAR` devuelvan números interpretables. Con datos que arrancan en marzo, el YTD del primer año arrastra un sesgo que hay que explicar en cada gráfico.
+> Que el período cubra **años calendario completos** no es un detalle: es lo que hace que `TOTALYTD` y `SAMEPERIODLASTYEAR` devuelvan números interpretables. Con datos que arrancan en marzo, el YTD del primer año arrastra un sesgo que hay que explicar en cada gráfico.
 
 ### Nomenclatura del modelo (viene de M6)
 
@@ -50,7 +50,7 @@ RETURN
     CALENDAR ( DATE ( PrimerAnio, 1, 1 ), DATE ( UltimoAnio, 12, 31 ) )
 ```
 
-> ⚠️ **Por qué no el `CALENDAR(MIN(...), MAX(...))` directo.** Esa versión arranca la tabla en la fecha de la primera venta y la termina en la de la última. Si tu primera venta fuera el 14 de marzo, el calendario no tendría enero ni febrero — y la inteligencia de tiempo **exige un calendario continuo y con los años completos**. La versión de arriba expande siempre al 1 de enero y al 31 de diciembre. Con estos datos ambas dan lo mismo (la primera venta cae justo el 2023-01-01), pero la de arriba no se rompe cuando cambies el dataset.
+> **Por qué no el `CALENDAR(MIN(...), MAX(...))` directo.** Esa versión arranca la tabla en la fecha de la primera venta y la termina en la de la última. Si tu primera venta fuera el 14 de marzo, el calendario no tendría enero ni febrero — y la inteligencia de tiempo **exige un calendario continuo y con los años completos**. La versión de arriba expande siempre al 1 de enero y al 31 de diciembre. Con estos datos ambas dan lo mismo (la primera venta cae justo el 2023-01-01), pero la de arriba no se rompe cuando cambies el dataset.
 
 ### Columnas calculadas
 
@@ -127,7 +127,7 @@ Total Ventas = SUM ( Fact_Ventas[total_venta] )
 
 `total_venta` ya viene calculada desde SQL Server como `cantidad × precio_unitario × (1 − descuento)`, así que acá alcanza con sumarla.
 
-> 💡 Si en tu modelo esa columna no existiera, **no** se resuelve con `SUM(Fact_Ventas[cantidad] * Fact_Ventas[precio_unitario])` — `SUM` acepta una sola columna, no una expresión. Para eso está el iterador: `SUMX ( Fact_Ventas, Fact_Ventas[cantidad] * Fact_Ventas[precio_unitario] )`.
+> Si en tu modelo esa columna no existiera, **no** se resuelve con `SUM(Fact_Ventas[cantidad] * Fact_Ventas[precio_unitario])` — `SUM` acepta una sola columna, no una expresión. Para eso está el iterador: `SUMX ( Fact_Ventas, Fact_Ventas[cantidad] * Fact_Ventas[precio_unitario] )`.
 
 ### 2 · Filtrada con `CALCULATE`
 
@@ -149,12 +149,12 @@ Ventas YTD = TOTALYTD ( [Total Ventas], Dim_Fechas[Date] )
 Ventas LY = CALCULATE ( [Total Ventas], SAMEPERIODLASTYEAR ( Dim_Fechas[Date] ) )
 ```
 
-> ⚠️ **Acá hay una trampa que conviene entender ahora y no en el examen.** Esto funciona porque `[Total Ventas]` es una **medida**, y una medida se **vuelve a evaluar** dentro del nuevo contexto que arma `CALCULATE`.
+> **Acá hay una trampa que conviene entender ahora y no en el examen.** Esto funciona porque `[Total Ventas]` es una **medida**, y una medida se **vuelve a evaluar** dentro del nuevo contexto que arma `CALCULATE`.
 >
 > Con una **variable** el comportamiento es el opuesto. Esto **no** funciona:
 > ```dax
 > VAR VentasActual = SUM ( Fact_Ventas[total_venta] )
-> VAR VentasAnterior = CALCULATE ( VentasActual, SAMEPERIODLASTYEAR ( Dim_Fechas[Date] ) )  -- ❌
+> VAR VentasAnterior = CALCULATE ( VentasActual, SAMEPERIODLASTYEAR ( Dim_Fechas[Date] ) )  -- no funciona
 > ```
 > Una variable se evalúa **una sola vez**, en el momento en que se define, y queda congelada con ese valor. Envolverla en `CALCULATE` no la recalcula: `VentasAnterior` termina siendo idéntica a `VentasActual` y el crecimiento da **siempre 0**, sin ningún mensaje de error.
 >
@@ -253,7 +253,7 @@ El Norte no vendió menos: **vendió otra cosa**. Se le cayó Computación (note
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 
 - [x] Las **5 relaciones** con cardinalidad 1:N, dirección única y activas.
 - [x] `Dim_Fechas` creada, con años calendario completos y **marcada como tabla de fechas**.
@@ -267,7 +267,7 @@ El Norte no vendió menos: **vendió otra cosa**. Se le cayó Computación (note
 
 ---
 
-## 📎 Diferencias con el material de la Semana 8
+## Diferencias con el material de la Semana 8
 
 Tres puntos donde este documento se aparta de la consigna, y por qué:
 
@@ -281,5 +281,5 @@ Además, el material nombra la columna de fecha como `Fecha` en las unidades 5 y
 
 ---
 <p align="center">
-🏠 <a href="./README.md">Documentación</a> · <a href="../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/">Semana 8</a> · <a href="../README.md">Índice del curso</a>
+<a href="./README.md">Documentación</a> · <a href="../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/">Semana 8</a> · <a href="../README.md">Índice del curso</a>
 </p>

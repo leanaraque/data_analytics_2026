@@ -60,16 +60,16 @@ La dimensión de fechas es la más importante y la más mal implementada. Power 
 
 ## Checklist del modelo bien construido
 
-| Verificación | ✓ |
+| Verificación | |
 |--------------|:-:|
-| Cada tabla tiene un propósito claro: hechos o dimensión | ☐ |
-| Las columnas del lado 1 no tienen valores duplicados | ☐ |
-| Todas las relaciones son 1:N con dirección única | ☐ |
-| Existe una tabla de fechas completa y marcada correctamente | ☐ |
-| No hay relaciones en círculo ni N:N no intencionadas | ☐ |
-| El modelo tiene forma de estrella, no de cadena lineal | ☐ |
+| Cada tabla tiene un propósito claro: hechos o dimensión | [] |
+| Las columnas del lado 1 no tienen valores duplicados | [] |
+| Todas las relaciones son 1:N con dirección única | [] |
+| Existe una tabla de fechas completa y marcada correctamente | [] |
+| No hay relaciones en círculo ni N:N no intencionadas | [] |
+| El modelo tiene forma de estrella, no de cadena lineal | [] |
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 8</a> · <a href="./02-medidas-vs-columnas-calculadas.md">Siguiente: Medidas vs. columnas calculadas ➡️</a>
+<a href="../README.md">Semana 8</a> · <a href="./02-medidas-vs-columnas-calculadas.md">Siguiente: Medidas vs. columnas calculadas</a>
 </p>

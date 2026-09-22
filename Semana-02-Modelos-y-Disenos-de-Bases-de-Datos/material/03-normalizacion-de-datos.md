@@ -130,10 +130,10 @@ Como analista te vas a encontrar con fuentes muy "sucias" (sobre todo CSV o Exce
 
 > Al dominar la normalización dejás de ser un "copiador de datos" para convertirte en un **Arquitecto de Información**.
 
-## 🎥 Video práctico — De tabla plana a modelo estrella (en Excel)
+## Video práctico — De tabla plana a modelo estrella (en Excel)
 En el video vas a transformar una **tabla plana desordenada** en un modelo bien estructurado, separando la información en una **tabla de hechos** y **tres tablas de dimensiones** directamente en Excel: cómo identificar qué datos van en cada tabla, cómo definir claves primarias y foráneas, y por qué esta separación es el paso previo indispensable antes de llevar los datos a Power BI. Al terminar entenderás de forma práctica la lógica detrás del **esquema estrella**.
 
 ---
 <p align="center">
-<a href="./02-oltp-vs-olap-y-modelado-analitico.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 2</a> · <a href="./04-plataformas-cloud-snowflake-bigquery-synapse.md">Siguiente ➡️</a>
+<a href="./02-oltp-vs-olap-y-modelado-analitico.md">Anterior</a> · <a href="../README.md">Semana 2</a> · <a href="./04-plataformas-cloud-snowflake-bigquery-synapse.md">Siguiente</a>
 </p>

@@ -1,22 +1,22 @@
-# 📦 M9 — Pre-entrega: IA en el flujo del proyecto
+# M9 — Pre-entrega: IA en el flujo del proyecto
 
 > **Título:** Usando IA para documentar y optimizar el análisis.
 
-## 🎯 En una frase
+## En una frase
 Esta pre-entrega **integra la IA** al proyecto que venís construyendo. No vas a crear nada nuevo desde cero: vas a usar herramientas de IA **gratuitas** para **mejorar, documentar y validar** lo que ya construiste en los módulos anteriores, manteniendo siempre tu **criterio analítico** como filtro de calidad.
 
-## 🏢 Contexto
+## Contexto
 **RetailPro** quiere que el proyecto esté documentado de forma que cualquier analista nuevo pueda entenderlo y continuarlo. Tu tarea es usar IA como **co-piloto** para acelerar esa documentación y optimizar partes del código SQL.
 
-## 🧰 Herramientas habilitadas
+## Herramientas habilitadas
 Solo herramientas con **versión gratuita**: **Claude.ai, ChatGPT, Google Gemini o Microsoft Copilot**.
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 Un documento **`.docx` o `.pdf`** con las **4 tareas** documentadas (prompt usado, respuesta de la IA y tu análisis crítico de cada resultado aplicado a RetailPro).
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 
 ### Tarea 1 — Optimización SQL
 Tomá la consulta base del proyecto de **M5** (el `INNER JOIN` con 4 tablas) y pedile a la IA que la revise. Documentá:
@@ -37,15 +37,15 @@ Escribí un párrafo explicando **en qué momento** del proyecto la IA fue más 
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 - [ ] Documento `.docx` o `.pdf` con las **4 tareas**.
 - [ ] Cada tarea incluye: **prompt usado + respuesta de la IA + tu análisis crítico**.
 - [ ] Tarea 3: README subido al repositorio con **≥3 cambios justificados**.
 - [ ] Tarea 4: reflexión sobre el balance IA ↔ criterio analítico.
 
-> ⚖️ **Recordá:** la IA es el **borrador**; vos sos el **autor**. Ningún número sin fuente rastreable debería aparecer en un reporte que firma tu nombre.
+> **Recordá:** la IA es el **borrador**; vos sos el **autor**. Ningún número sin fuente rastreable debería aparecer en un reporte que firma tu nombre.
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 9</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 9</a> · <a href="../../README.md">Índice del curso</a>
 </p>

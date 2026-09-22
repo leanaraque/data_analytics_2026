@@ -16,12 +16,12 @@ VALUES (valor1, valor2);
 
 > **Regla de oro:** los valores de **texto y fechas** siempre van entre **comillas simples** (`'Enero'`), mientras que los **números** van **sin comillas** (`25.50`).
 
-> 🎥 **Autoincremental:** podés delegar en el motor la generación automática de los IDs con `IDENTITY` (SQL Server) o `SERIAL` (PostgreSQL). Se configura al crear la tabla y simplifica los `INSERT` en sistemas con muchas inserciones simultáneas.
+> **Autoincremental:** podés delegar en el motor la generación automática de los IDs con `IDENTITY` (SQL Server) o `SERIAL` (PostgreSQL). Se configura al crear la tabla y simplifica los `INSERT` en sistemas con muchas inserciones simultáneas.
 
 ## 2. Actualización: `UPDATE`
 Modifica valores que ya existen (un producto cambia de precio, un cliente cambia su email).
 
-> ⚠️ **¡Cuidado!** El `UPDATE` es muy potente. **Siempre** debe ir acompañado de una cláusula `WHERE`. Si la olvidás, SQL aplica el cambio a **todas** las filas de la tabla.
+> **¡Cuidado!** El `UPDATE` es muy potente. **Siempre** debe ir acompañado de una cláusula `WHERE`. Si la olvidás, SQL aplica el cambio a **todas** las filas de la tabla.
 
 ```sql
 -- Ejemplo seguro:
@@ -48,9 +48,9 @@ Imaginá que tu base de datos es un **archivador de oficina**:
 - **Error de tipos de datos:** intentar insertar texto en una columna numérica, o saltarse campos obligatorios (`NOT NULL`).
 - **No usar transacciones:** en entornos profesionales se usan `BEGIN` y `COMMIT` para "confirmar" los cambios solo después de estar seguros (esto es **TCL**). En este nivel inicial practicamos la precisión manual.
 
-> 🎥 **`DELETE` vs `TRUNCATE`:** ambos vacían datos, pero difieren en rendimiento y uso. `TRUNCATE` borra todas las filas de golpe (más rápido, no admite `WHERE`); `DELETE` borra filas específicas según la condición.
+> **`DELETE` vs `TRUNCATE`:** ambos vacían datos, pero difieren en rendimiento y uso. `TRUNCATE` borra todas las filas de golpe (más rápido, no admite `WHERE`); `DELETE` borra filas específicas según la condición.
 
 ---
 <p align="center">
-<a href="./04-comandos-ddl-alter-y-drop.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="./06-permisos-y-roles-dcl.md">Siguiente ➡️</a>
+<a href="./04-comandos-ddl-alter-y-drop.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="./06-permisos-y-roles-dcl.md">Siguiente</a>
 </p>

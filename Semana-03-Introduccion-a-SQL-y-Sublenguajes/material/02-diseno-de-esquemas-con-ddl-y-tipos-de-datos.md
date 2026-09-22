@@ -88,9 +88,9 @@ En empresas como Amazon o Mercado Libre, el diseño de esquemas es la base de to
 
 > **¿Qué sigue?** En la próxima unidad ponés "candados" a estas tablas (**Primary Keys** y **Foreign Keys**) para asegurar que la información sea siempre coherente.
 
-> 🛠️ **Practicá:** [Práctica 1 — Diseño de tablas con `CREATE TABLE`](../ejercicios/practica-01-diseno-de-tablas.md)
+> **Practicá:** [Práctica 1 — Diseño de tablas con `CREATE TABLE`](../ejercicios/practica-01-diseno-de-tablas.md)
 
 ---
 <p align="center">
-<a href="./01-introduccion-a-sql.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="./03-restricciones-de-integridad-pk-fk.md">Siguiente ➡️</a>
+<a href="./01-introduccion-a-sql.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="./03-restricciones-de-integridad-pk-fk.md">Siguiente</a>
 </p>

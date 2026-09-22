@@ -87,5 +87,5 @@ ADDCOLUMNS (
 
 ---
 <p align="center">
-<a href="./03-dax-fundamental-calculate-iteradores.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="./05-inteligencia-de-tiempo-yoy-ytd.md">Siguiente ➡️</a>
+<a href="./03-dax-fundamental-calculate-iteradores.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="./05-inteligencia-de-tiempo-yoy-ytd.md">Siguiente</a>
 </p>

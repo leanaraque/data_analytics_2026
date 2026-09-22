@@ -77,7 +77,7 @@ FROM empleados;
 
 **Error 3 — Usar agregaciones con columnas individuales sin agrupar.** Un error clásico:
 ```sql
-SELECT nombre, MAX(salario) FROM empleados;  -- ❌ incorrecto en la mayoría de motores
+SELECT nombre, MAX(salario) FROM empleados;  -- incorrecto en la mayoría de motores
 ```
 SQL se confunde porque `nombre` devuelve muchas filas y `MAX(salario)` solo una. Esto se soluciona con **`GROUP BY`** (próxima etapa). Por ahora, recordá que si usás una función de agregación, el resultado suele ser **una sola fila**.
 
@@ -90,9 +90,9 @@ Aprendimos a transformar miles de filas en métricas clave:
 
 Hasta ahora calculamos estas métricas para **toda la tabla**. El siguiente salto es calcular los mismos promedios y totales para **grupos específicos** (ventas promedio por ciudad, empleados totales por departamento) usando **`GROUP BY`**.
 
-> 🎯 *Preguntate:* si tuvieras la base de datos de Spotify, ¿qué función usarías para saber cuántos minutos de música escuchó un usuario este año? Exacto: `SUM(segundos_escuchados) / 60`. **¡Ya estás pensando como un analista!**
+> *Preguntate:* si tuvieras la base de datos de Spotify, ¿qué función usarías para saber cuántos minutos de música escuchó un usuario este año? Exacto: `SUM(segundos_escuchados) / 60`. **¡Ya estás pensando como un analista!**
 
 ---
 <p align="center">
-<a href="./04-order-by-y-limit.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 4</a> · <a href="../entregable/README.md">Ir al entregable (M4) ➡️</a>
+<a href="./04-order-by-y-limit.md">Anterior</a> · <a href="../README.md">Semana 4</a> · <a href="../entregable/README.md">Ir al entregable (M4)</a>
 </p>

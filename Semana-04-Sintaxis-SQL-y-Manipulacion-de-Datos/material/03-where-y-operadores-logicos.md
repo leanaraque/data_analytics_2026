@@ -49,9 +49,9 @@ WHERE ciudad IN ('Madrid', 'Barcelona', 'Valencia')
 ## Resumen
 Ya sabés cómo "recortar" tus tablas **verticalmente** (eligiendo columnas con `SELECT`) y **horizontalmente** (eligiendo filas con `WHERE`). Esta es la base fundamental de cualquier reporte analítico.
 
-> ⚠️ Recordá de la Semana 3: `WHERE` no es exclusiva del `SELECT` — es igual de crítica en `UPDATE` y `DELETE` para evitar modificaciones masivas accidentales.
+> Recordá de la Semana 3: `WHERE` no es exclusiva del `SELECT` — es igual de crítica en `UPDATE` y `DELETE` para evitar modificaciones masivas accidentales.
 
 ---
 <p align="center">
-<a href="./02-sentencia-distinct.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 4</a> · <a href="./04-order-by-y-limit.md">Siguiente ➡️</a>
+<a href="./02-sentencia-distinct.md">Anterior</a> · <a href="../README.md">Semana 4</a> · <a href="./04-order-by-y-limit.md">Siguiente</a>
 </p>

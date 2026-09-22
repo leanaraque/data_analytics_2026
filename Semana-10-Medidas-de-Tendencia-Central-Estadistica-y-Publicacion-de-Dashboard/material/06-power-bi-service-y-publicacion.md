@@ -31,18 +31,18 @@ Se crean **dos elementos separados** en el Service:
 ## 4. Publicar en Web: el gran peligro de seguridad
 - **Publicar en el Service (seguro):** requiere que el espectador tenga una **cuenta** de Power BI y **permisos** otorgados por vos. Los datos están protegidos por el inicio de sesión.
 - **Publicar en la Web (público):** genera un enlace o código HTML que se puede pegar en cualquier sitio.
-  - ⚠️ **Riesgo:** el informe se vuelve **públicamente accesible** en internet. Cualquiera que encuentre el enlace ve tus datos **sin contraseña**.
+  - **Riesgo:** el informe se vuelve **públicamente accesible** en internet. Cualquiera que encuentre el enlace ve tus datos **sin contraseña**.
   - **Uso correcto:** solo para datos que ya son públicos (estadísticas de salud pública, resultados deportivos).
   - **Uso incorrecto:** **NUNCA** para datos corporativos, salarios, listas de clientes o estrategias internas.
 
-> ⚖️ **Regla de oro:** si usás "Publicar en la Web", asumí que **el mundo entero** está viendo tus datos.
+> **Regla de oro:** si usás "Publicar en la Web", asumí que **el mundo entero** está viendo tus datos.
 
 ## 5. Errores comunes de principiantes
 - **Pensar que el informe se actualiza solo:** al publicar subís una "foto" de los datos. Para que se actualicen automáticamente desde SQL necesitás un **Gateway** (unidad 9).
 - **Publicar con filtros aplicados:** si dejás el informe filtrado por "2024", todos lo verán así. **Limpiá los filtros** antes de subir.
 - **Ignorar el peso del archivo:** subir 500 MB sin filtrar en Power Query hace el informe lento para el usuario final.
 
-## 🛠️ Práctica — Tu primer reporte en la nube
+## Práctica — Tu primer reporte en la nube
 Simula el proceso de publicar un reporte de ventas para el equipo directivo:
 1. **Auditoría de datos sensibles:** verificá que no haya datos reales protegidos (DNIs, correos). Si los hay, reemplazalos por ficticios.
 2. **Limpieza de interfaz:** nombres de páginas profesionales; eliminá páginas de "Prueba".
@@ -55,5 +55,5 @@ Simula el proceso de publicar un reporte de ventas para el equipo directivo:
 
 ---
 <p align="center">
-<a href="./05-distribuciones-de-frecuencias-y-probabilidad.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./07-areas-de-trabajo-y-permisos.md">Siguiente ➡️</a>
+<a href="./05-distribuciones-de-frecuencias-y-probabilidad.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./07-areas-de-trabajo-y-permisos.md">Siguiente</a>
 </p>

@@ -59,16 +59,16 @@ in
 - **Transformaciones sin botón:** funciones como `Table.FuzzyJoin` (unir tablas donde los nombres no coinciden exacto, como "García" y "Garcia") requieren ajustes manuales en el Editor.
 
 ## 5. Errores comunes
-- **Olvidar que M es case-sensitive:** `Table.SelectRows` ✅ vs `table.selectrows` ❌.
+- **Olvidar que M es case-sensitive:** `Table.SelectRows` vs `table.selectrows` .
 - **La "coma huérfana":** nunca pongas coma después del **último** paso antes del `in`.
 - **Romper la cadena de pasos:** si borrás un paso del medio, el siguiente da error porque busca un "ingrediente" que ya no existe.
 
 ## 6. Síntesis
 Pasamos de ser "usuarios de botones" a entender el "cerebro" de Power Query. M es un lenguaje **funcional** donde cada paso es una función aplicada a los datos; la estructura `let...in` separa la **preparación** del **resultado final**; y el **Editor Avanzado** te muestra la receta completa.
 
-> 💡 **Reflexión:** la próxima vez que apliques un paso en Power Query, mirá la barra de fórmulas y tratá de "leer" lo que M escribió por vos. Ese hábito es el primer paso para dominar el análisis a nivel profesional.
+> **Reflexión:** la próxima vez que apliques un paso en Power Query, mirá la barra de fórmulas y tratá de "leer" lo que M escribió por vos. Ese hábito es el primer paso para dominar el análisis a nivel profesional.
 
 ---
 <p align="center">
-<a href="./05-combinacion-de-tablas-merge-y-append.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./07-automatizacion-con-funciones-de-power-query.md">Siguiente ➡️</a>
+<a href="./05-combinacion-de-tablas-merge-y-append.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./07-automatizacion-con-funciones-de-power-query.md">Siguiente</a>
 </p>

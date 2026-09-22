@@ -1,6 +1,6 @@
 # 7. Funciones DAX avanzadas
 
-> 📖 **Para profundizar** — Contenido avanzado. Con `CALCULATE`, YoY y YTD dominados, esta unidad extiende el *toolkit* con **lógica condicional** y **segmentación dinámica**.
+> **Para profundizar** — Contenido avanzado. Con `CALCULATE`, YoY y YTD dominados, esta unidad extiende el *toolkit* con **lógica condicional** y **segmentación dinámica**.
 
 Las funciones condicionales `IF` y `SWITCH` son esenciales para clasificaciones y segmentaciones dinámicas que responden a las necesidades del negocio.
 
@@ -46,7 +46,7 @@ RETURN VentasProducto
 - Usá **prefijos** para diferenciar tipos de objetos (`m_` para medidas, `c_` para columnas calculadas).
 - Incluí **comentarios** en DAX con `//` para explicar partes complejas.
 
-## 🤖 Introducción a Copilot en Power BI
+## Introducción a Copilot en Power BI
 Copilot es la IA integrada que **sugiere fórmulas DAX** y ayuda a crear medidas rápidamente.
 - **Ventajas:** acelera la creación de expresiones, sugiere sintaxis correcta y patrones comunes.
 - **Limitaciones:** **no** reemplaza la validación humana; las sugerencias deben revisarse críticamente.
@@ -55,5 +55,5 @@ Copilot es la IA integrada que **sugiere fórmulas DAX** y ayuda a crear medidas
 
 ---
 <p align="center">
-<a href="./06-optimizacion-variables-y-dax-studio.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="../entregable/README.md">Ir al entregable (M8) ➡️</a>
+<a href="./06-optimizacion-variables-y-dax-studio.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="../entregable/README.md">Ir al entregable (M8)</a>
 </p>

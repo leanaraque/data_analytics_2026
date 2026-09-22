@@ -43,5 +43,5 @@ La más potente y profesional. Usa la función DAX **`USERPRINCIPALNAME()`**.
 
 ---
 <p align="center">
-<a href="./07-areas-de-trabajo-y-permisos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./09-gateways-y-actualizaciones-programadas.md">Siguiente ➡️</a>
+<a href="./07-areas-de-trabajo-y-permisos.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./09-gateways-y-actualizaciones-programadas.md">Siguiente</a>
 </p>

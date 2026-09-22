@@ -17,7 +17,7 @@ Así, Power BI es una solución robusta para análisis empresarial **de punta a 
 La preparación de datos se realiza principalmente con **Power Query**, que permite transformar, limpiar y reorganizar la información **antes** de cargarla al modelo. Es el mismo proceso de normalización que trabajaste en Excel (M2), ahora dentro de Power BI.
 
 ## Tipos de conectores disponibles
-> 📖 **Para profundizar** — Esta sección amplía el tema con contenido avanzado. Podés continuar sin leerla.
+> **Para profundizar** — Esta sección amplía el tema con contenido avanzado. Podés continuar sin leerla.
 
 Los conectores permiten que Power BI se comunique con distintos sistemas:
 
@@ -68,5 +68,5 @@ Expresiones **numéricas calculadas con DAX** que realizan operaciones dinámica
 
 ---
 <p align="center">
-<a href="./01-ecosistema-power-bi-y-desktop.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./03-conexion-a-postgresql-y-sql-server.md">Siguiente ➡️</a>
+<a href="./01-ecosistema-power-bi-y-desktop.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./03-conexion-a-postgresql-y-sql-server.md">Siguiente</a>
 </p>

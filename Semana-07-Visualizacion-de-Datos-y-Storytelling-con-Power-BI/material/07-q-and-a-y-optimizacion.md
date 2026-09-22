@@ -1,6 +1,6 @@
 # 7. Q&A y optimización
 
-> 📖 **Para profundizar** — Última unidad del módulo. Con todas las herramientas de visualización dominadas, **Q&A** permite que el usuario explore los datos en **lenguaje natural** sin construir visuales manualmente.
+> **Para profundizar** — Última unidad del módulo. Con todas las herramientas de visualización dominadas, **Q&A** permite que el usuario explore los datos en **lenguaje natural** sin construir visuales manualmente.
 
 ¿Alguna vez te preguntaste cómo sería analizar datos **sin escribir fórmulas** ni navegar entre menús? La función de **Preguntas y Respuestas (Q&A)** de Power BI permite generar visualizaciones simplemente **escribiendo preguntas en lenguaje natural**, usando IA para interpretarlas.
 
@@ -25,9 +25,9 @@ Para que Q&A funcione bien, el **modelo de datos** debe estar prolijo:
 ## Ventajas
 Facilita el acceso a *insights* incluso para usuarios sin conocimientos técnicos de visualización, acelera el análisis y apoya la toma de decisiones basada en evidencia. Con los avances de IA, la precisión y naturalidad de estas interacciones seguirá mejorando, convirtiendo a **Q&A** en un aliado clave del análisis.
 
-> 💡 **Conexión:** preparar bien los datos con **Power Query** (M6) asegura que Q&A y todas las visualizaciones sean **rápidas y confiables**. La IA (Q&A + Copilot) no reemplaza al analista: lo libera de la construcción manual para enfocarse en el **análisis y la interpretación**.
+> **Conexión:** preparar bien los datos con **Power Query** (M6) asegura que Q&A y todas las visualizaciones sean **rápidas y confiables**. La IA (Q&A + Copilot) no reemplaza al analista: lo libera de la construcción manual para enfocarse en el **análisis y la interpretación**.
 
 ---
 <p align="center">
-<a href="./06-navegacion-botones-marcadores-tooltips.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="../entregable/README.md">Ir al entregable (M7) ➡️</a>
+<a href="./06-navegacion-botones-marcadores-tooltips.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="../entregable/README.md">Ir al entregable (M7)</a>
 </p>

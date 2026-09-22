@@ -1,34 +1,34 @@
-# 🗄️ Base de datos del proyecto — RetailPro_DB (SQL Server)
+# Base de datos del proyecto — RetailPro_DB (SQL Server)
 
 Base de datos **única y canónica** del proyecto integrador. Se crea entera con un solo script y es la fuente de datos de los módulos **M6 (ETL), M8 (DAX) y M10 (estadística)**.
 
-> 🎓 **El Proyecto Final (M11) no usa esta base.** La consigna del examen pide un dataset propio de Kaggle o el que provee el curso — ese material vive en [`recursos/ejemplo-examen-final/`](../ejemplo-examen-final/).
+> **El Proyecto Final (M11) no usa esta base.** La consigna del examen pide un dataset propio de Kaggle o el que provee el curso — ese material vive en [`recursos/ejemplo-examen-final/`](../ejemplo-examen-final/).
 
 | | |
 |---|---|
-| 🛠️ **Motor** | Microsoft SQL Server 2016 o superior |
-| 📄 **Script** | [`retailpro_db_sqlserver.sql`](./retailpro_db_sqlserver.sql) |
-| 🗃️ **Base** | `RetailPro_DB` |
-| 📊 **Volumen** | 5 categorías · 4 territorios · 40 clientes · 22 productos · **1.444 ventas** |
-| 📅 **Período** | 2023-01-01 a 2024-12-31 (24 meses completos) |
-| ♻️ **Repetible** | Sí — se puede ejecutar tantas veces como haga falta |
+| **Motor** | Microsoft SQL Server 2016 o superior |
+| **Script** | [`retailpro_db_sqlserver.sql`](./retailpro_db_sqlserver.sql) |
+| **Base** | `RetailPro_DB` |
+| **Volumen** | 5 categorías · 4 territorios · 40 clientes · 22 productos · **1.444 ventas** |
+| **Período** | 2023-01-01 a 2024-12-31 (24 meses completos) |
+| **Repetible** | Sí — se puede ejecutar tantas veces como haga falta |
 
 ---
 
-## 🚀 Cómo ejecutarlo
+## Cómo ejecutarlo
 
 1. Abrí **SQL Server Management Studio (SSMS)** o **Azure Data Studio** y conectate a tu instancia.
 2. `Archivo > Abrir > Archivo...` y elegí `retailpro_db_sqlserver.sql`.
 3. Ejecutá el script **completo** con **F5**.
 4. Al final vas a ver en la pestaña *Mensajes* un resumen de la carga y varias grillas de validación.
 
-> ⚠️ **El script usa separadores `GO`.** `GO` no es T-SQL: lo interpreta el cliente. Ejecutalo desde SSMS o Azure Data Studio, no lo pegues en una herramienta que no los soporte.
+> **El script usa separadores `GO`.** `GO` no es T-SQL: lo interpreta el cliente. Ejecutalo desde SSMS o Azure Data Studio, no lo pegues en una herramienta que no los soporte.
 
-> 🔤 **Si ves caracteres raros** (`Ã³`, `Ã±`) al abrir el archivo, volvé a abrirlo con `Archivo > Abrir > Archivo...`, desplegá la flechita del botón **Abrir** y elegí **Abrir con... > Codificación > UTF-8**. Todos los literales llevan el prefijo `N'...'` (Unicode) justamente por esto.
+> **Si ves caracteres raros** (`Ã³`, `Ã±`) al abrir el archivo, volvé a abrirlo con `Archivo > Abrir > Archivo...`, desplegá la flechita del botón **Abrir** y elegí **Abrir con... > Codificación > UTF-8**. Todos los literales llevan el prefijo `N'...'` (Unicode) justamente por esto.
 
 ---
 
-## 🧱 El modelo
+## El modelo
 
 Esquema en estrella: `ventas` es la tabla de **hechos**, las otras cuatro son **dimensiones**.
 
@@ -56,7 +56,7 @@ categorias (1) ──< productos (1) ──┐
 
 ---
 
-## 🧪 La historia que cuentan los datos
+## La historia que cuentan los datos
 
 Los datos no son ruido aleatorio: reproducen el caso de negocio del **brief de M1**. Los números salen del propio script (bloque 8 de validación):
 
@@ -88,7 +88,7 @@ Otros patrones útiles ya cargados:
 
 ---
 
-## 🧹 Suciedad intencional (para M6)
+## Suciedad intencional (para M6)
 
 La base tiene problemas reales que hay que resolver en **Power Query** y **justificar**. Todos están dentro de las restricciones de integridad, así que la base es válida: la suciedad está en las columnas que admiten nulos y en el texto libre.
 
@@ -102,13 +102,13 @@ La base tiene problemas reales que hay que resolver en **Power Query** y **justi
 | `productos` id 20 | `costo` NULL | **Nulo crítico:** sin costo no hay margen. ¿Se usa el costo promedio de la categoría, se marca el producto o se excluye del cálculo de margen? |
 | `productos` id 21 | `subcategoria` NULL | `"Sin subcategoría"`. |
 
-> 💡 El script imprime estas filas al final para que las veas antes de empezar. No hay duplicados de clave: en una base relacional bien construida no puede haberlos, porque las **PK** los impiden. Ese es justamente el punto — la deduplicación de M6 se practica sobre las variantes de texto, no sobre las claves.
+> El script imprime estas filas al final para que las veas antes de empezar. No hay duplicados de clave: en una base relacional bien construida no puede haberlos, porque las **PK** los impiden. Ese es justamente el punto — la deduplicación de M6 se practica sobre las variantes de texto, no sobre las claves.
 
 Además hay **4 clientes sin ninguna venta** (ids 37–40) y **2 productos sin ninguna venta** (ids 21–22), para que las consultas `LEFT JOIN ... IS NULL` de **M5** devuelvan filas de verdad.
 
 ---
 
-## 🔌 Conectar Power BI Desktop
+## Conectar Power BI Desktop
 
 1. **Inicio > Obtener datos > SQL Server**.
 2. **Servidor:** el nombre de tu instancia. Los valores más habituales:
@@ -122,7 +122,7 @@ Además hay **4 clientes sin ninguna venta** (ids 37–40) y **2 productos sin n
 6. En el Navegador, marcá **las 5 tablas**: `categorias`, `clientes`, `productos`, `territorios`, `ventas`.
 7. Pulsá **Transformar datos** — **no** "Cargar". Ahí empieza el trabajo de M6.
 
-> ⚠️ **No importes la vista `vw_ventas_detalle`.** Existe para explorar y validar desde SQL, pero es una **tabla plana**: si la cargás, no hay modelo que armar y el ejercicio de esquema en estrella de M8 pierde sentido. Importá las 5 tablas por separado.
+> **No importes la vista `vw_ventas_detalle`.** Existe para explorar y validar desde SQL, pero es una **tabla plana**: si la cargás, no hay modelo que armar y el ejercicio de esquema en estrella de M8 pierde sentido. Importá las 5 tablas por separado.
 
 ### Renombrado que pide M6
 
@@ -138,7 +138,7 @@ La tabla `Dim_Fechas` **no** viene de SQL: se crea en Power BI con DAX. El paso 
 
 ---
 
-## 🧯 Problemas frecuentes
+## Problemas frecuentes
 
 | Síntoma | Causa y solución |
 |---------|------------------|
@@ -150,7 +150,7 @@ La tabla `Dim_Fechas` **no** viene de SQL: se crea en Power BI con DAX. El paso 
 
 ---
 
-## ✅ Cómo saber que quedó bien
+## Cómo saber que quedó bien
 
 Al final de la ejecución, el bloque de validación tiene que mostrar:
 
@@ -164,5 +164,5 @@ Si algún conteo da 0, el script se cortó a mitad de camino: ejecutalo entero d
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Recursos</a> · <a href="../../README.md">Índice del curso</a> · <a href="../../documentacion/Semana-08-Entregable-M8.md">Documentación M8 ➡️</a>
+<a href="../README.md">Recursos</a> · <a href="../../README.md">Índice del curso</a> · <a href="../../documentacion/Semana-08-Entregable-M8.md">Documentación M8</a>
 </p>

@@ -4,7 +4,7 @@
 
 La cláusula **`JOIN`** permite combinar registros de diferentes tablas dentro de una consulta SQL. Es fundamental en bases de datos relacionales: posibilita analizar y obtener datos combinados de múltiples tablas asociándolas por **al menos un campo en común** (por ejemplo, una columna).
 
-> 🎥 **Preparación del entorno:** antes de los ejercicios, el módulo incluye un video que crea desde cero la base de datos, define las tablas y carga los datos de práctica (a partir de un archivo `.sql`). Si todavía no tenés el entorno listo, empezá por ahí.
+> **Preparación del entorno:** antes de los ejercicios, el módulo incluye un video que crea desde cero la base de datos, define las tablas y carga los datos de práctica (a partir de un archivo `.sql`). Si todavía no tenés el entorno listo, empezá por ahí.
 
 ## ¿Qué permite hacer la cláusula `JOIN`?
 Hoy `JOIN` no se limita a bases tradicionales: también se aplica en entornos modernos como **Google BigQuery, Snowflake o Azure Synapse**, donde las consultas abarcan grandes volúmenes y aprovechan procesamiento paralelo. Además, herramientas de **IA** (como Copilot en Fabric/Synapse o AI SQL en Databricks) permiten generar consultas `JOIN` a partir de descripciones en lenguaje natural, facilitando reportes incluso a usuarios no técnicos.
@@ -42,5 +42,5 @@ Esta unidad te prepara para responder preguntas como *"¿Qué clientes realizaro
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 5</a> · <a href="./02-inner-join-ejemplos-de-negocio.md">Siguiente: INNER JOIN con ejemplos de negocio ➡️</a>
+<a href="../README.md">Semana 5</a> · <a href="./02-inner-join-ejemplos-de-negocio.md">Siguiente: INNER JOIN con ejemplos de negocio</a>
 </p>

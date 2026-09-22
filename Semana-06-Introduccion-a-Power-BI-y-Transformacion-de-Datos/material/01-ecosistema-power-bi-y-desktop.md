@@ -32,7 +32,7 @@ Componentes clave de la interfaz:
 - **Panel de Visualizaciones:** la galería de gráficos (barras, líneas, mapas, velocímetros).
 - **Panel de Datos:** todas tus tablas y columnas listas para usar.
 
-> 🤖 **Novedad 2026 — Copilot:** la IA está integrada. Podés pedirle en lenguaje natural *"Creá un gráfico que compare las ventas de este año contra el anterior"* y genera una propuesta automáticamente. No sustituye al analista, pero acelera el diseño.
+> **Novedad 2026 — Copilot:** la IA está integrada. Podés pedirle en lenguaje natural *"Creá un gráfico que compare las ventas de este año contra el anterior"* y genera una propuesta automáticamente. No sustituye al analista, pero acelera el diseño.
 
 ## 4. Diferencias cruciales: Informes vs. Dashboards
 
@@ -57,5 +57,5 @@ Power BI es una plataforma **interactiva y colaborativa**. El flujo siempre inic
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 6</a> · <a href="./02-power-bi-y-transformacion-de-datos.md">Siguiente: Power BI y transformación de datos ➡️</a>
+<a href="../README.md">Semana 6</a> · <a href="./02-power-bi-y-transformacion-de-datos.md">Siguiente: Power BI y transformación de datos</a>
 </p>

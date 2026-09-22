@@ -1,29 +1,29 @@
-# Semana 11 — Proyecto Final 🎓
+# Semana 11 — Proyecto Final
 
 > **Cierre del recorrido completo:** Fundamentos → SQL → ETL → Modelado y Visualización → IA y Estadística → **Proyecto Integrador**. Integrás todo en un proyecto real: extraés datos con SQL, los limpiás con Power Query, modelás con DAX, visualizás en Power BI y validás estadísticamente. **Es tu primer entregable profesional como analista de datos.**
 
 Un analista de datos no *"hace SQL"* de 9 a 12 y *"hace estadística"* de 12 a 3: **resuelve problemas de negocio**. Este proyecto es el escenario donde dejás de ser un estudiante que sigue tutoriales para convertirte en un profesional que **propone soluciones**.
 
-## 🎯 Objetivos de la evaluación
+## Objetivos de la evaluación
 - **Integrar** todas las competencias del programa en una narrativa coherente.
 - Resolver un **caso de negocio real** de punta a punta.
 - **Comunicar** los hallazgos de forma clara y persuasiva (storytelling con datos).
 - Demostrar el **criterio analítico** que transforma la incertidumbre en decisiones informadas.
 
-## 📚 Contenido de la semana
+## Contenido de la semana
 
 | Documento | Descripción |
 |-----------|-------------|
-| [📄 Fundamentos del Proyecto Integrador](./material/01-fundamentos-del-proyecto-integrador.md) | Los 3 pilares, los principios de una evaluación de calidad y los errores comunes a evitar |
-| [📦 Consigna del Proyecto Final](./entregable/README.md) | La evaluación integradora completa: estructura, importancia y qué entregar |
-| [📝 Sección 1 — Preguntas Teóricas](./entregable/seccion-1-preguntas-teoricas.md) | Las 4 preguntas + guía de qué debe incluir cada respuesta |
-| [🛠️ Sección 2 — Ejercicios Prácticos](./entregable/seccion-2-ejercicios-practicos.md) | Los 3 ejercicios (SQL, modelado y storytelling) con ayudas técnicas |
-| [🎨 Guía de Presentación y Checklist](./entregable/guia-de-presentacion.md) | Formato de entrega (Google Docs), la estructura recomendada de 7 secciones y el checklist maestro |
-| [🎓 Material de apoyo del examen](../recursos/ejemplo-examen-final/) | Dataset de ejemplo (Excel + CSV), scripts de SQL Server y MySQL, y un ejemplo de entrega resuelta |
+| [Fundamentos del Proyecto Integrador](./material/01-fundamentos-del-proyecto-integrador.md) | Los 3 pilares, los principios de una evaluación de calidad y los errores comunes a evitar |
+| [Consigna del Proyecto Final](./entregable/README.md) | La evaluación integradora completa: estructura, importancia y qué entregar |
+| [Sección 1 — Preguntas Teóricas](./entregable/seccion-1-preguntas-teoricas.md) | Las 4 preguntas + guía de qué debe incluir cada respuesta |
+| [Sección 2 — Ejercicios Prácticos](./entregable/seccion-2-ejercicios-practicos.md) | Los 3 ejercicios (SQL, modelado y storytelling) con ayudas técnicas |
+| [Guía de Presentación y Checklist](./entregable/guia-de-presentacion.md) | Formato de entrega (Google Docs), la estructura recomendada de 7 secciones y el checklist maestro |
+| [Material de apoyo del examen](../recursos/ejemplo-examen-final/) | Dataset de ejemplo (Excel + CSV), scripts de SQL Server y MySQL, y un ejemplo de entrega resuelta |
 
 ---
 
-## 🧩 Los tres pilares de la integración
+## Los tres pilares de la integración
 Un proyecto verdaderamente integrador teje una narrativa a través de **tres dimensiones técnicas**:
 
 | Pilar | Qué demuestra | Semanas que lo sostienen |
@@ -36,7 +36,7 @@ Un proyecto verdaderamente integrador teje una narrativa a través de **tres dim
 
 ---
 
-## 🗺️ Cómo cada módulo del curso alimenta el proyecto final
+## Cómo cada módulo del curso alimenta el proyecto final
 
 | Módulo | Aporte al proyecto |
 |--------|--------------------|
@@ -51,12 +51,12 @@ Un proyecto verdaderamente integrador teje una narrativa a través de **tres dim
 
 ---
 
-## 📦 En una frase, ¿qué entregás?
+## En una frase, ¿qué entregás?
 Un **único enlace de Google Docs** que funcione como un **reporte visual completo** del análisis: contexto del problema, dataset, EDA, modelo y SQL, transformación, dashboard y conclusiones — todo con capturas y explicaciones, de modo que el evaluador entienda **todo el proceso sin salir del documento**.
 
-> 👉 El detalle completo, sección por sección, está en la [**Guía de Presentación y Checklist**](./entregable/guia-de-presentacion.md).
+> El detalle completo, sección por sección, está en la [**Guía de Presentación y Checklist**](./entregable/guia-de-presentacion.md).
 
 ---
 <p align="center">
-<a href="../Semana-10-Medidas-de-Tendencia-Central-Estadistica-y-Publicacion-de-Dashboard/">⬅️ Semana 10</a> · 🏠 <a href="../README.md">Índice del curso</a>
+<a href="../Semana-10-Medidas-de-Tendencia-Central-Estadistica-y-Publicacion-de-Dashboard/">Semana 10</a> · <a href="../README.md">Índice del curso</a>
 </p>

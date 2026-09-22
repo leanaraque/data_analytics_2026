@@ -2,7 +2,7 @@
 
 > Bloque de **Fundamentos**. Antes de escribir una línea de SQL, necesitás entender cómo se organiza la información.
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 Al finalizar esta semana serás capaz de:
 - Explicar los principales **modelos de datos** (relacional, entidad-relación y NoSQL) y sus casos de uso.
 - Diferenciar sistemas **OLTP** y **OLAP** y reconocer los patrones de modelado dimensional (star y snowflake).
@@ -10,21 +10,21 @@ Al finalizar esta semana serás capaz de:
 - Comprender qué es una **base de datos relacional** y sus componentes (tablas, PK, FK, tipos de datos) con **PostgreSQL**.
 - Diseñar un **modelo relacional** completo a partir de un caso de negocio.
 
-## 📚 Temario y material
+## Temario y material
 
 | # | Unidad | Material |
 |---|--------|----------|
-| 1 | Visión general de modelos de datos (relacional, ER, NoSQL) | [📄 Leer](./material/01-vision-general-de-modelos-de-datos.md) |
-| 2 | OLTP vs OLAP y modelado analítico (star / snowflake) | [📄 Leer](./material/02-oltp-vs-olap-y-modelado-analitico.md) |
-| 3 | Normalización de datos (1NF, 2NF, 3NF) | [📄 Leer](./material/03-normalizacion-de-datos.md) |
-| 4 | 📖 *Avanzado:* Plataformas cloud — Snowflake, BigQuery, Synapse | [📄 Leer](./material/04-plataformas-cloud-snowflake-bigquery-synapse.md) |
-| 5 | Bases de datos relacionales y PostgreSQL | [📄 Leer](./material/05-bases-de-datos-relacionales-y-postgresql.md) |
+| 1 | Visión general de modelos de datos (relacional, ER, NoSQL) | [Leer](./material/01-vision-general-de-modelos-de-datos.md) |
+| 2 | OLTP vs OLAP y modelado analítico (star / snowflake) | [Leer](./material/02-oltp-vs-olap-y-modelado-analitico.md) |
+| 3 | Normalización de datos (1NF, 2NF, 3NF) | [Leer](./material/03-normalizacion-de-datos.md) |
+| 4 | *Avanzado:* Plataformas cloud — Snowflake, BigQuery, Synapse | [Leer](./material/04-plataformas-cloud-snowflake-bigquery-synapse.md) |
+| 5 | Bases de datos relacionales y PostgreSQL | [Leer](./material/05-bases-de-datos-relacionales-y-postgresql.md) |
 
-> 📖 La unidad 4 es contenido **avanzado / opcional**: podés avanzar sin leerla y volver cuando quieras ir más lejos.
+> La unidad 4 es contenido **avanzado / opcional**: podés avanzar sin leerla y volver cuando quieras ir más lejos.
 
 ---
 
-## 📦 Entregable de la semana (¡esto cuenta para la nota!)
+## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M2 — Pre-entrega: Modelo de datos RetailPro** · [Ver consigna completa →](./entregable/README.md)
 
@@ -40,11 +40,11 @@ Al finalizar esta semana serás capaz de:
 
 **Tablas obligatorias:** `clientes`, `productos`, `ventas`, `territorios` (ver columnas mínimas en la [consigna](./entregable/README.md)).
 
-> ⚠️ **Ojo:** este entregable (RetailPro) **sí es evaluable**. No confundir con el ejercicio guiado *Normalización del Videoclub*, que **no** suma nota.
+> **Ojo:** este entregable (RetailPro) **sí es evaluable**. No confundir con el ejercicio guiado *Normalización del Videoclub*, que **no** suma nota.
 
 ---
 
-## 📂 Contenido de la carpeta
+## Contenido de la carpeta
 ```
 Semana-02-.../
 ├── README.md            → esta guía
@@ -54,5 +54,5 @@ Semana-02-.../
 
 ---
 <p align="center">
-<a href="../Semana-01-Introduccion-al-Analisis-de-Datos/">⬅️ Semana 1</a> · 🏠 <a href="../README.md">Índice del curso</a> · <a href="../Semana-03-Introduccion-a-SQL-y-Sublenguajes/">Semana 3 ➡️</a>
+<a href="../Semana-01-Introduccion-al-Analisis-de-Datos/">Semana 1</a> · <a href="../README.md">Índice del curso</a> · <a href="../Semana-03-Introduccion-a-SQL-y-Sublenguajes/">Semana 3</a>
 </p>

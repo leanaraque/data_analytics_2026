@@ -24,7 +24,7 @@ Una tabla en SQL es muy similar a una hoja de cálculo:
 > **Ejemplo:** en un país, el DNI o Cédula es tu clave primaria: no puede haber dos personas con el mismo número, y todos deben tener uno. En SQL solemos usar un ID numérico (`id_producto`, `id_venta`) como PK.
 
 **D. Valores Nulos (NULL):** a veces falta información (un cliente no dio su teléfono). En SQL representamos esa ausencia con `NULL`.
-> ⚠️ **Error común:** `NULL` **no** es lo mismo que un cero (`0`) ni que un texto vacío (`''`).
+> **Error común:** `NULL` **no** es lo mismo que un cero (`0`) ni que un texto vacío (`''`).
 > - `0` es un valor numérico (*tengo 0 dólares*).
 > - `NULL` significa "desconocido" (*no sé cuántos dólares tengo*).
 
@@ -82,5 +82,5 @@ La columna `id_categoria` en `Productos` es una **Clave Foránea (Foreign Key)**
 
 ---
 <p align="center">
-<a href="./04-plataformas-cloud-snowflake-bigquery-synapse.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 2</a> · <a href="../entregable/README.md">Ir al entregable (M2) ➡️</a>
+<a href="./04-plataformas-cloud-snowflake-bigquery-synapse.md">Anterior</a> · <a href="../README.md">Semana 2</a> · <a href="../entregable/README.md">Ir al entregable (M2)</a>
 </p>

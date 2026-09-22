@@ -1,14 +1,14 @@
-# ✅ Evaluación Integradora 1
+# Evaluación Integradora 1
 
 Evalúa tu comprensión de los conceptos fundamentales de la **Semana 1**, cubriendo desde la distinción entre datos e información hasta los roles y herramientas de la industria.
 
 | | |
 |---|---|
-| 📊 **Preguntas** | 6 |
-| ✅ **Nota de aprobación** | 70% |
-| 🔄 **Intentos** | 3 |
+| **Preguntas** | 6 |
+| **Nota de aprobación** | 70% |
+| **Intentos** | 3 |
 
-> 💡 Intentá responder por tu cuenta antes de abrir la explicación de cada pregunta.
+> Intentá responder por tu cuenta antes de abrir la explicación de cada pregunta.
 
 ---
 
@@ -133,5 +133,5 @@ HTML/CSS es para desarrollo web y Photoshop para diseño gráfico: no son herram
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 1</a> · <a href="../entregable/README.md">Ir al entregable (M1) ➡️</a>
+<a href="../README.md">Volver a la Semana 1</a> · <a href="../entregable/README.md">Ir al entregable (M1)</a>
 </p>

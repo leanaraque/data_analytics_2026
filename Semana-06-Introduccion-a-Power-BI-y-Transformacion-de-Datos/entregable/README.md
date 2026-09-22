@@ -1,21 +1,21 @@
-# 📦 M6 — Checkpoint: Pipeline ETL Completo
+# M6 — Checkpoint: Pipeline ETL Completo
 
 > **Título:** De datos crudos a modelo confiable en Power BI.
 
-## 🎯 En una frase
+## En una frase
 Un reporte de Power BI es tan confiable como los datos que lo alimentan. Vas a construir el **motor de datos** que va a sostener todos tus reportes futuros: conectás Power BI a una fuente real, **perfilás la calidad**, aplicás **transformaciones profesionales** en Power Query y **documentás** la lógica en lenguaje M. El resultado es un `.pbix` limpio, bien nombrado y listo para construir encima cualquier análisis.
 
-> 🔗 **Posición en la cadena:** en M3 creaste la base `Ventas_Tech_DB`; en este módulo aprendiste a conectar, limpiar y documentar. Este checkpoint **une esas piezas**. En **M8** vas a tomar este `.pbix` limpio y construir encima el modelo analítico (relaciones 1:N, tabla calendario y medidas DAX). **Sin un buen pipeline ETL, las medidas de M8 no funcionarán.**
+> **Posición en la cadena:** en M3 creaste la base `Ventas_Tech_DB`; en este módulo aprendiste a conectar, limpiar y documentar. Este checkpoint **une esas piezas**. En **M8** vas a tomar este `.pbix` limpio y construir encima el modelo analítico (relaciones 1:N, tabla calendario y medidas DAX). **Sin un buen pipeline ETL, las medidas de M8 no funcionarán.**
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 El **enlace a tu repositorio GitHub público** con el archivo **`Pipeline_ETL_Apellido_Nombre.pbix`** dentro de la carpeta del módulo.
 
 ---
 
-## 🏢 Contexto
+## Contexto
 Sos analista de datos SSR en **TechStore**, una distribuidora de tecnología. El equipo de BI necesita que los datos crudos del sistema de ventas estén en Power BI de forma **limpia, estructurada y documentada**. El dataset tiene problemas reales: **duplicados, nulos en campos clave y tipos incorrectos** que debés resolver antes de cerrar y aplicar.
 
-## 📂 Dataset
+## Dataset
 Descargá el archivo **`Pipeline_ETL_Dataset.xlsx`** provisto por el curso. Contiene cuatro hojas:
 
 | Hoja | Descripción | Problemas intencionales |
@@ -29,7 +29,7 @@ Descargá el archivo **`Pipeline_ETL_Dataset.xlsx`** provisto por el curso. Cont
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 
 ### Paso 1 — Conexión a la fuente
 *Inicio > Obtener datos > Excel* → seleccioná `Pipeline_ETL_Dataset.xlsx`. Elegí las cuatro tablas y hacé clic en **Transformar datos** (¡no confirmes la carga todavía!) para entrar directo al Editor de Power Query.
@@ -67,12 +67,12 @@ Renombrá también las columnas al español con `snake_case`.
 Abrí el **Editor Avanzado** en **al menos dos** consultas y agregá comentarios con `//` que expliquen la **lógica** de los pasos importantes (técnicos y justificados, no obvios).
 
 ```powerquery
-// ✅ BUENO:
+// BUENO:
 // Se eliminan duplicados por id_cliente porque Dim_Clientes
 // debe tener valores únicos en su PK para que las relaciones
 // del modelo funcionen correctamente en Power BI
 
-// ❌ MALO:
+// MALO:
 // Se eliminan duplicados
 ```
 
@@ -89,7 +89,7 @@ Guardá como `Pipeline_ETL_Apellido_Nombre.pbix` y subilo a tu repositorio GitHu
 
 ---
 
-## ✔️ Criterios de aceptación
+## Criterios de aceptación
 - [ ] Las 4 tablas cargadas sin errores con nomenclatura `Dim_` / `Fact_`.
 - [ ] Duplicados eliminados en `Dim_Clientes` y `Dim_Productos`.
 - [ ] Nulos resueltos con **decisión técnica justificada**.
@@ -97,7 +97,7 @@ Guardá como `Pipeline_ETL_Apellido_Nombre.pbix` y subilo a tu repositorio GitHu
 - [ ] Merge aplicado: `Fact_Ventas` incluye `nombre_producto` y `categoria`.
 - [ ] Al menos **dos** consultas con comentarios técnicos en el Editor Avanzado.
 
-## ⚠️ Errores comunes a evitar
+## Errores comunes a evitar
 - **Confirmar la carga sin transformar:** siempre elegí *"Transformar datos"* al importar.
 - **Quitar duplicados en la columna incorrecta:** hacelo por la columna de **ID**, no por todas las columnas a la vez.
 - **Eliminar nulos sin justificación:** un **precio** nulo es crítico; una **ciudad** nula puede reemplazarse por `"Sin datos"`.
@@ -106,5 +106,5 @@ Guardá como `Pipeline_ETL_Apellido_Nombre.pbix` y subilo a tu repositorio GitHu
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 6</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 6</a> · <a href="../../README.md">Índice del curso</a>
 </p>

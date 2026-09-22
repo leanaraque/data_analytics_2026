@@ -73,5 +73,5 @@ Actúan como **variables** que el usuario ajusta con un slider o campo de entrad
 
 ---
 <p align="center">
-<a href="./02-visualizaciones-clave.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="./04-storytelling-con-datos.md">Siguiente ➡️</a>
+<a href="./02-visualizaciones-clave.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="./04-storytelling-con-datos.md">Siguiente</a>
 </p>

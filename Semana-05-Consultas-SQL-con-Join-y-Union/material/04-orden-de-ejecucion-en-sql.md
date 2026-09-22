@@ -52,14 +52,14 @@ LIMIT    10;                                             -- paso 8
 
 ## Errores frecuentes explicados por el orden de ejecución
 
-| ❌ Error común | ✅ Corrección |
+| Error común | Corrección |
 |----------------|---------------|
 | Usar un alias del `SELECT` en el `WHERE` (el alias **no existe** todavía en el paso 2) | Usar la expresión completa, o mover la condición a `HAVING` si involucra agregación |
 | Usar `SUM()` en el `WHERE` (`WHERE` no puede filtrar agregaciones) | Mover la condición a `HAVING`, que se ejecuta **después** del `GROUP BY` |
 | Esperar que `ORDER BY` afecte el `GROUP BY` (`ORDER BY` corre en el paso 7) | Ordenar por columnas o alias del resultado final |
 | Usar `LIMIT` sin `ORDER BY` (resultado impredecible) | Acompañar siempre `LIMIT` / `TOP` con un `ORDER BY` explícito |
 
-## ⚠️ Caso especial: `WHERE` vs. `HAVING`
+## Caso especial: `WHERE` vs. `HAVING`
 Ambas filtran filas, pero en momentos distintos: **`WHERE` filtra antes de agrupar** (sobre filas individuales) y **`HAVING` filtra después de agrupar** (sobre resultados agregados).
 > **Regla práctica:** si la condición usa `SUM`, `COUNT`, `AVG`, `MAX` o `MIN`, va en `HAVING`.
 
@@ -91,5 +91,5 @@ En BI y análisis comercial, las consultas corren sobre **millones de registros*
 
 ---
 <p align="center">
-<a href="./03-left-right-full-outer-join.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="./05-checklist-left-right-full.md">Siguiente ➡️</a>
+<a href="./03-left-right-full-outer-join.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="./05-checklist-left-right-full.md">Siguiente</a>
 </p>

@@ -45,9 +45,9 @@ Esto te muestra el **plan de ejecución** y te ayuda a identificar si se están 
 ## ¿Por qué importa en el trabajo real?
 Un equipo de **marketing** puede querer identificar clientes activos para campañas; un analista **financiero** necesita conocer los totales de ventas por cliente. Entender los JOINs y manejar los `NULL` es fundamental para evitar errores en los reportes y asegurar información completa y precisa. La **optimización** es crucial en entornos con grandes bases de datos, donde una consulta lenta afecta la productividad.
 
-> 🎥 **Simplificar el INNER JOIN:** ¿la palabra `INNER` es obligatoria? (No: `JOIN` por defecto es `INNER JOIN`.) Y el uso de **alias** de tabla (`c`, `p`) hace las consultas más limpias y legibles.
+> **Simplificar el INNER JOIN:** ¿la palabra `INNER` es obligatoria? (No: `JOIN` por defecto es `INNER JOIN`.) Y el uso de **alias** de tabla (`c`, `p`) hace las consultas más limpias y legibles.
 
 ---
 <p align="center">
-<a href="./01-clausula-join.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="./03-left-right-full-outer-join.md">Siguiente ➡️</a>
+<a href="./01-clausula-join.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="./03-left-right-full-outer-join.md">Siguiente</a>
 </p>

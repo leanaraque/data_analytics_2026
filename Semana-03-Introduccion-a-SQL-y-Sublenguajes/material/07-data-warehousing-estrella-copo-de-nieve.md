@@ -1,6 +1,6 @@
 # 7. Introducción al Data Warehousing: esquemas en Estrella y Copo de Nieve
 
-> 📖 **Para profundizar** — Esta unidad amplía el tema con contenido avanzado. Podés continuar sin leerla y volver cuando quieras ir más lejos o cuando ya domines los conceptos anteriores.
+> **Para profundizar** — Esta unidad amplía el tema con contenido avanzado. Podés continuar sin leerla y volver cuando quieras ir más lejos o cuando ya domines los conceptos anteriores.
 
 Aprendé a diferenciar el **Esquema Estrella** del **Copo de Nieve**, comprendiendo cómo organizar tus datos para optimizar el análisis y la velocidad en herramientas como **Power BI**.
 
@@ -20,12 +20,12 @@ Una evolución técnica del estrella. Aquí las **dimensiones están normalizada
 - **Por qué importa:** reduce la redundancia al máximo. Pero requiere **más JOINs** en cada consulta, lo que puede **ralentizar** los reportes.
 - **Uso típico:** cuando el volumen de datos es inmenso y el ahorro de espacio es crítico, o cuando las jerarquías de datos son muy complejas.
 
-## 🃏 Cómo estudiar este tema (tarjetas de repaso)
+## Cómo estudiar este tema (tarjetas de repaso)
 - Leé la pregunta e intentá responderla en voz alta **antes** de ver la respuesta.
 - Si fallás, no te preocupes: leé la respuesta y reflexioná sobre por qué tu mente tomó el otro camino.
 - El activo más valioso es la **revisión espaciada**: volvé a repasar dentro de un par de días para que los conceptos se asienten en tu memoria a largo plazo.
 
 ---
 <p align="center">
-<a href="./06-permisos-y-roles-dcl.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="../entregable/README.md">Ir al entregable (Checkpoint M3) ➡️</a>
+<a href="./06-permisos-y-roles-dcl.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="../entregable/README.md">Ir al entregable (Checkpoint M3)</a>
 </p>

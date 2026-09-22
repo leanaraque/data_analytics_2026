@@ -1,25 +1,25 @@
-# 📦 M2 — Pre-entrega: Modelo de datos RetailPro
+# M2 — Pre-entrega: Modelo de datos RetailPro
 
 > **Título:** Diseño del modelo relacional — las tablas del proyecto.
 
-## 🎯 En una frase
+## En una frase
 Con el brief definido en **M1**, ahora vas a diseñar la **arquitectura de datos** que va a sostener todo el análisis: el modelo relacional de RetailPro, normalizado hasta **3NF**.
 
-> 🧱 Esta pre-entrega es **el plano del edificio**: si el diseño es sólido, todo lo que construyas encima va a funcionar. En **M3** vas a implementar exactamente este modelo en SQL, así que cada decisión que tomes acá tiene consecuencias directas en los módulos siguientes.
+> Esta pre-entrega es **el plano del edificio**: si el diseño es sólido, todo lo que construyas encima va a funcionar. En **M3** vas a implementar exactamente este modelo en SQL, así que cada decisión que tomes acá tiene consecuencias directas en los módulos siguientes.
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 Un documento **PDF o DOCX** con el **diagrama ER** (incluido como imagen) y las justificaciones, subido directo en la plataforma.
 
-> ⚠️ **Esta pre-entrega SÍ es evaluable** (es el modelo relacional de RetailPro). No la confundas con el ejercicio guiado de **Normalización del Videoclub**, que es práctica **(no evaluable)**.
+> **Esta pre-entrega SÍ es evaluable** (es el modelo relacional de RetailPro). No la confundas con el ejercicio guiado de **Normalización del Videoclub**, que es práctica **(no evaluable)**.
 
 ---
 
-## 🏢 Contexto
+## Contexto
 RetailPro necesita migrar sus datos desde **planillas de Excel desorganizadas** a una base de datos relacional. Tu tarea es diseñar el modelo que va a contener toda la información del negocio, aplicando las reglas de **normalización hasta 3NF** aprendidas en este módulo.
 
 ---
 
-## 🧩 Mini-ejemplo resuelto: cómo se normaliza a 3NF
+## Mini-ejemplo resuelto: cómo se normaliza a 3NF
 Antes de armar RetailPro, mirá cómo se pasa de **UNA** tabla desnormalizada a **tres** tablas relacionadas.
 
 **Tabla original** (todo mezclado y con datos repetidos):
@@ -38,7 +38,7 @@ Antes de armar RetailPro, mirá cómo se pasa de **UNA** tabla desnormalizada a 
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 
 ### 1. Diagrama ER
 Diseñá el modelo relacional de RetailPro con **todas sus tablas, columnas, tipos de datos, claves primarias (PK) y claves foráneas (FK)**. Podés usar **draw.io, Lucidchart, dbdiagram.io** o cualquier herramienta equivalente. También podés dibujarlo a mano y fotografiarlo.
@@ -65,7 +65,7 @@ Para cada tabla, indicá **a cuál de las preguntas de análisis** que definiste
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 - [ ] **1 archivo único** en PDF o DOCX.
 - [ ] **Diagrama ER** incluido como **imagen** (con PK y FK visibles).
 - [ ] Las 4 tablas obligatorias con sus **columnas mínimas** y **tipos de datos**.
@@ -75,5 +75,5 @@ Para cada tabla, indicá **a cuál de las preguntas de análisis** que definiste
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 2</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 2</a> · <a href="../../README.md">Índice del curso</a>
 </p>

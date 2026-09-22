@@ -1,6 +1,6 @@
 # 9. Gateways y actualizaciones programadas: el puente entre tu PC y la nube
 
-> 📖 **Para profundizar** — Contenido avanzado. El reporte está publicado y seguro; el problema es que los datos se **desactualizan** si no hay una conexión activa con la fuente.
+> **Para profundizar** — Contenido avanzado. El reporte está publicado y seguro; el problema es que los datos se **desactualizan** si no hay una conexión activa con la fuente.
 
 Diseñaste el dashboard perfecto conectado a tu base PostgreSQL, lo publicaste, y al día siguiente tu jefe pregunta: *"¿Por qué las ventas de ayer no aparecen?"*. Power BI Service (en la nube) **no puede entrar mágicamente** a tu computadora o al servidor de la oficina: hay una **pared digital de seguridad**. Para derribarla necesitás dos herramientas: **Gateways** y **Actualizaciones Programadas**.
 
@@ -45,5 +45,5 @@ Con el puente construido, le decís al mensajero **cuándo** trabajar. En la con
 
 ---
 <p align="center">
-<a href="./08-seguridad-nivel-de-fila-rls.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./10-dashboards-y-suscripciones.md">Siguiente ➡️</a>
+<a href="./08-seguridad-nivel-de-fila-rls.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./10-dashboards-y-suscripciones.md">Siguiente</a>
 </p>

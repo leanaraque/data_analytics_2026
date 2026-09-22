@@ -1,18 +1,18 @@
-# 📦 M8 — Checkpoint 2: Modelo de datos + tabla de medidas core en DAX
+# M8 — Checkpoint 2: Modelo de datos + tabla de medidas core en DAX
 
 > **Título:** Del dato limpio al motor analítico funcionando.
 
-## 🎯 En una frase
+## En una frase
 En el entregable anterior (M6) limpiaste y estructuraste los datos. Ahora vas a **darles inteligencia**: conectar las tablas con relaciones correctas, crear una **tabla calendario** que habilite el análisis temporal y escribir las **5 medidas DAX** fundamentales que van a alimentar todos tus reportes.
 
-> 🔗 **Posición en la cadena:** M3 (base `Ventas_Tech_DB`) → M6 (Power Query, `.pbix` limpio) → **M8 (relaciones + calendario + medidas)** → **M11 (proyecto integrador)**. Abrí el `.pbix` que entregaste en M6 y continuá desde ahí. *(Si tuviste un error técnico, existe `Checkpoint2_Dataset.xlsx` como recurso de emergencia — pero trabajar sobre tu propio dataset es lo recomendado.)*
+> **Posición en la cadena:** M3 (base `Ventas_Tech_DB`) → M6 (Power Query, `.pbix` limpio) → **M8 (relaciones + calendario + medidas)** → **M11 (proyecto integrador)**. Abrí el `.pbix` que entregaste en M6 y continuá desde ahí. *(Si tuviste un error técnico, existe `Checkpoint2_Dataset.xlsx` como recurso de emergencia — pero trabajar sobre tu propio dataset es lo recomendado.)*
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 El **enlace a tu repositorio GitHub público** con `Apellido_Nombre_Checkpoint2.pbix`.
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 
 ### Paso 1 — Configurar el modelo de relaciones
 En la **Vista de Modelo**, creá estas relaciones arrastrando columnas:
@@ -66,7 +66,7 @@ VAR VentasAnterior = [Ventas LY]
 RETURN
     DIVIDE( VentasActual - VentasAnterior, VentasAnterior )
 ```
-> 💡 Formateá `% Crecimiento Anual` como **porcentaje** desde *Herramientas de medida → Formato → %*.
+> Formateá `% Crecimiento Anual` como **porcentaje** desde *Herramientas de medida → Formato → %*.
 
 ### Paso 5 — Validación con Matriz
 Creá una página `Validación` con una **Matriz**: **Filas** = `Mes Nombre` · **Columnas** = `Año` · **Valores** = `Total Ventas`, `Ventas YTD`, `Ventas LY`, `% Crecimiento Anual`.
@@ -84,7 +84,7 @@ Guardá como `Apellido_Nombre_Checkpoint2.pbix` y subilo a tu repositorio GitHub
 
 ---
 
-## ✔️ Criterios de aceptación
+## Criterios de aceptación
 - [ ] Las **4 relaciones** con cardinalidad 1:N y dirección única.
 - [ ] `Dim_Fechas` **marcada como tabla de fechas** y relacionada con `Fact_Ventas`.
 - [ ] La tabla `_Medidas` con ícono de calculadora y las **5 medidas**.
@@ -92,7 +92,7 @@ Guardá como `Apellido_Nombre_Checkpoint2.pbix` y subilo a tu repositorio GitHub
 - [ ] `Ventas LY` muestra los valores del año anterior y `BLANK` donde no hay comparable.
 - [ ] `% Crecimiento Anual` usa `VAR` y `DIVIDE` (sin división directa `/`).
 
-## ⚠️ Errores comunes a evitar
+## Errores comunes a evitar
 - **No marcar `Dim_Fechas` como tabla de fechas:** sin esto, `TOTALYTD` y `SAMEPERIODLASTYEAR` **no funcionan** aunque la fórmula esté bien.
 - **Relación bidireccional:** activar "Ambas" genera ambigüedad. Usá siempre **dirección única**.
 - **Dejar la `Columna 1` en `_Medidas`:** sin eliminarla, la tabla no toma el ícono de calculadora.
@@ -101,5 +101,5 @@ Guardá como `Apellido_Nombre_Checkpoint2.pbix` y subilo a tu repositorio GitHub
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 8</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 8</a> · <a href="../../README.md">Índice del curso</a>
 </p>

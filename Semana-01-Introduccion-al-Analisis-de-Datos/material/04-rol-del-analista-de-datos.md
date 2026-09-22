@@ -42,5 +42,5 @@ El conocimiento de plataformas BI facilita la creación de reportes automáticos
 
 ---
 <p align="center">
-<a href="./03-bi-data-analytics-data-science.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="./05-excel-basico-formulas-y-funciones.md">Siguiente ➡️</a>
+<a href="./03-bi-data-analytics-data-science.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="./05-excel-basico-formulas-y-funciones.md">Siguiente</a>
 </p>

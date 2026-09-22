@@ -1,6 +1,6 @@
 # 5. Gráficos avanzados en Power BI
 
-> 📖 **Para profundizar** — Amplía tu vocabulario visual con tipos avanzados para casos de negocio específicos. Podés continuar sin leerla y volver cuando domines los gráficos esenciales.
+> **Para profundizar** — Amplía tu vocabulario visual con tipos avanzados para casos de negocio específicos. Podés continuar sin leerla y volver cuando domines los gráficos esenciales.
 
 Con los gráficos esenciales dominados (barras, líneas, mapas, matrices), esta unidad suma visualizaciones que van más allá para analizar patrones, comparar comportamientos y comunicar hallazgos de forma más estratégica.
 
@@ -46,5 +46,5 @@ La cita de Mies van der Rohe se aplica perfecto: **simplicidad y claridad** son 
 
 ---
 <p align="center">
-<a href="./04-storytelling-con-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="./06-navegacion-botones-marcadores-tooltips.md">Siguiente ➡️</a>
+<a href="./04-storytelling-con-datos.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="./06-navegacion-botones-marcadores-tooltips.md">Siguiente</a>
 </p>

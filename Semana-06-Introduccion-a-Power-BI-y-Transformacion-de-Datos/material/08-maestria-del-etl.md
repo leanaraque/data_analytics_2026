@@ -1,6 +1,6 @@
 # 8. La maestría del ETL: consolidando el flujo de datos en Power BI
 
-> 📖 **Para profundizar** — Unidad de consolidación con contenido avanzado. Podés continuar sin leerla y volver cuando quieras ver "el bosque completo".
+> **Para profundizar** — Unidad de consolidación con contenido avanzado. Podés continuar sin leerla y volver cuando quieras ver "el bosque completo".
 
 Sos el chef principal de un restaurante de alta cocina. Antes de presentar un plato espectacular a tus comensales (los *stakeholders*), necesitás ingredientes frescos, limpios y bien cortados. **Power Query es tu cocina profesional**, y la transformación de datos es la *mise en place* que garantiza que el resultado sea nutritivo para la toma de decisiones.
 
@@ -42,9 +42,9 @@ Al cerrar el Editor de Power Query y hacer **"Cerrar y Aplicar"**, los datos ate
 - **Optimización:** cargá solo lo que necesites (pocos datos, gran valor).
 - **Lenguaje M:** el lenguaje detrás de la interfaz, ideal para automatizaciones avanzadas.
 
-> 🤔 **Reflexión:** si tuvieras que explicarle a tu jefe por qué tardaste 3 días preparando los datos y solo 3 horas haciendo los gráficos, ¿cómo usarías la analogía del "reloj de arena" para justificar el valor de tu trabajo?
+> **Reflexión:** si tuvieras que explicarle a tu jefe por qué tardaste 3 días preparando los datos y solo 3 horas haciendo los gráficos, ¿cómo usarías la analogía del "reloj de arena" para justificar el valor de tu trabajo?
 
 ---
 <p align="center">
-<a href="./07-automatizacion-con-funciones-de-power-query.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./09-modelado-relaciones-y-cardinalidad.md">Siguiente ➡️</a>
+<a href="./07-automatizacion-con-funciones-de-power-query.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./09-modelado-relaciones-y-cardinalidad.md">Siguiente</a>
 </p>

@@ -1,11 +1,11 @@
-# 🛠️ Práctica 2 — Creando la base de datos `Ventas_Tech_DB`
+# Práctica 2 — Creando la base de datos `Ventas_Tech_DB`
 
 > Práctica guiada de la Semana 3: DDL + constraints + `INSERT`. El script completo está en [**`ventas_tech_db.sql`**](./ventas_tech_db.sql).
 
 ## Propósito
 Construir desde cero la base de datos **`Ventas_Tech_DB`** — el dataset que vas a usar durante **todo el curso**. Vas a definir cuatro tablas relacionadas, establecer las claves foráneas que garantizan la integridad y cargarla con datos iniciales listos para consultar.
 
-> 🔗 En el **Módulo 6** vas a conectar Power BI directamente a esta base para limpiarla y transformarla. En el **Módulo 8** vas a construir el modelo analítico y las medidas DAX encima de ella. Este es el primer paso de ese recorrido.
+> En el **Módulo 6** vas a conectar Power BI directamente a esta base para limpiarla y transformarla. En el **Módulo 8** vas a construir el modelo analítico y las medidas DAX encima de ella. Este es el primer paso de ese recorrido.
 
 ## Contexto
 Sos el **DBA de TechStore**, una cadena de tiendas de tecnología. Tu tarea es crear la base `Ventas_Tech_DB` con un modelo relacional correcto que soporte las operaciones de ventas.
@@ -80,7 +80,7 @@ SELECT * FROM clientes;
 SELECT * FROM productos;
 SELECT * FROM ventas;
 -- (En el Módulo 5 vas a cruzar estas tablas con JOIN para ver
---  las ventas junto al nombre del cliente y del producto.)
+-- las ventas junto al nombre del cliente y del producto.)
 ```
 
 ## Criterios de aceptación
@@ -90,14 +90,14 @@ SELECT * FROM ventas;
 - El `DROP TABLE` respeta el **orden inverso** de dependencias.
 - Las 4 tablas se cargan y `ventas` contiene **10 registros**.
 
-## ⚠️ Errores comunes a evitar
+## Errores comunes a evitar
 - **Orden incorrecto en `DROP TABLE`:** eliminá primero las tablas con FK antes que las referenciadas.
 - **Orden incorrecto en `INSERT`:** cargá `categorias` y `clientes` antes de `productos` y `ventas`.
 - **`FLOAT` para precios:** usá siempre `DECIMAL(10,2)` para valores monetarios.
 
-> 📎 **Nota de compatibilidad:** `TINYINT(1)` es sintaxis de **MySQL/SQL Server**. En **PostgreSQL** usá `BOOLEAN` (con `DEFAULT TRUE`). El [script](./ventas_tech_db.sql) incluye una nota sobre esto.
+> **Nota de compatibilidad:** `TINYINT(1)` es sintaxis de **MySQL/SQL Server**. En **PostgreSQL** usá `BOOLEAN` (con `DEFAULT TRUE`). El [script](./ventas_tech_db.sql) incluye una nota sobre esto.
 
 ---
 <p align="center">
-<a href="./practica-01-diseno-de-tablas.md">⬅️ Práctica 1</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="../entregable/README.md">Ir al entregable ➡️</a>
+<a href="./practica-01-diseno-de-tablas.md">Práctica 1</a> · <a href="../README.md">Semana 3</a> · <a href="../entregable/README.md">Ir al entregable</a>
 </p>

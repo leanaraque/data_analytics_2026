@@ -1,4 +1,4 @@
-# 🛠️ Práctica 1 — Diseño de tablas con `CREATE TABLE`
+# Práctica 1 — Diseño de tablas con `CREATE TABLE`
 
 > Práctica guiada **(no evaluable)** de la unidad *Diseño de esquemas con DDL*.
 
@@ -48,10 +48,10 @@ CREATE TABLE productos (
 - Los nombres de columnas **no** contienen espacios ni caracteres especiales.
 - El repositorio queda organizado con el nuevo archivo `.sql`.
 
-## ⚠️ Error común a evitar
+## Error común a evitar
 No olvides las **comas** (`,`) al final de cada definición de columna, **excepto en la última** antes de cerrar el paréntesis. Si olvidás una coma, SQL no entenderá dónde termina un campo y empieza el otro.
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 3</a> · <a href="./practica-02-ventas-tech-db.md">Práctica 2: Ventas_Tech_DB ➡️</a>
+<a href="../README.md">Volver a la Semana 3</a> · <a href="./practica-02-ventas-tech-db.md">Práctica 2: Ventas_Tech_DB</a>
 </p>

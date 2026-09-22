@@ -27,5 +27,5 @@ Operación de **crecimiento horizontal**. Se usa para traer información adicion
 
 ---
 <p align="center">
-<a href="./04-limpieza-y-tipado-en-power-query.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./06-lenguaje-m-y-editor-avanzado.md">Siguiente ➡️</a>
+<a href="./04-limpieza-y-tipado-en-power-query.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./06-lenguaje-m-y-editor-avanzado.md">Siguiente</a>
 </p>

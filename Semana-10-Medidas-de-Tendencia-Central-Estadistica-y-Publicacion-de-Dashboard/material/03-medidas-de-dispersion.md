@@ -66,5 +66,5 @@ Tiempos de entrega (minutos): **10, 12, 15, 18, 20**.
 
 ---
 <p align="center">
-<a href="./02-medidas-de-tendencia-central-con-sql.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./04-analisis-univariado-y-outliers-con-sql.md">Siguiente ➡️</a>
+<a href="./02-medidas-de-tendencia-central-con-sql.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./04-analisis-univariado-y-outliers-con-sql.md">Siguiente</a>
 </p>

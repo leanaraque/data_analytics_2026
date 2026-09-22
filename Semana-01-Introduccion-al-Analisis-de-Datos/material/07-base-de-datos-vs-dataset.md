@@ -47,5 +47,5 @@ Saber cuándo y cómo usar cada uno te permite optimizar recursos, garantizar la
 
 ---
 <p align="center">
-<a href="./06-tecnologias-y-herramientas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="../evaluacion/evaluacion-integradora-1.md">Ir a la Evaluación Integradora 1 ➡️</a>
+<a href="./06-tecnologias-y-herramientas.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="../evaluacion/evaluacion-integradora-1.md">Ir a la Evaluación Integradora 1</a>
 </p>

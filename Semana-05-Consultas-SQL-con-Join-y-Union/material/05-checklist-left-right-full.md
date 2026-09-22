@@ -46,5 +46,5 @@ Conocer estas diferencias te permite diseñar consultas que reflejen fielmente l
 
 ---
 <p align="center">
-<a href="./04-orden-de-ejecucion-en-sql.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="./06-union-vs-union-all.md">Siguiente ➡️</a>
+<a href="./04-orden-de-ejecucion-en-sql.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="./06-union-vs-union-all.md">Siguiente</a>
 </p>

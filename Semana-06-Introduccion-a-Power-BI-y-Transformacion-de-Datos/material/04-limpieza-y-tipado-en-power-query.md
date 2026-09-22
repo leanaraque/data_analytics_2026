@@ -10,7 +10,7 @@ Cuando conectás Power BI a SQL, los datos vienen "crudos". Es común encontrar:
 - **Duplicados:** ventas registradas dos veces que inflan artificialmente los ingresos.
 - **Tipos de datos incorrectos:** fechas leídas como texto, que impiden crear filtros temporales.
 
-> ⚠️ **Importante:** Power Query **no modifica la base de datos original**. Funciona como una "receta": tomás los ingredientes (datos de SQL), los limpiás en el editor, y el resultado es lo que se sirve en el plato (tu reporte). Si borrás algo en Power Query, los datos en el servidor SQL siguen **intactos**.
+> **Importante:** Power Query **no modifica la base de datos original**. Funciona como una "receta": tomás los ingredientes (datos de SQL), los limpiás en el editor, y el resultado es lo que se sirve en el plato (tu reporte). Si borrás algo en Power Query, los datos en el servidor SQL siguen **intactos**.
 
 ## 2. El proceso de limpieza (workflow)
 Orden recomendado para principiantes:
@@ -28,7 +28,7 @@ A veces un precio llega como `"100.50"` (en **texto**). Si intentás sumarlo, Po
 
 > **Regla de oro:** siempre revisá que tus fechas tengan el ícono de un **calendario** pequeño. Si tienen el ícono `ABC`, Power BI no entenderá que "Enero" viene antes que "Febrero".
 
-## 🎥 Video — Dimensiones y medidas en Power BI
+## Video — Dimensiones y medidas en Power BI
 Cómo **identificar** qué campos describen o categorizan (dimensiones: nombre de cliente, categoría, fecha) y cuáles son valores numéricos que se agregan o calculan (medidas: ventas totales, cantidad, promedio). Power BI las clasifica automáticamente, pero a veces se equivoca; aprendé a **corregir** esa clasificación manualmente para evitar errores en las visualizaciones.
 
 ## Síntesis
@@ -36,5 +36,5 @@ Power Query es tu **zona segura** para limpiar datos sin romper el origen. El ti
 
 ---
 <p align="center">
-<a href="./03-conexion-a-postgresql-y-sql-server.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./05-combinacion-de-tablas-merge-y-append.md">Siguiente ➡️</a>
+<a href="./03-conexion-a-postgresql-y-sql-server.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./05-combinacion-de-tablas-merge-y-append.md">Siguiente</a>
 </p>

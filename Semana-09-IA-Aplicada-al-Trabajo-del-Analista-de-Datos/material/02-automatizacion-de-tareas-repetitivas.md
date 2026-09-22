@@ -24,7 +24,7 @@ Uno de los trabajos más postergados (y más valorados). La IA puede generarla d
 - **Diccionario de datos:** a partir de un `CREATE TABLE`, generar descripciones de cada columna en lenguaje de negocio.
 - **Comentarios en código SQL:** agregar explicaciones a consultas complejas heredadas sin documentación.
 
-> ⚠️ **Advertencia:** la IA documenta lo que el código **hace**, no lo que **debería** hacer. Si el código tiene errores de lógica, la documentación generada los **ocultará**. Revisá siempre la documentación contra el comportamiento real.
+> **Advertencia:** la IA documenta lo que el código **hace**, no lo que **debería** hacer. Si el código tiene errores de lógica, la documentación generada los **ocultará**. Revisá siempre la documentación contra el comportamiento real.
 
 ## 4. Resúmenes ejecutivos de reportes
 Traducir un dashboard lleno de números en un párrafo ejecutivo claro es demandante. El flujo correcto:
@@ -39,5 +39,5 @@ Automatizar **no** significa delegar el análisis: significa liberar tiempo del 
 
 ---
 <p align="center">
-<a href="./01-ia-como-copiloto-del-analista.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 9</a> · <a href="./03-ia-en-etl-y-power-bi.md">Siguiente ➡️</a>
+<a href="./01-ia-como-copiloto-del-analista.md">Anterior</a> · <a href="../README.md">Semana 9</a> · <a href="./03-ia-en-etl-y-power-bi.md">Siguiente</a>
 </p>

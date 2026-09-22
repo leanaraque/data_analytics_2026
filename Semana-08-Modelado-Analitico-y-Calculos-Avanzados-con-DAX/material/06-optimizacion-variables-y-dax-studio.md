@@ -1,6 +1,6 @@
 # 6. Optimización de medidas DAX: variables y DAX Studio
 
-> 📖 **Para profundizar** — Contenido avanzado. Con las medidas ya funcionando, el siguiente nivel es hacerlas **eficientes y mantenibles**.
+> **Para profundizar** — Contenido avanzado. Con las medidas ya funcionando, el siguiente nivel es hacerlas **eficientes y mantenibles**.
 
 Escribir una fórmula que devuelva el resultado correcto es solo el primer paso. Lo que separa a un analista junior de uno SSR es escribir fórmulas **eficientes, legibles y mantenibles**. Una medida que tarda cinco segundos, que nadie entiende y que vos mismo no recordás tres meses después, está **mal escrita** aunque el número sea correcto. Dos herramientas lo transforman: las **variables (`VAR`)** y **DAX Studio**.
 
@@ -86,13 +86,13 @@ SUMMARIZECOLUMNS(
 
 | Situación | ¿Usar `VAR`? |
 |-----------|:------------:|
-| El mismo cálculo aparece más de una vez | ✅ Siempre |
-| La medida tiene más de tres niveles de anidamiento | ✅ Recomendado |
-| Necesitás depurar un paso intermedio | ✅ Técnica estándar |
-| El cálculo es simple y se usa una sola vez | ❌ No es necesario |
-| Esperás que se recalcule dentro de un `FILTER` | ⚠️ Cuidado con el contexto |
+| El mismo cálculo aparece más de una vez | Siempre |
+| La medida tiene más de tres niveles de anidamiento | Recomendado |
+| Necesitás depurar un paso intermedio | Técnica estándar |
+| El cálculo es simple y se usa una sola vez | No es necesario |
+| Esperás que se recalcule dentro de un `FILTER` | Cuidado con el contexto |
 
 ---
 <p align="center">
-<a href="./05-inteligencia-de-tiempo-yoy-ytd.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="./07-funciones-dax-avanzadas.md">Siguiente ➡️</a>
+<a href="./05-inteligencia-de-tiempo-yoy-ytd.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="./07-funciones-dax-avanzadas.md">Siguiente</a>
 </p>

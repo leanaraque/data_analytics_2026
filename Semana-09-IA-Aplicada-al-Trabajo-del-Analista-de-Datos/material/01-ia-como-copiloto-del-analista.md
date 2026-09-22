@@ -25,8 +25,8 @@ Un buen prompt para tareas analíticas tiene **cuatro componentes**:
 - **Formato esperado:** cómo querés la respuesta (solo el código, con comentarios, con alternativas).
 
 **Evolución de un prompt para generar SQL:**
-- ❌ **Malo:** *"Escribí una consulta SQL de ventas"* → algo genérico que no corresponde a tu esquema.
-- ✅ **Bueno:** *"Tengo una tabla `VENTAS` en SQL Server con columnas: `ID_VENTA` (int), `FECHA` (date), `ID_CLIENTE` (int), `MONTO` (decimal), `REGION` (varchar). Necesito una consulta que devuelva el total de ventas por región para el último trimestre, ordenado de mayor a menor. Solo la consulta, sin explicación."*
+- **Malo:** *"Escribí una consulta SQL de ventas"* → algo genérico que no corresponde a tu esquema.
+- **Bueno:** *"Tengo una tabla `VENTAS` en SQL Server con columnas: `ID_VENTA` (int), `FECHA` (date), `ID_CLIENTE` (int), `MONTO` (decimal), `REGION` (varchar). Necesito una consulta que devuelva el total de ventas por región para el último trimestre, ordenado de mayor a menor. Solo la consulta, sin explicación."*
 
 ## Generación y depuración de SQL con IA
 El caso de uso más inmediato. La IA puede:
@@ -42,7 +42,7 @@ El caso de uso más inmediato. La IA puede:
 - **Ignorar NULLs** en agregaciones (`COUNT(*)` vs `COUNT(columna)`).
 - Generar **JOINs incorrectos** cuando hay tablas con nombres similares.
 
-> ⚖️ **Regla de oro:** nunca ejecutes en producción una consulta generada por IA sin haberla **leído línea por línea**. La IA puede sonar muy segura y estar completamente equivocada.
+> **Regla de oro:** nunca ejecutes en producción una consulta generada por IA sin haberla **leído línea por línea**. La IA puede sonar muy segura y estar completamente equivocada.
 
 ## Errores comunes y trampas conceptuales
 - **Tratar la IA como un oráculo:** no "sabe" la verdad, produce texto estadísticamente plausible. La **validación es obligatoria**.
@@ -55,5 +55,5 @@ La IA generativa no reemplaza los fundamentos de los módulos anteriores: los **
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 9</a> · <a href="./02-automatizacion-de-tareas-repetitivas.md">Siguiente: Automatización de tareas repetitivas ➡️</a>
+<a href="../README.md">Semana 9</a> · <a href="./02-automatizacion-de-tareas-repetitivas.md">Siguiente: Automatización de tareas repetitivas</a>
 </p>

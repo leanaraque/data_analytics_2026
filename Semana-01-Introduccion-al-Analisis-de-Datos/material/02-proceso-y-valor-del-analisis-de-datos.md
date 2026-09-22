@@ -28,8 +28,8 @@ Un error común de los principiantes es saltar directo a "jugar con los datos". 
 
 ### A. Definición del problema (la etapa más crítica)
 Si hacés la pregunta equivocada, obtendrás la respuesta correcta a un problema que no importa.
-- ❌ **Mal planteamiento:** *"¿Cuántas ventas tuvimos?"* (métrica de vanidad, no resuelve nada).
-- ✅ **Buen planteamiento:** *"¿Por qué las ventas de la sucursal Centro cayeron un 15% respecto al mes pasado?"*
+- **Mal planteamiento:** *"¿Cuántas ventas tuvimos?"* (métrica de vanidad, no resuelve nada).
+- **Buen planteamiento:** *"¿Por qué las ventas de la sucursal Centro cayeron un 15% respecto al mes pasado?"*
 
 ### B. Recolección y preparación
 Aquí vive el **80% del tiempo** de un analista. Los datos del mundo real están "sucios": nombres mal escritos, fechas en formatos distintos, valores faltantes.
@@ -92,5 +92,5 @@ El análisis de datos no es una línea recta; es un **ciclo**. Una vez que tomá
 
 ---
 <p align="center">
-<a href="./01-datos-vs-informacion.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="./03-bi-data-analytics-data-science.md">Siguiente ➡️</a>
+<a href="./01-datos-vs-informacion.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="./03-bi-data-analytics-data-science.md">Siguiente</a>
 </p>

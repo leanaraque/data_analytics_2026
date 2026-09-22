@@ -31,8 +31,8 @@ in
 
 ---
 
-## 🧪 Desafío guiado — Automatización ETL con el Editor Avanzado
-> 📖 **Para profundizar** — Contenido avanzado; podés continuar sin hacerlo y volver luego.
+## Desafío guiado — Automatización ETL con el Editor Avanzado
+> **Para profundizar** — Contenido avanzado; podés continuar sin hacerlo y volver luego.
 
 Actuás como un Data Analyst que recibió una tabla de productos con **inconsistencias**: espacios alrededor de los nombres (`" Laptop "`), mayúsculas/minúsculas mezcladas, y registros de `"PRUEBA"` que no deben llegar al reporte. Tu objetivo es completar el código M para **limpiar, filtrar y tipar**.
 
@@ -56,9 +56,9 @@ Actuás como un Data Analyst que recibió una tabla de productos con **inconsist
 
 *(El registro 3 desaparece por ser de categoría `PRUEBA`.)*
 
-> 💡 **Pistas de funciones M:** `Text.Trim` (quitar espacios), `Text.Upper` (mayúsculas) y `Table.SelectRows` (filtrar). Recordá: **M es case-sensitive** (`Table.SelectRows` ≠ `table.selectrows`).
+> **Pistas de funciones M:** `Text.Trim` (quitar espacios), `Text.Upper` (mayúsculas) y `Table.SelectRows` (filtrar). Recordá: **M es case-sensitive** (`Table.SelectRows` ≠ `table.selectrows`).
 
 ---
 <p align="center">
-<a href="./06-lenguaje-m-y-editor-avanzado.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./08-maestria-del-etl.md">Siguiente ➡️</a>
+<a href="./06-lenguaje-m-y-editor-avanzado.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./08-maestria-del-etl.md">Siguiente</a>
 </p>

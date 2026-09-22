@@ -2,7 +2,7 @@
 
 > El corazón del trabajo diario del analista: **extraer exactamente lo que necesitás** de una base de datos y resumirlo en métricas de negocio.
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 Al finalizar esta semana serás capaz de:
 - Escribir consultas **`SELECT`** eligiendo columnas y renombrándolas con **alias (`AS`)**.
 - Obtener valores únicos con **`DISTINCT`** y entender cuándo conviene frente a `GROUP BY`.
@@ -10,21 +10,21 @@ Al finalizar esta semana serás capaz de:
 - **Ordenar** (`ORDER BY`) y **limitar** (`LIMIT`) los resultados.
 - Calcular métricas con **funciones de agregación** (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`).
 
-## 📚 Temario y material
+## Temario y material
 
 | # | Unidad | Material |
 |---|--------|----------|
-| 1 | Consultas básicas: `SELECT` y alias de columnas (`AS`) | [📄 Leer](./material/01-select-y-alias-de-columnas.md) |
-| 2 | Sentencia `DISTINCT` (eliminar duplicados) | [📄 Leer](./material/02-sentencia-distinct.md) |
-| 3 | Filtrado preciso: `WHERE` y operadores lógicos | [📄 Leer](./material/03-where-y-operadores-logicos.md) |
-| 4 | Ordenar y limitar: `ORDER BY` y `LIMIT` | [📄 Leer](./material/04-order-by-y-limit.md) |
-| 5 | Funciones de agregación: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` | [📄 Leer](./material/05-funciones-de-agregacion.md) |
+| 1 | Consultas básicas: `SELECT` y alias de columnas (`AS`) | [Leer](./material/01-select-y-alias-de-columnas.md) |
+| 2 | Sentencia `DISTINCT` (eliminar duplicados) | [Leer](./material/02-sentencia-distinct.md) |
+| 3 | Filtrado preciso: `WHERE` y operadores lógicos | [Leer](./material/03-where-y-operadores-logicos.md) |
+| 4 | Ordenar y limitar: `ORDER BY` y `LIMIT` | [Leer](./material/04-order-by-y-limit.md) |
+| 5 | Funciones de agregación: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` | [Leer](./material/05-funciones-de-agregacion.md) |
 
-> 🔗 Las métricas de agregación que aprendés acá son las mismas que después vas a **replicar con DAX en Power BI (M8)**.
+> Las métricas de agregación que aprendés acá son las mismas que después vas a **replicar con DAX en Power BI (M8)**.
 
 ---
 
-## 📦 Entregable de la semana (¡esto cuenta para la nota!)
+## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M4 — Pre-entrega: Consultas SQL de negocio** · [Ver consigna completa →](./entregable/README.md)
 
@@ -43,11 +43,11 @@ Más un **bloque de comentarios** al final con **3 hallazgos** concretos que enc
 
 **¿Qué entregás?** El **enlace a tu repositorio GitHub público** con `m4_consultas_negocio.sql`.
 
-> 💡 En la [consigna](./entregable/README.md) incluí **ayudas técnicas** con la sintaxis de `EXTRACT`, `HAVING` y `CASE WHEN` (patrones, no la solución completa).
+> En la [consigna](./entregable/README.md) incluí **ayudas técnicas** con la sintaxis de `EXTRACT`, `HAVING` y `CASE WHEN` (patrones, no la solución completa).
 
 ---
 
-## 📂 Contenido de la carpeta
+## Contenido de la carpeta
 ```
 Semana-04-.../
 ├── README.md            → esta guía
@@ -57,5 +57,5 @@ Semana-04-.../
 
 ---
 <p align="center">
-<a href="../Semana-03-Introduccion-a-SQL-y-Sublenguajes/">⬅️ Semana 3</a> · 🏠 <a href="../README.md">Índice del curso</a> · <a href="../Semana-05-Consultas-SQL-con-Join-y-Union/">Semana 5 ➡️</a>
+<a href="../Semana-03-Introduccion-a-SQL-y-Sublenguajes/">Semana 3</a> · <a href="../README.md">Índice del curso</a> · <a href="../Semana-05-Consultas-SQL-con-Join-y-Union/">Semana 5</a>
 </p>

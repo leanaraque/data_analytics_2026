@@ -57,7 +57,7 @@ FROM   Clientes c
 FULL OUTER JOIN Pedidos p ON c.cliente_id = p.cliente_id;
 ```
 
-> ⚠️ **No todos los sistemas lo soportan directamente:** **MySQL no** tiene `FULL OUTER JOIN` nativo; se simula con un `UNION` de `LEFT JOIN` y `RIGHT JOIN`. **PostgreSQL y SQL Server** sí lo soportan nativamente.
+> **No todos los sistemas lo soportan directamente:** **MySQL no** tiene `FULL OUTER JOIN` nativo; se simula con un `UNION` de `LEFT JOIN` y `RIGHT JOIN`. **PostgreSQL y SQL Server** sí lo soportan nativamente.
 
 ## Impacto de los valores `NULL`
 Los `NULL` indican **ausencia de datos** o no coincidencia en la tabla relacionada. Interpretarlos correctamente es crucial: un cliente con `NULL` en `pedido_id` significa que **no tiene pedidos registrados**, algo relevante para campañas de marketing o análisis de retención.
@@ -76,5 +76,5 @@ Conocer las diferencias de **soporte y sintaxis** entre MySQL, PostgreSQL y SQL 
 
 ---
 <p align="center">
-<a href="./02-inner-join-ejemplos-de-negocio.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="./04-orden-de-ejecucion-en-sql.md">Siguiente ➡️</a>
+<a href="./02-inner-join-ejemplos-de-negocio.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="./04-orden-de-ejecucion-en-sql.md">Siguiente</a>
 </p>

@@ -1,6 +1,6 @@
 # 5. Distribuciones de frecuencias y probabilidad básica
 
-> 📖 **Para profundizar** — Contenido avanzado. Podés continuar sin leerla y volver cuando domines los conceptos anteriores.
+> **Para profundizar** — Contenido avanzado. Podés continuar sin leerla y volver cuando domines los conceptos anteriores.
 
 Imaginá una tabla con las edades de 500 clientes de un banco. Leer fila por fila es imposible para extraer información. La **distribución de frecuencias** transforma esos datos "crudos" en una estructura ordenada que deja ver patrones, concentraciones y comportamientos.
 
@@ -19,12 +19,12 @@ Antes de análisis complejos o dashboards, hay que entender **cómo se distribuy
 ## Del conteo a la probabilidad
 Usamos la **frecuencia relativa** como nuestra mejor aproximación de la **probabilidad experimental**. Si en el pasado el **20%** de tus clientes (frecuencia relativa) compró un producto nuevo, podés usar ese valor para **estimar la probabilidad** de que un cliente futuro también lo haga.
 
-## 🃏 Cómo estudiar este tema (tarjetas de repaso)
+## Cómo estudiar este tema (tarjetas de repaso)
 - **Recuerdo activo:** leé la pregunta e intentá responderla **antes** de ver la respuesta.
 - **No te apresures:** si no recordás algo, leé la respuesta, reflexioná y volvé a intentarlo más tarde.
 - **Aplicá el concepto:** pensá siempre cómo lo aplicarías a un dataset real (como los de SQL o Power BI).
 
 ---
 <p align="center">
-<a href="./04-analisis-univariado-y-outliers-con-sql.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./06-power-bi-service-y-publicacion.md">Siguiente ➡️</a>
+<a href="./04-analisis-univariado-y-outliers-con-sql.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./06-power-bi-service-y-publicacion.md">Siguiente</a>
 </p>

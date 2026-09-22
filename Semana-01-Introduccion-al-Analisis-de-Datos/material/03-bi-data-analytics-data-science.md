@@ -49,5 +49,5 @@ Comprender estas diferencias te permite seleccionar la disciplina adecuada segú
 
 ---
 <p align="center">
-<a href="./02-proceso-y-valor-del-analisis-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="./04-rol-del-analista-de-datos.md">Siguiente ➡️</a>
+<a href="./02-proceso-y-valor-del-analisis-de-datos.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="./04-rol-del-analista-de-datos.md">Siguiente</a>
 </p>

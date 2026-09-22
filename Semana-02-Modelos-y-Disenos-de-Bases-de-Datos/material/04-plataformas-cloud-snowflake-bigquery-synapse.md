@@ -1,6 +1,6 @@
 # 4. Introducción práctica a Snowflake, BigQuery y Azure Synapse
 
-> 📖 **Para profundizar** — Esta unidad amplía el tema con contenido avanzado. Podés continuar al siguiente tema sin leerla y volver cuando quieras ir más lejos o cuando ya domines los conceptos anteriores.
+> **Para profundizar** — Esta unidad amplía el tema con contenido avanzado. Podés continuar al siguiente tema sin leerla y volver cuando quieras ir más lejos o cuando ya domines los conceptos anteriores.
 
 > La normalización te enseñó a diseñar bases de datos locales. Esta unidad te muestra **dónde viven** esas bases de datos en el mundo profesional.
 
@@ -62,5 +62,5 @@ Comprender sus arquitecturas y modelos de costes permite diseñar soluciones efi
 
 ---
 <p align="center">
-<a href="./03-normalizacion-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 2</a> · <a href="./05-bases-de-datos-relacionales-y-postgresql.md">Siguiente ➡️</a>
+<a href="./03-normalizacion-de-datos.md">Anterior</a> · <a href="../README.md">Semana 2</a> · <a href="./05-bases-de-datos-relacionales-y-postgresql.md">Siguiente</a>
 </p>

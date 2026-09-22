@@ -35,5 +35,5 @@ Una de las funciones más potentes para el negocio: en lugar de esperar a que el
 
 ---
 <p align="center">
-<a href="./09-gateways-y-actualizaciones-programadas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="../entregable/README.md">Ir al entregable (M10) ➡️</a>
+<a href="./09-gateways-y-actualizaciones-programadas.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="../entregable/README.md">Ir al entregable (M10)</a>
 </p>

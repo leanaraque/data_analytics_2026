@@ -45,5 +45,5 @@ Este proyecto te enfrenta a la frustración de un código que no corre, a la dud
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 11</a> · <a href="../entregable/README.md">Ir a la consigna del Proyecto Final ➡️</a>
+<a href="../README.md">Semana 11</a> · <a href="../entregable/README.md">Ir a la consigna del Proyecto Final</a>
 </p>

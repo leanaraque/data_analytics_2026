@@ -1,4 +1,4 @@
-# 🧰 Recursos del curso
+# Recursos del curso
 
 Material **transversal** a todo el curso Data Analytics de Coderhouse: guías de instalación, cheatsheets, plantillas y enlaces útiles que no pertenecen a una semana en particular.
 
@@ -6,10 +6,10 @@ Material **transversal** a todo el curso Data Analytics de Coderhouse: guías de
 
 | Recurso | Descripción |
 |---------|-------------|
-| [🗄️ `base-de-datos/`](./base-de-datos/) | **`RetailPro_DB`** — script completo de SQL Server que crea la base del proyecto integrador: tablas, relaciones, restricciones y 1.444 ventas de 2023–2024. Es la fuente de datos de M6, M8 y M10. |
-| [🎓 `ejemplo-examen-final/`](./ejemplo-examen-final/) | **Material oficial del Proyecto Final (M11)** — el dataset "Ventas Retail" (Excel + CSV, 3.000 ventas), los scripts de SQL Server y MySQL que lo montan, y un ejemplo de entrega resuelta. |
+| [`base-de-datos/`](./base-de-datos/) | **`RetailPro_DB`** — script completo de SQL Server que crea la base del proyecto integrador: tablas, relaciones, restricciones y 1.444 ventas de 2023–2024. Es la fuente de datos de M6, M8 y M10. |
+| [`ejemplo-examen-final/`](./ejemplo-examen-final/) | **Material oficial del Proyecto Final (M11)** — el dataset "Ventas Retail" (Excel + CSV, 3.000 ventas), los scripts de SQL Server y MySQL que lo montan, y un ejemplo de entrega resuelta. |
 
-> 🚧 Se irá completando a lo largo del curso.
+> Se irá completando a lo largo del curso.
 
 Ideas de lo que vivirá acá:
 - Guías de instalación (SQL Server + SSMS, Power BI Desktop).
@@ -20,5 +20,5 @@ Ideas de lo que vivirá acá:
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver al índice del curso</a>
+<a href="../README.md">Volver al índice del curso</a>
 </p>

@@ -1,19 +1,19 @@
-# 📦 M4 — Pre-entrega: Consultas SQL de negocio
+# M4 — Pre-entrega: Consultas SQL de negocio
 
 > **Título:** Extrayendo métricas clave con SQL.
 
-## 🎯 En una frase
+## En una frase
 Ya tenés la base de datos creada en **M3**. Ahora escribís las primeras consultas que responden directamente a **preguntas de negocio**. Es el primer paso de la extracción de datos que después vas a conectar a Power BI en **M6**.
 
-## 🏢 Contexto
+## Contexto
 El equipo comercial de **RetailPro** necesita respuestas rápidas antes de la reunión del lunes. No quieren ver todas las filas de la base: quieren **métricas concretas, rankings y comparativas**. Tu tarea es escribir las consultas SQL que generen exactamente esa información.
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 El **enlace a tu repositorio GitHub público** con el archivo **`m4_consultas_negocio.sql`** dentro de la carpeta del proyecto.
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 Sobre la base **`Ventas_Tech_DB`** creada en M3, escribí las consultas en `m4_consultas_negocio.sql`. Trabajamos solo sobre la tabla **`ventas`** (recordá que tiene `id_cliente`, `id_producto`, `cantidad`, `precio_unitario` y `fecha_venta`). Los nombres de productos y clientes los vas a poder traer **cruzando tablas con `JOIN` en el Módulo 5**; por ahora trabajamos con los **IDs**.
 
 ### Consulta 1 — Resumen ejecutivo mensual
@@ -39,7 +39,7 @@ Al final del archivo, agregá un bloque de comentarios `--` con **3 hallazgos co
 
 ---
 
-## 💡 Ayudas técnicas (patrones, no la solución)
+## Ayudas técnicas (patrones, no la solución)
 Estas piezas nuevas aparecen en la consigna. Acá tenés la **sintaxis** para que las incorpores vos:
 
 **Extraer el mes de una fecha:**
@@ -66,11 +66,11 @@ SELECT ...,
 FROM ...;
 ```
 
-> 🧩 *Pista para la Consulta 4:* podés obtener el promedio mensual general con una **subconsulta** dentro del `CASE`, o calcularlo aparte y compararlo. ¡Animate a resolverlo vos!
+> *Pista para la Consulta 4:* podés obtener el promedio mensual general con una **subconsulta** dentro del `CASE`, o calcularlo aparte y compararlo. ¡Animate a resolverlo vos!
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 - [ ] Archivo **`m4_consultas_negocio.sql`** con las **4 consultas** resueltas.
 - [ ] Alias descriptivos **en español**.
 - [ ] Consulta 2 limitada al **Top 5**; Consulta 3 con `HAVING`; Consulta 4 con `CASE WHEN`.
@@ -79,5 +79,5 @@ FROM ...;
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 4</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 4</a> · <a href="../../README.md">Índice del curso</a>
 </p>

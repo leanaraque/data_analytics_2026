@@ -57,5 +57,5 @@ Dominar `UNION` y `UNION ALL` junto con un buen manejo de JOINs y `NULL` es fund
 
 ---
 <p align="center">
-<a href="./06-union-vs-union-all.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="../entregable/README.md">Ir al entregable (M5) ➡️</a>
+<a href="./06-union-vs-union-all.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="../entregable/README.md">Ir al entregable (M5)</a>
 </p>

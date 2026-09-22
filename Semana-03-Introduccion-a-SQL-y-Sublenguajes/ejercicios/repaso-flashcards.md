@@ -1,4 +1,4 @@
-# 🃏 Repaso con flashcards — Semana 3
+# Repaso con flashcards — Semana 3
 
 > Unidad de repaso para consolidar SQL, sublenguajes, restricciones y manipulación de datos.
 
@@ -70,5 +70,5 @@ La **tabla de hechos** contiene las **métricas numéricas** (cantidades, totale
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 3</a>
+<a href="../README.md">Volver a la Semana 3</a>
 </p>

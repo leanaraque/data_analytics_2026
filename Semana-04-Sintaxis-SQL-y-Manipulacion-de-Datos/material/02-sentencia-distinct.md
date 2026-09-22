@@ -52,5 +52,5 @@ Ambas consultas devuelven clientes únicos, pero `GROUP BY` es **más flexible**
 
 ---
 <p align="center">
-<a href="./01-select-y-alias-de-columnas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 4</a> · <a href="./03-where-y-operadores-logicos.md">Siguiente ➡️</a>
+<a href="./01-select-y-alias-de-columnas.md">Anterior</a> · <a href="../README.md">Semana 4</a> · <a href="./03-where-y-operadores-logicos.md">Siguiente</a>
 </p>

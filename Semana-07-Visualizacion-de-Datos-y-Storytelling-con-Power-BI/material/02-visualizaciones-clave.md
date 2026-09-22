@@ -41,5 +41,5 @@ Antes de arrastrar campos, preguntate: *¿qué quiero que el usuario descubra pr
 
 ---
 <p align="center">
-<a href="./01-principios-de-diseno-y-jerarquia-visual.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="./03-segmentadores-filtros-e-interacciones.md">Siguiente ➡️</a>
+<a href="./01-principios-de-diseno-y-jerarquia-visual.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="./03-segmentadores-filtros-e-interacciones.md">Siguiente</a>
 </p>

@@ -24,7 +24,7 @@ ALTER TABLE nombretabla
 ALTER COLUMN nombrecolumna tipodatocolumna;
 ```
 
-> ⚠️ La sintaxis para modificar el tipo de una columna varía entre motores: en SQL Server es `ALTER COLUMN`, en MySQL `MODIFY COLUMN`, y en PostgreSQL `ALTER COLUMN ... TYPE`.
+> La sintaxis para modificar el tipo de una columna varía entre motores: en SQL Server es `ALTER COLUMN`, en MySQL `MODIFY COLUMN`, y en PostgreSQL `ALTER COLUMN ... TYPE`.
 
 ## ¿Qué es `DROP`?
 `DROP` **elimina objetos de forma permanente** (tablas, esquemas, vistas, bases de datos). Esta operación es **irreversible** y debe usarse con precaución.
@@ -45,11 +45,11 @@ Las estructuras de las bases pueden necesitar ajustes conforme evolucionan los r
 
 Saber **modificar tablas sin perder información** es esencial para mantener la integridad y continuidad del análisis. Eliminar objetos obsoletos ayuda a optimizar el rendimiento y la organización. Además, conocer las particularidades entre **SQL Server, MySQL y PostgreSQL** es clave para aplicar estas operaciones correctamente en distintos entornos.
 
-## 🎥 Videos de la unidad
+## Videos de la unidad
 - **Modificando estructuras — `ALTER TABLE`:** agregar columnas, cambiar el tipo de una existente y eliminar columnas que ya no se necesitan, sin borrar y recrear la tabla.
 - **Eliminando estructuras — `DROP TABLE`:** cómo funciona, cuándo tiene sentido usarlo y qué precauciones tomar (es irreversible: borra estructura **y** datos). Diferencia entre eliminar **datos** y eliminar **estructuras** completas.
 
 ---
 <p align="center">
-<a href="./03-restricciones-de-integridad-pk-fk.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="./05-manipulacion-de-datos-dml.md">Siguiente ➡️</a>
+<a href="./03-restricciones-de-integridad-pk-fk.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="./05-manipulacion-de-datos-dml.md">Siguiente</a>
 </p>

@@ -1,4 +1,4 @@
-# 📝 Documentación de entregables
+# Documentación de entregables
 
 Desarrollo propio de los **entregables** del proyecto RetailPro, semana a semana. Material complementario al curso (no forma parte del contenido oficial de Coderhouse).
 

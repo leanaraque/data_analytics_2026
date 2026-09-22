@@ -2,7 +2,7 @@
 
 > Primera unidad del curso. Todo lo que viene — SQL, ETL, DAX, dashboards — necesita este piso conceptual.
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 Al finalizar esta semana serás capaz de:
 - Distinguir con claridad entre **datos** e **información** y entender cómo el contexto los transforma.
 - Comprender el **proceso y el valor** del análisis de datos, del dato a la decisión.
@@ -11,24 +11,24 @@ Al finalizar esta semana serás capaz de:
 - Reconocer las **tecnologías** del ciclo de vida del dato (bases de datos, ETL/ELT, data lakes, visualización).
 - Diferenciar una **base de datos** de un **dataset**.
 
-## 📚 Temario y material
+## Temario y material
 
 | # | Unidad | Material |
 |---|--------|----------|
-| 1 | Datos vs. Información | [📄 Leer](./material/01-datos-vs-informacion.md) |
-| 2 | El proceso y valor del análisis de datos | [📄 Leer](./material/02-proceso-y-valor-del-analisis-de-datos.md) |
-| 3 | Business Intelligence, Data Analytics & Data Science | [📄 Leer](./material/03-bi-data-analytics-data-science.md) |
-| 4 | Rol del Analista de Datos | [📄 Leer](./material/04-rol-del-analista-de-datos.md) |
-| 5 | Excel básico: fórmulas y funciones fundamentales | [📄 Leer](./material/05-excel-basico-formulas-y-funciones.md) |
-| 6 | Tecnologías y Herramientas | [📄 Leer](./material/06-tecnologias-y-herramientas.md) |
-| 7 | Diferencias entre base de datos y dataset | [📄 Leer](./material/07-base-de-datos-vs-dataset.md) |
+| 1 | Datos vs. Información | [Leer](./material/01-datos-vs-informacion.md) |
+| 2 | El proceso y valor del análisis de datos | [Leer](./material/02-proceso-y-valor-del-analisis-de-datos.md) |
+| 3 | Business Intelligence, Data Analytics & Data Science | [Leer](./material/03-bi-data-analytics-data-science.md) |
+| 4 | Rol del Analista de Datos | [Leer](./material/04-rol-del-analista-de-datos.md) |
+| 5 | Excel básico: fórmulas y funciones fundamentales | [Leer](./material/05-excel-basico-formulas-y-funciones.md) |
+| 6 | Tecnologías y Herramientas | [Leer](./material/06-tecnologias-y-herramientas.md) |
+| 7 | Diferencias entre base de datos y dataset | [Leer](./material/07-base-de-datos-vs-dataset.md) |
 
-## ✅ Evaluación
+## Evaluación
 - **Evaluación Integradora 1** — 6 preguntas · aprobación 70% · 3 intentos → [Ver](./evaluacion/evaluacion-integradora-1.md)
 
 ---
 
-## 📦 Entregable de la semana (¡esto cuenta para la nota!)
+## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M1 — Pre-entrega: Brief del proyecto RetailPro** · [Ver consigna completa →](./entregable/README.md)
 
@@ -44,7 +44,7 @@ Al finalizar esta semana serás capaz de:
 | 4. KPIs | Ej.: *Total Ventas* = `SUM(total_venta)`. Al menos 4, con nombre, descripción y fórmula conceptual. |
 | 5. Boceto del dashboard | Un esquema simple (papel, PowerPoint o Canva) de la pantalla principal, incluido como imagen. |
 
-> ⚠️ **Ojo:** este entregable (RetailPro) **sí es evaluable**. No confundir con la práctica guiada *CoffeeInsight*, que es opcional y **no** suma nota.
+> **Ojo:** este entregable (RetailPro) **sí es evaluable**. No confundir con la práctica guiada *CoffeeInsight*, que es opcional y **no** suma nota.
 
 **Checklist de entrega:**
 - [ ] 1 archivo único en **PDF o DOCX**.
@@ -54,7 +54,7 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
-## 📂 Contenido de la carpeta
+## Contenido de la carpeta
 ```
 Semana-01-.../
 ├── README.md            → esta guía
@@ -65,5 +65,5 @@ Semana-01-.../
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Índice del curso</a> · <a href="../Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/">Semana 2 ➡️</a>
+<a href="../README.md">Índice del curso</a> · <a href="../Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/">Semana 2</a>
 </p>

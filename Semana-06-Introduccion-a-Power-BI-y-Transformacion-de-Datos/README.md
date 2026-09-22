@@ -2,7 +2,7 @@
 
 > Arranca el bloque **ETL**: ya sabés extraer datos con SQL; ahora conectás esos datos a la herramienta de análisis visual líder del mercado y los preparás para el análisis.
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 Al finalizar esta semana serás capaz de:
 - Describir el **ecosistema Power BI** (Desktop, Service, Fabric) y su flujo de trabajo.
 - Entender la **arquitectura** de Power BI y el proceso **ETL** (Extraer, Transformar, Cargar).
@@ -12,25 +12,25 @@ Al finalizar esta semana serás capaz de:
 - Leer y escribir transformaciones en **lenguaje M** y automatizarlas con funciones.
 - Diseñar un **modelo de datos** con relaciones y **cardinalidad 1:N**.
 
-## 📚 Temario y material
+## Temario y material
 
 | # | Unidad | Material |
 |---|--------|----------|
-| 1 | Ecosistema Power BI 2026 y Power BI Desktop | [📄 Leer](./material/01-ecosistema-power-bi-y-desktop.md) |
-| 2 | Power BI y transformación de datos (arquitectura, ETL, dimensiones y medidas) | [📄 Leer](./material/02-power-bi-y-transformacion-de-datos.md) |
-| 3 | Conexión de Power BI a PostgreSQL y SQL Server | [📄 Leer](./material/03-conexion-a-postgresql-y-sql-server.md) |
-| 4 | Limpieza y tipado de datos en Power Query | [📄 Leer](./material/04-limpieza-y-tipado-en-power-query.md) |
-| 5 | Combinación de tablas: Merge y Append | [📄 Leer](./material/05-combinacion-de-tablas-merge-y-append.md) |
-| 6 | Introducción al lenguaje M y Editor Avanzado | [📄 Leer](./material/06-lenguaje-m-y-editor-avanzado.md) |
-| 7 | Automatización de limpieza con funciones de Power Query | [📄 Leer](./material/07-automatizacion-con-funciones-de-power-query.md) |
-| 8 | 📖 *Avanzado:* La maestría del ETL (consolidación del flujo) | [📄 Leer](./material/08-maestria-del-etl.md) |
-| 9 | Modelado de datos: relaciones y cardinalidad 1:N | [📄 Leer](./material/09-modelado-relaciones-y-cardinalidad.md) |
+| 1 | Ecosistema Power BI 2026 y Power BI Desktop | [Leer](./material/01-ecosistema-power-bi-y-desktop.md) |
+| 2 | Power BI y transformación de datos (arquitectura, ETL, dimensiones y medidas) | [Leer](./material/02-power-bi-y-transformacion-de-datos.md) |
+| 3 | Conexión de Power BI a PostgreSQL y SQL Server | [Leer](./material/03-conexion-a-postgresql-y-sql-server.md) |
+| 4 | Limpieza y tipado de datos en Power Query | [Leer](./material/04-limpieza-y-tipado-en-power-query.md) |
+| 5 | Combinación de tablas: Merge y Append | [Leer](./material/05-combinacion-de-tablas-merge-y-append.md) |
+| 6 | Introducción al lenguaje M y Editor Avanzado | [Leer](./material/06-lenguaje-m-y-editor-avanzado.md) |
+| 7 | Automatización de limpieza con funciones de Power Query | [Leer](./material/07-automatizacion-con-funciones-de-power-query.md) |
+| 8 | *Avanzado:* La maestría del ETL (consolidación del flujo) | [Leer](./material/08-maestria-del-etl.md) |
+| 9 | Modelado de datos: relaciones y cardinalidad 1:N | [Leer](./material/09-modelado-relaciones-y-cardinalidad.md) |
 
-> 🔗 **Puentes con lo anterior:** conectar Power BI usa el SQL de M3–M5 · **Merge** = el `JOIN` de M5 · **Append** = el `UNION` de M5 · el modelo 1:N es el **esquema estrella** de M2.
+> **Puentes con lo anterior:** conectar Power BI usa el SQL de M3–M5 · **Merge** = el `JOIN` de M5 · **Append** = el `UNION` de M5 · el modelo 1:N es el **esquema estrella** de M2.
 
 ---
 
-## 📦 Entregable de la semana (¡esto cuenta para la nota!)
+## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M6 — Checkpoint: Pipeline ETL Completo** · [Ver consigna completa →](./entregable/README.md)
 
@@ -49,11 +49,11 @@ Al finalizar esta semana serás capaz de:
 
 **¿Qué entregás?** El **enlace a tu repositorio GitHub público** con `Pipeline_ETL_Apellido_Nombre.pbix`.
 
-> 🔗 Este `.pbix` limpio es la **base de M8**: encima construís el modelo analítico (relaciones 1:N, tabla calendario) y las medidas DAX. Sin un buen pipeline ETL, las medidas de M8 no funcionarán bien.
+> Este `.pbix` limpio es la **base de M8**: encima construís el modelo analítico (relaciones 1:N, tabla calendario) y las medidas DAX. Sin un buen pipeline ETL, las medidas de M8 no funcionarán bien.
 
 ---
 
-## 📂 Contenido de la carpeta
+## Contenido de la carpeta
 ```
 Semana-06-.../
 ├── README.md            → esta guía
@@ -63,5 +63,5 @@ Semana-06-.../
 
 ---
 <p align="center">
-<a href="../Semana-05-Consultas-SQL-con-Join-y-Union/">⬅️ Semana 5</a> · 🏠 <a href="../README.md">Índice del curso</a> · <a href="../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/">Semana 7 ➡️</a>
+<a href="../Semana-05-Consultas-SQL-con-Join-y-Union/">Semana 5</a> · <a href="../README.md">Índice del curso</a> · <a href="../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/">Semana 7</a>
 </p>

@@ -47,5 +47,5 @@ La regla de oro: otorgá siempre el **permiso mínimo necesario**. Si alguien so
 
 ---
 <p align="center">
-<a href="./05-manipulacion-de-datos-dml.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="./07-data-warehousing-estrella-copo-de-nieve.md">Siguiente ➡️</a>
+<a href="./05-manipulacion-de-datos-dml.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="./07-data-warehousing-estrella-copo-de-nieve.md">Siguiente</a>
 </p>

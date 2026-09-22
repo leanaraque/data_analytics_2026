@@ -67,5 +67,5 @@ Esta unidad sienta las bases para profundizar en **normalización**, diseño de 
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 2</a> · <a href="./02-oltp-vs-olap-y-modelado-analitico.md">Siguiente: OLTP vs OLAP ➡️</a>
+<a href="../README.md">Semana 2</a> · <a href="./02-oltp-vs-olap-y-modelado-analitico.md">Siguiente: OLTP vs OLAP</a>
 </p>

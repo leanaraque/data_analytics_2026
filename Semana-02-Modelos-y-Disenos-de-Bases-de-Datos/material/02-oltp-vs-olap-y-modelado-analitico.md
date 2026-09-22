@@ -44,7 +44,7 @@ Modelo dimensional donde una **tabla central de hechos** (*fact table*) se conec
 **Ventajas:** simplicidad y rapidez en consultas; fácil comprensión y mantenimiento.
 
 ### Snowflake Schema (esquema copo de nieve)
-> 📖 **Para profundizar** — Esta sección amplía el tema con contenido avanzado. Podés continuar al siguiente tema sin leerla y volver cuando quieras ir más lejos.
+> **Para profundizar** — Esta sección amplía el tema con contenido avanzado. Podés continuar al siguiente tema sin leerla y volver cuando quieras ir más lejos.
 
 Extensión del star schema donde las tablas de dimensiones están **normalizadas** en múltiples tablas relacionadas.
 - Reduce redundancia de datos.
@@ -68,5 +68,5 @@ El diseño adecuado del esquema dimensional impacta directamente en la **velocid
 
 ---
 <p align="center">
-<a href="./01-vision-general-de-modelos-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 2</a> · <a href="./03-normalizacion-de-datos.md">Siguiente ➡️</a>
+<a href="./01-vision-general-de-modelos-de-datos.md">Anterior</a> · <a href="../README.md">Semana 2</a> · <a href="./03-normalizacion-de-datos.md">Siguiente</a>
 </p>

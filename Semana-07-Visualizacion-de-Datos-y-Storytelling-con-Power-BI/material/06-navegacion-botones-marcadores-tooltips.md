@@ -23,7 +23,7 @@ Una **fotografía del estado completo** del informe. Captura: los **filtros y se
 - **Filtros preconfigurados:** botón "Ver solo Outliers" aplica un filtro y oculta gráficos irrelevantes.
 - **Resetear el dashboard:** botón "Limpiar filtros" con todos los segmentadores en estado inicial (de lo más valorado por los usuarios).
 
-> ⚠️ **Error crítico:** el marcador guarda los filtros activos **en el momento de su creación**. Si lo creás con una región seleccionada, cada uso filtrará por esa región sin que el usuario lo sepa. **Verificá siempre** el estado de todos los filtros antes de crear un marcador.
+> **Error crítico:** el marcador guarda los filtros activos **en el momento de su creación**. Si lo creás con una región seleccionada, cada uso filtrará por esa región sin que el usuario lo sepa. **Verificá siempre** el estado de todos los filtros antes de crear un marcador.
 
 ## 3. Tooltips personalizados: el zoom inteligente
 El **tooltip** es la ventanita que aparece al pasar el cursor. Por defecto muestra solo categoría y valor. Un **tooltip personalizado** lo reemplaza por una **página completa** de Power BI diseñada para enriquecer el dato sin saturar la pantalla.
@@ -56,9 +56,9 @@ El **tooltip** es la ventanita que aparece al pasar el cursor. Por defecto muest
 
 ## Bonus: parámetros y Copilot
 - **Parámetros y filtros dinámicos:** entradas que permiten ajustar el contenido en tiempo real (escenarios *what-if*). *(Ver detalle en la [unidad 3](./03-segmentadores-filtros-e-interacciones.md).)*
-- 🤖 **Copilot en Power BI:** la IA que asiste en la creación de visualizaciones y narrativas: genera ideas de diseño según tus datos, crea narrativas automáticas para explicar visuales y sugiere configuraciones óptimas. Al cargar un dataset, puede proponer un dashboard inicial con gráficos relevantes.
+- **Copilot en Power BI:** la IA que asiste en la creación de visualizaciones y narrativas: genera ideas de diseño según tus datos, crea narrativas automáticas para explicar visuales y sugiere configuraciones óptimas. Al cargar un dataset, puede proponer un dashboard inicial con gráficos relevantes.
 
 ---
 <p align="center">
-<a href="./05-graficos-avanzados.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="./07-q-and-a-y-optimizacion.md">Siguiente ➡️</a>
+<a href="./05-graficos-avanzados.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="./07-q-and-a-y-optimizacion.md">Siguiente</a>
 </p>

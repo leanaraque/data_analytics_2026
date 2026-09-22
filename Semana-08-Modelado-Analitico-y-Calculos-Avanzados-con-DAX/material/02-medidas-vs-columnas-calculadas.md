@@ -55,9 +55,9 @@ En cambio, una **medida** con `SUM(Ventas[Monto])`, al filtrar por "hoy", **mira
 - **Filtros:** si el resultado debe cambiar al interactuar → **medida**.
 - **Categorización:** si necesitás agrupar/filtrar por el resultado → **columna calculada**.
 
-> 💡 **Consejo PRO:** antes de crear una columna calculada, preguntate: *"¿Necesito poner este resultado en un eje de gráfico o en un filtro lateral?"*. Si la respuesta es **NO**, lo que necesitás es una **medida**.
+> **Consejo PRO:** antes de crear una columna calculada, preguntate: *"¿Necesito poner este resultado en un eje de gráfico o en un filtro lateral?"*. Si la respuesta es **NO**, lo que necesitás es una **medida**.
 
 ---
 <p align="center">
-<a href="./01-relaciones-1n-y-esquema-estrella.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="./03-dax-fundamental-calculate-iteradores.md">Siguiente ➡️</a>
+<a href="./01-relaciones-1n-y-esquema-estrella.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="./03-dax-fundamental-calculate-iteradores.md">Siguiente</a>
 </p>

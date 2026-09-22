@@ -10,7 +10,7 @@ Los modelos de lenguaje generan texto **estadísticamente plausible**, no verifi
 
 El riesgo es claro: si presentás a la dirección un análisis con una cifra inventada por la IA, **la responsabilidad es tuya**, no de la herramienta. El analista es el autor; la IA es el borrador.
 
-> ⚖️ **El estándar profesional:** ningún número que no puedas rastrear hasta su fuente de datos original debería aparecer en un reporte que firma tu nombre.
+> **El estándar profesional:** ningún número que no puedas rastrear hasta su fuente de datos original debería aparecer en un reporte que firma tu nombre.
 
 ## 2. Cuándo confiar y cuándo escalar la validación
 No toda interacción requiere el mismo nivel de verificación:
@@ -44,5 +44,5 @@ Empezaste aprendiendo a escribir mejores prompts. Lo terminás con algo más val
 
 ---
 <p align="center">
-<a href="./03-ia-en-etl-y-power-bi.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 9</a> · <a href="./05-material-complementario.md">Siguiente ➡️</a>
+<a href="./03-ia-en-etl-y-power-bi.md">Anterior</a> · <a href="../README.md">Semana 9</a> · <a href="./05-material-complementario.md">Siguiente</a>
 </p>

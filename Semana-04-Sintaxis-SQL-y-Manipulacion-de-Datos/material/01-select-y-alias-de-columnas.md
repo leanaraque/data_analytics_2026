@@ -46,5 +46,5 @@ FROM inventario;
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 4</a> · <a href="./02-sentencia-distinct.md">Siguiente: Sentencia DISTINCT ➡️</a>
+<a href="../README.md">Semana 4</a> · <a href="./02-sentencia-distinct.md">Siguiente: Sentencia DISTINCT</a>
 </p>

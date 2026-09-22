@@ -109,7 +109,7 @@ WHERE v.monto < l.limite_inferior
    OR v.monto > l.limite_superior;
 ```
 
-> 📎 **Nota SQL Server:** no tiene `percentile_cont` como función de agregación directa, sino como **función de ventana**:
+> **Nota SQL Server:** no tiene `percentile_cont` como función de agregación directa, sino como **función de ventana**:
 > ```sql
 > SELECT DISTINCT
 >     PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY monto) OVER () AS q1,
@@ -127,7 +127,7 @@ WHERE v.monto < l.limite_inferior
 | Posible fraude o anomalía | **Escalar** al área correspondiente, no eliminar |
 | Cliente o segmento diferente | **Segmentar** el análisis, no mezclar con el resto |
 
-> ⚖️ **La regla de oro:** nunca elimines un outlier **sin investigarlo primero**. Un outlier de gasto alto podría ser tu cliente más valioso; uno de devoluciones podría señalar un problema de calidad. **Los outliers más interesantes no son errores, son señales.**
+> **La regla de oro:** nunca elimines un outlier **sin investigarlo primero**. Un outlier de gasto alto podría ser tu cliente más valioso; uno de devoluciones podría señalar un problema de calidad. **Los outliers más interesantes no son errores, son señales.**
 
 ## 7. Errores comunes al trabajar con outliers
 - **Eliminar todos los outliers por defecto:** el error más grave. Entendé de dónde viene y qué representa antes de eliminar.
@@ -137,5 +137,5 @@ WHERE v.monto < l.limite_inferior
 
 ---
 <p align="center">
-<a href="./03-medidas-de-dispersion.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./05-distribuciones-de-frecuencias-y-probabilidad.md">Siguiente ➡️</a>
+<a href="./03-medidas-de-dispersion.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./05-distribuciones-de-frecuencias-y-probabilidad.md">Siguiente</a>
 </p>

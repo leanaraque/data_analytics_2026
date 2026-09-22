@@ -2,7 +2,7 @@
 
 > Arranca el bloque de **Visualización**: los datos están limpios y modelados, ahora los **comunicás**. Pasás de "generador de reportes" a **analista estratégico**.
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 Al finalizar esta semana serás capaz de:
 - Aplicar **principios de diseño** y **jerarquía visual** (patrón Z, tamaño, color, posición).
 - Elegir el **gráfico correcto** según la pregunta de negocio (barras, líneas, mapas, matrices).
@@ -11,23 +11,23 @@ Al finalizar esta semana serás capaz de:
 - Diseñar **navegación avanzada** con botones, marcadores y tooltips personalizados.
 - Explorar datos con **Q&A** en lenguaje natural.
 
-## 📚 Temario y material
+## Temario y material
 
 | # | Unidad | Material |
 |---|--------|----------|
-| 1 | Principios de diseño de dashboards y jerarquía visual | [📄 Leer](./material/01-principios-de-diseno-y-jerarquia-visual.md) |
-| 2 | Visualizaciones clave: barras, líneas, mapas y matrices | [📄 Leer](./material/02-visualizaciones-clave.md) |
-| 3 | Segmentadores, filtros, interacciones y parámetros | [📄 Leer](./material/03-segmentadores-filtros-e-interacciones.md) |
-| 4 | Técnicas de storytelling con datos | [📄 Leer](./material/04-storytelling-con-datos.md) |
-| 5 | 📖 *Avanzado:* Gráficos avanzados (treemap, cascada, dispersión…) | [📄 Leer](./material/05-graficos-avanzados.md) |
-| 6 | Navegación avanzada: botones, marcadores y tooltips | [📄 Leer](./material/06-navegacion-botones-marcadores-tooltips.md) |
-| 7 | 📖 *Avanzado:* Q&A y optimización (lenguaje natural) | [📄 Leer](./material/07-q-and-a-y-optimizacion.md) |
+| 1 | Principios de diseño de dashboards y jerarquía visual | [Leer](./material/01-principios-de-diseno-y-jerarquia-visual.md) |
+| 2 | Visualizaciones clave: barras, líneas, mapas y matrices | [Leer](./material/02-visualizaciones-clave.md) |
+| 3 | Segmentadores, filtros, interacciones y parámetros | [Leer](./material/03-segmentadores-filtros-e-interacciones.md) |
+| 4 | Técnicas de storytelling con datos | [Leer](./material/04-storytelling-con-datos.md) |
+| 5 | *Avanzado:* Gráficos avanzados (treemap, cascada, dispersión…) | [Leer](./material/05-graficos-avanzados.md) |
+| 6 | Navegación avanzada: botones, marcadores y tooltips | [Leer](./material/06-navegacion-botones-marcadores-tooltips.md) |
+| 7 | *Avanzado:* Q&A y optimización (lenguaje natural) | [Leer](./material/07-q-and-a-y-optimizacion.md) |
 
-> 🔗 **Puente:** los segmentadores usan las **relaciones del modelo** (M6); las medidas que visualizás vienen de **DAX** (M8).
+> **Puente:** los segmentadores usan las **relaciones del modelo** (M6); las medidas que visualizás vienen de **DAX** (M8).
 
 ---
 
-## 📦 Entregable de la semana (¡esto cuenta para la nota!)
+## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M7 — Pre-entrega: Boceto del Dashboard RetailPro** · [Ver consigna completa →](./entregable/README.md)
 
@@ -43,11 +43,11 @@ Al finalizar esta semana serás capaz de:
 
 **¿Qué entregás?** Una **imagen** del boceto (`.png`/`.jpg`) + un documento con el propósito y las justificaciones.
 
-> 📐 **Regla de oro:** máximo **5–7 elementos** visuales por página. Si lo planificás bien ahora, no vas a rehacer el diseño después.
+> **Regla de oro:** máximo **5–7 elementos** visuales por página. Si lo planificás bien ahora, no vas a rehacer el diseño después.
 
 ---
 
-## 📂 Contenido de la carpeta
+## Contenido de la carpeta
 ```
 Semana-07-.../
 ├── README.md            → esta guía
@@ -57,5 +57,5 @@ Semana-07-.../
 
 ---
 <p align="center">
-<a href="../Semana-06-Introduccion-a-Power-BI-y-Transformacion-de-Datos/">⬅️ Semana 6</a> · 🏠 <a href="../README.md">Índice del curso</a> · <a href="../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/">Semana 8 ➡️</a>
+<a href="../Semana-06-Introduccion-a-Power-BI-y-Transformacion-de-Datos/">Semana 6</a> · <a href="../README.md">Índice del curso</a> · <a href="../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/">Semana 8</a>
 </p>

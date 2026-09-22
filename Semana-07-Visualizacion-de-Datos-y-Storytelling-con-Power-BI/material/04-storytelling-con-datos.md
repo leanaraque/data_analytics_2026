@@ -53,5 +53,5 @@ El insight **conecta puntos**. Técnicas en Power BI:
 
 ---
 <p align="center">
-<a href="./03-segmentadores-filtros-e-interacciones.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 7</a> · <a href="./05-graficos-avanzados.md">Siguiente ➡️</a>
+<a href="./03-segmentadores-filtros-e-interacciones.md">Anterior</a> · <a href="../README.md">Semana 7</a> · <a href="./05-graficos-avanzados.md">Siguiente</a>
 </p>

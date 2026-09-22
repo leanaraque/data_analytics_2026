@@ -67,5 +67,5 @@ Ingreso Total = SUMX( Ventas, Ventas[Cantidad] * Ventas[Precio] )
 
 ---
 <p align="center">
-<a href="./02-medidas-vs-columnas-calculadas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 8</a> · <a href="./04-tabla-de-medidas-y-calendario.md">Siguiente ➡️</a>
+<a href="./02-medidas-vs-columnas-calculadas.md">Anterior</a> · <a href="../README.md">Semana 8</a> · <a href="./04-tabla-de-medidas-y-calendario.md">Siguiente</a>
 </p>

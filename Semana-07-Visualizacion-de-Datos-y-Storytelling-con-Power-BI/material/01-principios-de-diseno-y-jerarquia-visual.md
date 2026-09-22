@@ -10,8 +10,8 @@ Imaginá que sos piloto de avión. En medio de una tormenta no querés mirar cie
 Una representación visual de la información **más importante** para lograr uno o más objetivos, consolidada en una sola pantalla para monitorearla **de un vistazo**.
 
 **El propósito antes que la herramienta:** antes de diseñar, escribí en una sola frase el propósito del dashboard.
-- ❌ *"Mostrar las ventas de la empresa"* (demasiado vago).
-- ✅ *"¿Cuál fue el volumen de ventas de esta semana en la región Norte y por qué cambió respecto a la anterior?"* (claro y accionable).
+- *"Mostrar las ventas de la empresa"* (demasiado vago).
+- *"¿Cuál fue el volumen de ventas de esta semana en la región Norte y por qué cambió respecto a la anterior?"* (claro y accionable).
 
 > Si un dashboard requiere 10 minutos de explicación para entenderlo, **fracasó** en su diseño.
 
@@ -46,9 +46,9 @@ Diseñar es **iterativo**: tu primer diseño nunca es el final. Los tres pilares
 2. **Jerarquía:** usá tamaño, posición (patrón Z) y color para guiar el ojo.
 3. **Simplicidad:** "menos es más". Eliminá cualquier elemento que no ayude a decidir.
 
-> 🎥 **Video — Diseñá antes de construir (mockup):** hacé un **prototipo visual** del reporte (papel, PowerPoint, Figma, Miro) **antes** de abrir Power BI. Te ahorra rediseños y alinea expectativas con el cliente. Definí ahí la disposición de gráficos, filtros, KPIs y la jerarquía. *(Es exactamente el entregable de esta semana.)*
+> **Video — Diseñá antes de construir (mockup):** hacé un **prototipo visual** del reporte (papel, PowerPoint, Figma, Miro) **antes** de abrir Power BI. Te ahorra rediseños y alinea expectativas con el cliente. Definí ahí la disposición de gráficos, filtros, KPIs y la jerarquía. *(Es exactamente el entregable de esta semana.)*
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 7</a> · <a href="./02-visualizaciones-clave.md">Siguiente: Visualizaciones clave ➡️</a>
+<a href="../README.md">Semana 7</a> · <a href="./02-visualizaciones-clave.md">Siguiente: Visualizaciones clave</a>
 </p>

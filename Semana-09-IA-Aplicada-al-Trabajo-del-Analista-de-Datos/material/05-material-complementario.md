@@ -37,5 +37,5 @@ R: El prompting efectivo se aprende **rápido** (días o semanas de práctica). 
 
 ---
 <p align="center">
-<a href="./04-criterio-analitico-frente-a-la-ia.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 9</a> · <a href="../entregable/README.md">Ir al entregable (M9) ➡️</a>
+<a href="./04-criterio-analitico-frente-a-la-ia.md">Anterior</a> · <a href="../README.md">Semana 9</a> · <a href="../entregable/README.md">Ir al entregable (M9)</a>
 </p>

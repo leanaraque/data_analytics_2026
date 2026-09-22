@@ -1,19 +1,19 @@
-# 📦 M5 — Pre-entrega: Consultas con JOINs para el proyecto
+# M5 — Pre-entrega: Consultas con JOINs para el proyecto
 
 > **Título:** Cruzando tablas para enriquecer el análisis.
 
-## 🎯 En una frase
+## En una frase
 Las consultas de **M4** trabajaban sobre tablas individuales. Ahora las **cruzás** para obtener la **vista enriquecida** que necesita Power BI: ventas con nombre de cliente, nombre de producto, categoría y región en una sola consulta. Esa vista es la **materia prima del dashboard** que vas a construir en M7.
 
-## 🏢 Contexto
+## Contexto
 El equipo de análisis de **RetailPro** necesita una **vista única** que cruce toda la información del negocio. Además, el área de **CRM** quiere saber qué clientes **nunca compraron**, y el área de **producto** quiere identificar qué artículos del catálogo **no tienen movimiento**. Tu tarea es responder las tres preguntas con JOINs.
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 El **enlace a tu repositorio GitHub público** con el archivo **`m5_consultas_joins.sql`**, en la misma carpeta que los archivos de M3 y M4.
 
 ---
 
-## 📝 Instrucciones
+## Instrucciones
 Creá `m5_consultas_joins.sql` con las siguientes consultas:
 
 ### Consulta 1 — Vista base del proyecto (`INNER JOIN`)
@@ -33,7 +33,7 @@ Usá `UNION ALL` para combinar en un solo resultado las ventas **Online** y **Pr
 
 ---
 
-## 💡 Ayudas técnicas (patrones, no la solución)
+## Ayudas técnicas (patrones, no la solución)
 
 **JOIN de varias tablas encadenadas** (para la Consulta 1):
 ```sql
@@ -60,11 +60,11 @@ SELECT 'Presencial' AS canal, total_venta FROM ventas WHERE canal = 'Presencial'
 -- luego envolvés esto en un GROUP BY canal para el total
 ```
 
-> 🧩 *Ajustá los nombres de columnas a tu modelo de RetailPro (M2). El resultado final lo vas a conectar a Power BI en M6/M7.*
+> *Ajustá los nombres de columnas a tu modelo de RetailPro (M2). El resultado final lo vas a conectar a Power BI en M6/M7.*
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 - [ ] Archivo **`m5_consultas_joins.sql`** con las **4 consultas**.
 - [ ] Consulta 1: `INNER JOIN` de las 4 tablas con todas las columnas pedidas.
 - [ ] Consultas 2 y 3: `LEFT JOIN` + `IS NULL` para aislar los "sin par".
@@ -73,5 +73,5 @@ SELECT 'Presencial' AS canal, total_venta FROM ventas WHERE canal = 'Presencial'
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 5</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 5</a> · <a href="../../README.md">Índice del curso</a>
 </p>

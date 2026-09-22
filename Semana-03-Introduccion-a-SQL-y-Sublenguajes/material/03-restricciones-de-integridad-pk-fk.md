@@ -48,5 +48,5 @@ CREATE TABLE Inscripciones (
 
 ---
 <p align="center">
-<a href="./02-diseno-de-esquemas-con-ddl-y-tipos-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 3</a> · <a href="./04-comandos-ddl-alter-y-drop.md">Siguiente ➡️</a>
+<a href="./02-diseno-de-esquemas-con-ddl-y-tipos-de-datos.md">Anterior</a> · <a href="../README.md">Semana 3</a> · <a href="./04-comandos-ddl-alter-y-drop.md">Siguiente</a>
 </p>

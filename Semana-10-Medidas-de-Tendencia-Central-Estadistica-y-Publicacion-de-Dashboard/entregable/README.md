@@ -1,11 +1,11 @@
-# 📦 M10 — Pre-entrega: Validación estadística del proyecto
+# M10 — Pre-entrega: Validación estadística del proyecto
 
 > **Título:** Validando que tus KPIs sean estadísticamente confiables.
 
-## 🎯 En una frase
+## En una frase
 Esta pre-entrega tiene **dos partes**. En la primera aplicás **tendencia central y dispersión** sobre un caso guiado para afianzar la técnica. En la segunda aplicás esos mismos conceptos sobre los **datos reales de RetailPro** para validar que los KPIs de tu dashboard son estadísticamente confiables.
 
-## ✅ ¿Qué entregás?
+## ¿Qué entregás?
 Un documento **`.docx` o `.pdf`** con **ambas partes** y los cálculos presentados en **tabla**, más una sección final indicando si ajustaste algún KPI o título narrativo del dashboard.
 
 ---
@@ -23,7 +23,7 @@ Sos el analista de una tienda de electrónica. Tenés las ventas diarias de dos 
 3. Calculá la **desviación estándar muestral** de ambas (asumí que son una muestra de la operación anual).
 4. Redactá una **conclusión de 3 líneas** explicando cuál sucursal preferirías gestionar y por qué, basándote en la **variabilidad**.
 
-> 💡 *Pista:* ambas sucursales tienen una media parecida, pero una es mucho más **predecible** que la otra. La desviación estándar lo revela.
+> *Pista:* ambas sucursales tienen una media parecida, pero una es mucho más **predecible** que la otra. La desviación estándar lo revela.
 
 ---
 
@@ -46,11 +46,11 @@ Aplicá el método **IQR** sobre la columna `total_venta`:
 ### c) Conexión con el dashboard
 Revisá los KPIs y gráficos del **boceto de M7**. ¿Algún resultado estadístico de esta parte **confirma o contradice** lo que planeaste mostrar? Si corresponde, **ajustá el título narrativo** de algún visual para que comunique el hallazgo real.
 
-> 💡 **Tip:** si la media y la mediana de tus ventas son muy distintas, considerá agregar **ambas** como KPIs en el dashboard, o una **nota aclaratoria**. Un promedio inflado por outliers puede llevar al gerente a conclusiones erróneas.
+> **Tip:** si la media y la mediana de tus ventas son muy distintas, considerá agregar **ambas** como KPIs en el dashboard, o una **nota aclaratoria**. Un promedio inflado por outliers puede llevar al gerente a conclusiones erróneas.
 
 ---
 
-## ✔️ Checklist de entrega
+## Checklist de entrega
 - [ ] Documento `.docx` o `.pdf` con **ambas partes**.
 - [ ] Parte 1: media, rango y desviación estándar de ambas sucursales + conclusión.
 - [ ] Parte 2a: **media vs. mediana** del ticket con interpretación.
@@ -60,5 +60,5 @@ Revisá los KPIs y gráficos del **boceto de M7**. ¿Algún resultado estadísti
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Volver a la Semana 10</a> · <a href="../../README.md">Índice del curso</a>
+<a href="../README.md">Volver a la Semana 10</a> · <a href="../../README.md">Índice del curso</a>
 </p>

@@ -4,12 +4,12 @@
 
 Imaginá que tenés una gran cantidad de datos almacenados en diferentes sistemas y necesitás extraer información valiosa para tomar decisiones de negocio. ¿Cómo lo harías? Aquí entra en juego **SQL (Structured Query Language)**, el lenguaje estándar para consultar y manipular bases de datos relacionales.
 
-> 💡 Un concepto que vas a usar durante todo el módulo es el de **esquema**: el "plano" que organiza las tablas, columnas y relaciones de una base de datos. Definirlo bien desde el principio es lo que evita el desorden más adelante (lo vemos en detalle en la unidad de DDL).
+> Un concepto que vas a usar durante todo el módulo es el de **esquema**: el "plano" que organiza las tablas, columnas y relaciones de una base de datos. Definirlo bien desde el principio es lo que evita el desorden más adelante (lo vemos en detalle en la unidad de DDL).
 
 ## ¿Qué es SQL?
 SQL es un lenguaje estándar diseñado para **gestionar y manipular bases de datos relacionales**. Fue desarrollado en la **década de 1970** y desde entonces es la herramienta principal para interactuar con datos estructurados.
 
-> 🖥️ En este módulo usamos el SGBD **SQL Server** para la parte práctica (seguí el instructivo de instalación compartido en la plataforma).
+> En este módulo usamos el SGBD **SQL Server** para la parte práctica (seguí el instructivo de instalación compartido en la plataforma).
 
 ### Concepto: el modelo relacional
 Las bases de datos relacionales se basan en el **modelo relacional** y usan un conjunto de **tablas** para representar tanto los datos como las relaciones entre ellos.
@@ -51,10 +51,10 @@ SQL se divide en varios sublenguajes, cada uno con funciones específicas:
 ## SQL en el día a día del analista
 Un analista usa SQL para consultar ventas por región y periodo, actualizar registros de clientes, crear tablas para datos procesados y controlar quién accede a información sensible. Herramientas como **DBeaver** o **SSMS** ofrecen interfaces amigables para ejecutar estas tareas, aunque conocer los fundamentos de SQL es esencial para un análisis efectivo.
 
-## 🎥 Video — Conocé la herramienta: SQL Server (SSMS)
+## Video — Conocé la herramienta: SQL Server (SSMS)
 Primeros pasos dentro de **SQL Server Management Studio (SSMS)**: cómo abrir la herramienta, conectarte a un servidor y familiarizarte con los paneles y secciones que vas a usar durante toda la cursada. Al finalizar vas a moverte con confianza en el entorno y estar listo para escribir tus primeras consultas.
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 3</a> · <a href="./02-diseno-de-esquemas-con-ddl-y-tipos-de-datos.md">Siguiente: Diseño de esquemas con DDL ➡️</a>
+<a href="../README.md">Semana 3</a> · <a href="./02-diseno-de-esquemas-con-ddl-y-tipos-de-datos.md">Siguiente: Diseño de esquemas con DDL</a>
 </p>

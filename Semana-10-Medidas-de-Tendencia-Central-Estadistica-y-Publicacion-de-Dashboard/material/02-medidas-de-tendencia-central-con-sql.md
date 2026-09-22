@@ -54,5 +54,5 @@ LIMIT 1;
 
 ---
 <p align="center">
-<a href="./01-variables-cualitativas-y-cuantitativas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 10</a> · <a href="./03-medidas-de-dispersion.md">Siguiente ➡️</a>
+<a href="./01-variables-cualitativas-y-cuantitativas.md">Anterior</a> · <a href="../README.md">Semana 10</a> · <a href="./03-medidas-de-dispersion.md">Siguiente</a>
 </p>

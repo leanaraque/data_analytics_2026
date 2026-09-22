@@ -49,9 +49,9 @@ FROM Productos_Tienda2;
 ## En el mundo real
 Los analistas suelen consolidar datos de diferentes fuentes: bases regionales, sistemas de CRM o reportes de campañas. `UNION` garantiza que un reporte **no tenga registros repetidos** (evita inflar métricas). Pero si se requiere analizar **todas** las interacciones, incluyendo repeticiones, `UNION ALL` es la opción adecuada.
 
-> 💡 En bases de datos grandes, elegir correctamente entre `UNION` y `UNION ALL` impacta directamente en el **tiempo de respuesta** y la carga del servidor. Como `UNION` debe comparar filas para descartar duplicados, si sabés que no hay duplicados (o no te molestan), `UNION ALL` es más rápido.
+> En bases de datos grandes, elegir correctamente entre `UNION` y `UNION ALL` impacta directamente en el **tiempo de respuesta** y la carga del servidor. Como `UNION` debe comparar filas para descartar duplicados, si sabés que no hay duplicados (o no te molestan), `UNION ALL` es más rápido.
 
 ---
 <p align="center">
-<a href="./05-checklist-left-right-full.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 5</a> · <a href="./07-ejemplos-guiados-union.md">Siguiente ➡️</a>
+<a href="./05-checklist-left-right-full.md">Anterior</a> · <a href="../README.md">Semana 5</a> · <a href="./07-ejemplos-guiados-union.md">Siguiente</a>
 </p>

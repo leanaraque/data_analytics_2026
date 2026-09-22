@@ -25,7 +25,7 @@ La información es el resultado de **procesar, organizar y contextualizar** los 
 - **Calidad:** precisión, completitud y actualidad de los datos.
 - **Agregación:** resumir o combinar datos para facilitar su interpretación.
 
-> 💬 *"Los datos son el combustible, la información es el motor que impulsa las decisiones."*
+> *"Los datos son el combustible, la información es el motor que impulsa las decisiones."*
 
 ## Tabla comparativa
 
@@ -50,5 +50,5 @@ Este entendimiento es fundamental para roles en marketing, operaciones y negocio
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 1</a> · <a href="./02-proceso-y-valor-del-analisis-de-datos.md">Siguiente: El proceso y valor del análisis de datos ➡️</a>
+<a href="../README.md">Semana 1</a> · <a href="./02-proceso-y-valor-del-analisis-de-datos.md">Siguiente: El proceso y valor del análisis de datos</a>
 </p>

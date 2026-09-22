@@ -41,5 +41,5 @@ Clasificar dicta tus herramientas:
 
 ---
 <p align="center">
-🏠 <a href="../README.md">Semana 10</a> · <a href="./02-medidas-de-tendencia-central-con-sql.md">Siguiente: Tendencia central con SQL ➡️</a>
+<a href="../README.md">Semana 10</a> · <a href="./02-medidas-de-tendencia-central-con-sql.md">Siguiente: Tendencia central con SQL</a>
 </p>

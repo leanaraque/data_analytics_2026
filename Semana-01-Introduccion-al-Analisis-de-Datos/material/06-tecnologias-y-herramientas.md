@@ -44,5 +44,5 @@ Este flujo es esencial para roles en marketing, operaciones y tecnología, donde
 
 ---
 <p align="center">
-<a href="./05-excel-basico-formulas-y-funciones.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 1</a> · <a href="./07-base-de-datos-vs-dataset.md">Siguiente ➡️</a>
+<a href="./05-excel-basico-formulas-y-funciones.md">Anterior</a> · <a href="../README.md">Semana 1</a> · <a href="./07-base-de-datos-vs-dataset.md">Siguiente</a>
 </p>

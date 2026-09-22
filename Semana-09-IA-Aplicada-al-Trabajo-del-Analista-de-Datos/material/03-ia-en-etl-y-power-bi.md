@@ -15,8 +15,8 @@ En M7 viste la introducción a Copilot. Acá profundizamos en los patrones de ma
 
 ### 2.1 Generación de páginas contextualizadas
 La diferencia entre un prompt básico y uno efectivo es el **contexto de negocio**:
-- ❌ **Básico:** *"Crea una página de ventas."*
-- ✅ **Avanzado:** *"Crea una página de análisis de performance comercial para el equipo de ventas. Necesito ver: (1) total de ventas del mes vs. el mismo mes del año anterior, (2) ranking de los 10 mejores vendedores por margen (no por volumen), (3) un mapa de calor de ventas por región. El público es el gerente comercial que toma decisiones semanales. Usá colores corporativos: azul (#2563EB) y gris (#6B7280)."*
+- **Básico:** *"Crea una página de ventas."*
+- **Avanzado:** *"Crea una página de análisis de performance comercial para el equipo de ventas. Necesito ver: (1) total de ventas del mes vs. el mismo mes del año anterior, (2) ranking de los 10 mejores vendedores por margen (no por volumen), (3) un mapa de calor de ventas por región. El público es el gerente comercial que toma decisiones semanales. Usá colores corporativos: azul (#2563EB) y gris (#6B7280)."*
 
 ### 2.2 Narrativas automáticas y su validación
 Copilot genera narrativas que resumen los hallazgos. El proceso profesional de validación:
@@ -24,7 +24,7 @@ Copilot genera narrativas que resumen los hallazgos. El proceso profesional de v
 2. **Verificás** cada cifra contra las fuentes originales (DAX Debugger, tabla subyacente).
 3. **Editás** el tono y la especificidad según la audiencia.
 
-> ⚠️ **Error frecuente:** Copilot puede describir tendencias que **no** son estadísticamente significativas o que dependen de un **outlier**. Aplicá el criterio estadístico de M10 antes de comunicar un hallazgo como conclusión.
+> **Error frecuente:** Copilot puede describir tendencias que **no** son estadísticamente significativas o que dependen de un **outlier**. Aplicá el criterio estadístico de M10 antes de comunicar un hallazgo como conclusión.
 
 ### 2.3 Asistencia en DAX con IA
 El flujo recomendado con cualquier herramienta de IA:
@@ -44,5 +44,5 @@ Este módulo cierra el **ciclo técnico** del curso: SQL extrae (M3–M5), Power
 
 ---
 <p align="center">
-<a href="./02-automatizacion-de-tareas-repetitivas.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 9</a> · <a href="./04-criterio-analitico-frente-a-la-ia.md">Siguiente ➡️</a>
+<a href="./02-automatizacion-de-tareas-repetitivas.md">Anterior</a> · <a href="../README.md">Semana 9</a> · <a href="./04-criterio-analitico-frente-a-la-ia.md">Siguiente</a>
 </p>

@@ -1,4 +1,4 @@
-# 🛠️ Sección 2 — Ejercicios Prácticos
+# Sección 2 — Ejercicios Prácticos
 
 > Resolución de casos que requieren aplicar **consultas SQL, modelado de datos y creación de narrativas visuales**. Podés usar Excel o Power BI según el ejercicio.
 
@@ -12,7 +12,7 @@ Vas a trabajar con un **dataset real de Kaggle** (elegido por vos) que incluya i
 - Elegí un **dataset empresarial público** disponible en Kaggle.
 - Debe permitir construir (o derivar) **al menos dos tablas**: `ventas` y `clientes`.
 - Si el dataset viene en **una sola tabla**, deberás **separarlo o estructurarlo** para representar ambas entidades.
-- 📎 *Si no encontrás un dataset adecuado*, usá el que provee el curso: [**Ejemplo de Examen Final — Ventas Retail**](../../recursos/ejemplo-examen-final/). Trae el Excel ("Ejemplo de Ex Final"), los CSV y los scripts de SQL Server y MySQL ya listos.
+- *Si no encontrás un dataset adecuado*, usá el que provee el curso: [**Ejemplo de Examen Final — Ventas Retail**](../../recursos/ejemplo-examen-final/). Trae el Excel ("Ejemplo de Ex Final"), los CSV y los scripts de SQL Server y MySQL ya listos.
 
 ### Paso 2 · Preparación de datos *(obligatorio, antes de escribir la consulta)*
 - **Revisá y limpiá** lo necesario: valores vacíos, formatos de fecha, nombres de columnas.
@@ -22,9 +22,9 @@ Vas a trabajar con un **dataset real de Kaggle** (elegido por vos) que incluya i
   - **Total de la venta** (o una variable equivalente que permita calcularlo).
 - Asegurate de que la **columna de fecha** esté en un formato que permita filtrar "últimos 30 días".
 
-> 🗓️ **Ojo con "últimos 30 días":** se cuentan a partir de **la fecha de la última venta del dataset**, no de la fecha de hoy. (Los datasets suelen ser históricos; si filtraras contra `CURRENT_DATE` / `GETDATE()`, probablemente no traerías ninguna fila.) En el dataset provisto por el curso, por ejemplo, la última venta es del **2025-04-07**: la ventana correcta va del **2025-03-08 al 2025-04-07** y devuelve **257 transacciones**.
+> **Ojo con "últimos 30 días":** se cuentan a partir de **la fecha de la última venta del dataset**, no de la fecha de hoy. (Los datasets suelen ser históricos; si filtraras contra `CURRENT_DATE` / `GETDATE()`, probablemente no traerías ninguna fila.) En el dataset provisto por el curso, por ejemplo, la última venta es del **2025-04-07**: la ventana correcta va del **2025-03-08 al 2025-04-07** y devuelve **257 transacciones**.
 
-> 🧹 **Y ojo con los nulos y duplicados:** el dataset del curso está *sucio a propósito* (10 `MontoTotal` vacíos, 20 `Cantidad` vacías, 5 `TransactionID` repetidos). Tratarlos **y explicar qué criterio usaste** es parte de lo que se evalúa. El detalle completo está en el [README del material](../../recursos/ejemplo-examen-final/#-la-suciedad-del-dataset-es-intencional).
+> **Y ojo con los nulos y duplicados:** el dataset del curso está *sucio a propósito* (10 `MontoTotal` vacíos, 20 `Cantidad` vacías, 5 `TransactionID` repetidos). Tratarlos **y explicar qué criterio usaste** es parte de lo que se evalúa. El detalle completo está en el [README del material](../../recursos/ejemplo-examen-final/#la-suciedad-del-dataset-es-intencional).
 
 ### Paso 3 · La consulta SQL
 Escribí una consulta que:
@@ -32,7 +32,7 @@ Escribí una consulta que:
 2. **Filtre** las ventas realizadas en los **últimos 30 días**.
 3. **Ordene** los resultados por **fecha de compra descendente**.
 
-#### 💡 Ayuda técnica — patrón de consulta (adaptá los nombres a tu dataset)
+#### Ayuda técnica — patrón de consulta (adaptá los nombres a tu dataset)
 ```sql
 SELECT
     c.nombre_cliente,
@@ -61,7 +61,7 @@ ORDER BY v.fecha_compra DESC;
 
 Diseñá un **diagrama ER simple** que represente la relación entre **clientes, productos y ventas**. Describí brevemente las entidades y las relaciones.
 
-### 💡 Ayuda técnica — cómo encararlo
+### Ayuda técnica — cómo encararlo
 - **Entidades y sus claves:**
   - `clientes` → PK `id_cliente` (+ nombre, ciudad, segmento…).
   - `productos` → PK `id_producto` (+ nombre, categoría, precio…).
@@ -72,7 +72,7 @@ Diseñá un **diagrama ER simple** que represente la relación entre **clientes,
 - Es el **esquema en estrella**: `ventas` en el centro, `clientes` y `productos` como dimensiones.
 - Herramientas: **draw.io, dbdiagram.io, Lucidchart** o a mano (foto).
 
-📖 Repasá: [S2 · Visión general de modelos de datos](../../Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/material/01-vision-general-de-modelos-de-datos.md) y [S8 · Relaciones y esquema estrella](../../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/material/01-relaciones-1n-y-esquema-estrella.md)
+Repasá: [S2 · Visión general de modelos de datos](../../Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/material/01-vision-general-de-modelos-de-datos.md) y [S8 · Relaciones y esquema estrella](../../Semana-08-Modelado-Analitico-y-Calculos-Avanzados-con-DAX/material/01-relaciones-1n-y-esquema-estrella.md)
 
 ---
 
@@ -80,7 +80,7 @@ Diseñá un **diagrama ER simple** que represente la relación entre **clientes,
 
 Imaginá que debés presentar un **informe de ventas mensual** a un equipo de **marketing**. Describí qué **tipo(s) de gráfico** usarías y cómo **estructurarías la narrativa** para que sea clara y persuasiva. Podés usar **Excel o Power BI**.
 
-### 💡 Ayuda técnica — cómo encararlo
+### Ayuda técnica — cómo encararlo
 - **Elegí el gráfico según la pregunta:**
   - Evolución mensual → **gráfico de líneas** (tendencia en el tiempo).
   - Comparación entre categorías/productos/regiones → **gráfico de barras/columnas**.
@@ -91,9 +91,9 @@ Imaginá que debés presentar un **informe de ventas mensual** a un equipo de **
   3. **Cierre:** un *insight* accionable y una **recomendación** para el equipo de marketing.
 - Aplicá **jerarquía visual** (lo importante arriba-izquierda), **títulos probativos** y **comparativas**. Recordá: por cada gráfico, preguntate *"¿qué decisión permite tomar?"*.
 
-📖 Repasá: [S7 · Visualizaciones clave](../../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/material/02-visualizaciones-clave.md) y [S7 · Storytelling con datos](../../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/material/04-storytelling-con-datos.md)
+Repasá: [S7 · Visualizaciones clave](../../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/material/02-visualizaciones-clave.md) y [S7 · Storytelling con datos](../../Semana-07-Visualizacion-de-Datos-y-Storytelling-con-Power-BI/material/04-storytelling-con-datos.md)
 
 ---
 <p align="center">
-<a href="./seccion-1-preguntas-teoricas.md">⬅️ Sección 1</a> · 🏠 <a href="../README.md">Semana 11</a> · <a href="./guia-de-presentacion.md">Siguiente: Guía de Presentación ➡️</a>
+<a href="./seccion-1-preguntas-teoricas.md">Sección 1</a> · <a href="../README.md">Semana 11</a> · <a href="./guia-de-presentacion.md">Siguiente: Guía de Presentación</a>
 </p>

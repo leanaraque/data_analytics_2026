@@ -17,7 +17,7 @@ Ambos son relacionales, pero Power BI los trata de forma ligeramente distinta:
 - **SQL Server:** producto de Microsoft, integración **nativa** y fluida. Soporta **Windows Authentication** (tu usuario de la computadora) o **SQL Authentication**.
 - **PostgreSQL:** de código abierto. Tiene un conector específico, pero a veces requiere instalar un pequeño componente intermediario llamado **Npgsql** para que ambos "hablen el mismo idioma".
 
-## 🎥 Video — Conectar SQL Server con Power BI
+## Video — Conectar SQL Server con Power BI
 Proceso paso a paso: seleccionar el conector de SQL Server, ingresar el **nombre del servidor** y la **base de datos**, elegir entre modo **Importación** y **DirectQuery**, y cargar las tablas necesarias. También qué hacer cuando la conexión falla y cómo verificar que los datos se importaron bien.
 
 ## Errores comunes de principiantes
@@ -27,5 +27,5 @@ Proceso paso a paso: seleccionar el conector de SQL Server, ingresar el **nombre
 
 ---
 <p align="center">
-<a href="./02-power-bi-y-transformacion-de-datos.md">⬅️ Anterior</a> · 🏠 <a href="../README.md">Semana 6</a> · <a href="./04-limpieza-y-tipado-en-power-query.md">Siguiente ➡️</a>
+<a href="./02-power-bi-y-transformacion-de-datos.md">Anterior</a> · <a href="../README.md">Semana 6</a> · <a href="./04-limpieza-y-tipado-en-power-query.md">Siguiente</a>
 </p>
