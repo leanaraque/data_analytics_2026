@@ -36,6 +36,8 @@ En el mundo empresarial y de marketing actual, la capacidad de analizar datos y 
 - **Gestioná tu tiempo** para no quedarte sin completar alguna sección.
 - **Reflexioná** sobre tus respuestas y **justificá** tus decisiones cuando se requiera.
 
+> 📦 **El material de apoyo ya está en el repo:** el dataset de ejemplo, los scripts de SQL Server / MySQL y un ejemplo de entrega resuelta viven en [`recursos/ejemplo-examen-final/`](../../recursos/ejemplo-examen-final/).
+
 > 📖 **Es de libro abierto:** podés usar tus apuntes y todos los recursos del programa (¡incluido este repositorio!) para apoyar tus respuestas. Se valorará la **precisión, la aplicación práctica y la claridad** en la comunicación.
 
 ---

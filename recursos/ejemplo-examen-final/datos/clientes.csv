@@ -1,0 +1,201 @@
+CustomerID,Nombre,Email,País,Ciudad,Segmento,FechaRegistro
+CLI-0001,Laura Aguilar,laura.aguilar@outlook.com,Brasil,Belo Horizonte,Básico,2023-06-10
+CLI-0002,Catalina Sánchez,catalina.sanchez@outlook.com,Argentina,Buenos Aires,Premium,2023-01-16
+CLI-0003,Renata Guerrero,renata.guerrero@gmail.com,Argentina,Rosario,Estándar,2024-05-07
+CLI-0004,Antonella Jiménez,antonella.jimenez@gmail.com,Argentina,La Plata,Premium,2024-03-01
+CLI-0005,Emma Flores,emma.flores@gmail.com,Perú,Arequipa,Básico,2023-04-18
+CLI-0006,Emiliano Delgado,emiliano.delgado@gmail.com,Chile,Concepción,Estándar,2024-03-25
+CLI-0007,Carlos Moreno,carlos.moreno@gmail.com,Brasil,São Paulo,Estándar,2023-11-07
+CLI-0008,Valentina Castillo,valentina.castillo@outlook.com,Uruguay,Punta del Este,Premium,2023-06-19
+CLI-0009,Martín Moreno,martin.moreno@gmail.com,Brasil,Belo Horizonte,Básico,2024-06-29
+CLI-0010,Pedro Medina,pedro.medina@gmail.com,México,Monterrey,Estándar,2024-02-18
+CLI-0011,Eduardo Rodríguez,eduardo.rodriguez@gmail.com,Argentina,Buenos Aires,Básico,2023-09-08
+CLI-0012,Renata Silva,renata.silva@gmail.com,Chile,Santiago,Estándar,2023-05-21
+CLI-0013,Sebastián Castillo,sebastian.castillo@outlook.com,Argentina,Buenos Aires,Estándar,2023-10-01
+CLI-0014,Pedro Romero,pedro.romero@outlook.com,Argentina,Córdoba,Premium,2024-02-20
+CLI-0015,Elena Ruiz,elena.ruiz@outlook.com,Argentina,Buenos Aires,Estándar,2024-08-30
+CLI-0016,José Mendoza,jose.mendoza@gmail.com,Argentina,Rosario,Estándar,2023-02-08
+CLI-0017,Nicolás Cruz,nicolas.cruz@gmail.com,Argentina,Buenos Aires,Premium,2023-01-29
+CLI-0018,Adriana Martínez,adriana.martinez@outlook.com,Argentina,La Plata,Básico,2024-04-21
+CLI-0019,Natalia Pérez,natalia.perez@gmail.com,Ecuador,Guayaquil,Estándar,2023-11-14
+CLI-0020,Renata Ramírez,renata.ramirez@gmail.com,Argentina,Mendoza,Estándar,2023-09-02
+CLI-0021,Laura Gutiérrez,laura.gutierrez@outlook.com,Argentina,Buenos Aires,Estándar,2024-11-27
+CLI-0022,Santiago Romero,santiago.romero@outlook.com,México,CDMX,Estándar,2023-09-29
+CLI-0023,Tomás Ramírez,tomas.ramirez@outlook.com,México,Monterrey,Estándar,2024-03-15
+CLI-0024,Daniel Rodríguez,daniel.rodriguez@outlook.com,Argentina,La Plata,Estándar,2023-08-27
+CLI-0025,Agustín Mendoza,agustin.mendoza@outlook.com,Brasil,Rio de Janeiro,Estándar,2024-01-12
+CLI-0026,Adriana Pérez,adriana.perez@outlook.com,Chile,Concepción,Básico,2023-09-23
+CLI-0027,Pedro Sánchez,pedro.sanchez@outlook.com,Argentina,La Plata,Básico,2023-12-25
+CLI-0028,Adriana Campos,adriana.campos@outlook.com,Perú,Lima,Estándar,2023-12-06
+CLI-0029,Tomás Reyes,tomas.reyes@gmail.com,Colombia,Bogotá,Estándar,2024-01-24
+CLI-0030,Ricardo Soto,ricardo.soto@outlook.com,Argentina,La Plata,Estándar,2024-07-30
+CLI-0031,Santiago Rodríguez,santiago.rodriguez@gmail.com,Argentina,La Plata,Estándar,2024-11-19
+CLI-0032,Mateo López,mateo.lopez@gmail.com,Perú,Arequipa,Premium,2023-01-03
+CLI-0033,Carolina Gutiérrez,carolina.gutierrez@gmail.com,Brasil,Rio de Janeiro,Estándar,2024-03-04
+CLI-0034,Daniel Vega,daniel.vega@outlook.com,Brasil,Belo Horizonte,Básico,2023-05-22
+CLI-0035,Joaquín Delgado,joaquin.delgado@outlook.com,Uruguay,Montevideo,Estándar,2024-01-11
+CLI-0036,Tomás Castro,tomas.castro@gmail.com,Chile,Santiago,Premium,2024-10-31
+CLI-0037,Miguel Cruz,miguel.cruz@gmail.com,Perú,Arequipa,Estándar,2023-11-20
+CLI-0038,Benjamín Díaz,benjamin.diaz@gmail.com,Perú,Lima,Estándar,2023-05-26
+CLI-0039,Victoria Soto,victoria.soto@outlook.com,Colombia,Medellín,Estándar,2023-10-20
+CLI-0040,Renata Morales,renata.morales@outlook.com,Chile,Santiago,Premium,2024-10-26
+CLI-0041,Gabriela Gutiérrez,gabriela.gutierrez@gmail.com,México,Monterrey,Premium,2024-03-07
+CLI-0042,Adriana Moreno,adriana.moreno@gmail.com,Uruguay,Montevideo,Básico,2024-08-07
+CLI-0043,Daniel Romero,daniel.romero@gmail.com,Chile,Santiago,Estándar,2024-02-03
+CLI-0044,Gabriela Aguilar,gabriela.aguilar@gmail.com,Argentina,Mendoza,Estándar,2023-12-10
+CLI-0045,Catalina García,catalina.garcia@outlook.com,México,Guadalajara,Estándar,2023-05-20
+CLI-0046,Florencia Pérez,florencia.perez@gmail.com,México,CDMX,Premium,2023-07-06
+CLI-0047,Isabella Moreno,isabella.moreno@outlook.com,Chile,Santiago,Estándar,2023-03-02
+CLI-0048,Lucía Sánchez,lucia.sanchez@outlook.com,México,Guadalajara,Básico,2024-01-15
+CLI-0049,Emiliano Flores,emiliano.flores@gmail.com,Uruguay,Punta del Este,Básico,2024-03-15
+CLI-0050,Julieta Sánchez,julieta.sanchez@gmail.com,Argentina,Córdoba,Básico,2023-11-15
+CLI-0051,Andrea Campos,andrea.campos@outlook.com,Argentina,Córdoba,Estándar,2023-10-29
+CLI-0052,Mariana González,mariana.gonzalez@outlook.com,Argentina,Córdoba,Estándar,2023-12-10
+CLI-0053,José Guerrero,jose.guerrero@gmail.com,Brasil,Rio de Janeiro,Estándar,2023-01-11
+CLI-0054,Ana Mendoza,ana.mendoza@outlook.com,Argentina,Rosario,Estándar,2023-03-03
+CLI-0055,Sofía Ramírez,sofia.ramirez@gmail.com,Chile,Concepción,Básico,2023-08-14
+CLI-0056,Benjamín Rivera,benjamin.rivera@outlook.com,Argentina,Córdoba,Premium,2023-06-02
+CLI-0057,Fernando Silva,fernando.silva@gmail.com,Uruguay,Punta del Este,Premium,2024-07-17
+CLI-0058,Miguel Jiménez,miguel.jimenez@gmail.com,Brasil,São Paulo,Estándar,2024-07-24
+CLI-0059,Emiliano Fuentes,emiliano.fuentes@outlook.com,Uruguay,Punta del Este,Premium,2024-08-06
+CLI-0060,Andrea Soto,andrea.soto@outlook.com,Argentina,Mendoza,Estándar,2024-10-21
+CLI-0061,Lucas Ruiz,lucas.ruiz@outlook.com,Argentina,La Plata,Estándar,2024-07-28
+CLI-0062,Andrea García,andrea.garcia@outlook.com,Brasil,Rio de Janeiro,Estándar,2023-11-06
+CLI-0063,Andrea Fuentes,andrea.fuentes@gmail.com,Uruguay,Punta del Este,Básico,2023-08-31
+CLI-0064,Adriana Díaz,adriana.diaz@outlook.com,Argentina,Rosario,Básico,2024-05-07
+CLI-0065,Valentina García,valentina.garcia@gmail.com,Perú,Lima,Estándar,2024-01-01
+CLI-0066,Camila Álvarez,camila.alvarez@outlook.com,Argentina,Buenos Aires,Estándar,2023-11-26
+CLI-0067,Tomás Guerrero,tomas.guerrero@gmail.com,Brasil,Curitiba,Estándar,2023-04-17
+CLI-0068,Paula Ramírez,paula.ramirez@gmail.com,Ecuador,Quito,Estándar,2023-08-14
+CLI-0069,Catalina Cruz,catalina.cruz@gmail.com,Brasil,Belo Horizonte,Estándar,2023-08-06
+CLI-0070,Daniel Gómez,daniel.gomez@gmail.com,Brasil,Belo Horizonte,Estándar,2024-05-20
+CLI-0071,Gabriel Guerrero,gabriel.guerrero@gmail.com,Chile,Concepción,Estándar,2023-09-16
+CLI-0072,Elena Herrera,elena.herrera@outlook.com,Chile,Santiago,Estándar,2024-05-31
+CLI-0073,Santiago Medina,santiago.medina@gmail.com,México,CDMX,Estándar,2023-02-23
+CLI-0074,Natalia Jiménez,natalia.jimenez@gmail.com,Argentina,Córdoba,Estándar,2023-02-16
+CLI-0075,Laura Cruz,laura.cruz@gmail.com,Argentina,Rosario,Básico,2024-11-19
+CLI-0076,María Aguilar,maria.aguilar@outlook.com,Chile,Concepción,Básico,2024-06-04
+CLI-0077,Ricardo Gómez,ricardo.gomez@gmail.com,Colombia,Cali,Premium,2023-04-09
+CLI-0078,Gabriel Pérez,gabriel.perez@gmail.com,Chile,Valparaíso,Básico,2023-01-20
+CLI-0079,Lucas Mendoza,lucas.mendoza@outlook.com,Argentina,Mendoza,Estándar,2024-07-26
+CLI-0080,Martín Hernández,martin.hernandez@outlook.com,Uruguay,Punta del Este,Básico,2024-05-04
+CLI-0081,Alejandro Mendoza,alejandro.mendoza@gmail.com,México,Guadalajara,Básico,2024-02-23
+CLI-0082,Pedro Ramos,pedro.ramos@gmail.com,Argentina,Córdoba,Estándar,2024-11-20
+CLI-0083,Diego Flores,diego.flores@gmail.com,Brasil,Rio de Janeiro,Premium,2023-03-03
+CLI-0084,Alejandro Romero,alejandro.romero@outlook.com,Brasil,Rio de Janeiro,Estándar,2023-05-25
+CLI-0085,Laura Silva,laura.silva@gmail.com,Brasil,Rio de Janeiro,Estándar,2023-08-04
+CLI-0086,Lucía Ruiz,lucia.ruiz@outlook.com,Brasil,Belo Horizonte,Estándar,2023-01-03
+CLI-0087,Mía Martínez,mia.martinez@outlook.com,Argentina,Rosario,Estándar,2023-06-09
+CLI-0088,Laura Hernández,laura.hernandez@outlook.com,Argentina,Rosario,Premium,2023-04-30
+CLI-0089,Benjamín Ruiz,benjamin.ruiz@gmail.com,Argentina,Córdoba,Básico,2023-03-30
+CLI-0090,Isabella Fuentes,isabella.fuentes@gmail.com,Ecuador,Guayaquil,Básico,2023-11-25
+CLI-0091,Mariana Moreno,mariana.moreno@gmail.com,Colombia,Bogotá,Estándar,2024-08-02
+CLI-0092,Catalina Herrera,catalina.herrera@outlook.com,Brasil,Rio de Janeiro,Estándar,2023-12-23
+CLI-0093,Gabriel Moreno,gabriel.moreno@gmail.com,Ecuador,Quito,Estándar,2024-09-01
+CLI-0094,Ana Rivera,ana.rivera@outlook.com,Uruguay,Punta del Este,Premium,2023-09-24
+CLI-0095,Laura Rodríguez,laura.rodriguez@gmail.com,Brasil,Belo Horizonte,Básico,2024-09-08
+CLI-0096,Valentina Fuentes,valentina.fuentes@gmail.com,Brasil,Curitiba,Premium,2023-11-19
+CLI-0097,Elena Reyes,elena.reyes@outlook.com,Argentina,Córdoba,Estándar,2024-09-26
+CLI-0098,Elena Rodríguez,elena.rodriguez@gmail.com,Argentina,Rosario,Estándar,2024-06-24
+CLI-0099,Martín Mendoza,martin.mendoza@outlook.com,Chile,Santiago,Estándar,2024-10-10
+CLI-0100,Victoria Fuentes,victoria.fuentes@gmail.com,Chile,Santiago,Estándar,2023-07-14
+CLI-0101,Gabriel Silva,gabriel.silva@gmail.com,Argentina,La Plata,Básico,2023-11-28
+CLI-0102,Lucía Ortiz,lucia.ortiz@outlook.com,Perú,Arequipa,Estándar,2023-06-19
+CLI-0103,Martín Álvarez,martin.alvarez@gmail.com,México,Guadalajara,Premium,2024-06-04
+CLI-0104,Gabriel Hernández,gabriel.hernandez@outlook.com,Argentina,Buenos Aires,Premium,2024-04-07
+CLI-0105,Gabriel López,gabriel.lopez@gmail.com,Perú,Arequipa,Básico,2023-02-09
+CLI-0106,Emma Reyes,emma.reyes@gmail.com,Ecuador,Quito,Básico,2024-06-20
+CLI-0107,Eduardo Moreno,eduardo.moreno@gmail.com,Ecuador,Guayaquil,Estándar,2023-09-18
+CLI-0108,Camila Vega,camila.vega@outlook.com,Argentina,Mendoza,Estándar,2024-01-30
+CLI-0109,Mateo Castillo,mateo.castillo@gmail.com,México,CDMX,Estándar,2023-08-14
+CLI-0110,Emma Morales,emma.morales@gmail.com,Brasil,Rio de Janeiro,Estándar,2023-05-04
+CLI-0111,Mariana Ramírez,mariana.ramirez@outlook.com,Uruguay,Punta del Este,Básico,2023-02-07
+CLI-0112,Mateo Morales,mateo.morales@outlook.com,Ecuador,Quito,Estándar,2023-11-24
+CLI-0113,Carolina Martínez,carolina.martinez@gmail.com,Uruguay,Punta del Este,Estándar,2023-09-08
+CLI-0114,Agustín Delgado,agustin.delgado@gmail.com,Colombia,Bogotá,Estándar,2023-06-25
+CLI-0115,Antonella Álvarez,antonella.alvarez@gmail.com,Colombia,Medellín,Premium,2024-08-24
+CLI-0116,Valentina Ortiz,valentina.ortiz@gmail.com,Colombia,Cali,Estándar,2024-03-29
+CLI-0117,Agustín Herrera,agustin.herrera@gmail.com,Brasil,Belo Horizonte,Básico,2023-02-06
+CLI-0118,Sofía Silva,sofia.silva@outlook.com,Argentina,Rosario,Premium,2023-11-12
+CLI-0119,Carlos Guerrero,carlos.guerrero@outlook.com,Brasil,Belo Horizonte,Estándar,2024-11-18
+CLI-0120,Felipe Soto,felipe.soto@outlook.com,Colombia,Cali,Estándar,2024-08-15
+CLI-0121,Lucía Flores,lucia.flores@gmail.com,Argentina,Buenos Aires,Estándar,2023-04-24
+CLI-0122,Jorge Jiménez,jorge.jimenez@outlook.com,Brasil,Belo Horizonte,Estándar,2023-02-09
+CLI-0123,Valeria Medina,valeria.medina@gmail.com,Argentina,Rosario,Estándar,2023-10-28
+CLI-0124,José Campos,jose.campos@gmail.com,Chile,Valparaíso,Básico,2023-08-12
+CLI-0125,Sofía Morales,sofia.morales@gmail.com,Colombia,Bogotá,Estándar,2023-11-14
+CLI-0126,Lucía Rivera,lucia.rivera@outlook.com,Colombia,Cali,Estándar,2023-12-15
+CLI-0127,Camila Fuentes,camila.fuentes@gmail.com,Argentina,Rosario,Estándar,2023-04-25
+CLI-0128,Gabriel Ramírez,gabriel.ramirez@outlook.com,Perú,Lima,Estándar,2024-11-28
+CLI-0129,Ana Campos,ana.campos@gmail.com,Chile,Santiago,Básico,2023-11-19
+CLI-0130,Antonella Morales,antonella.morales@outlook.com,Brasil,Curitiba,Básico,2024-07-21
+CLI-0131,Valentina Ramos,valentina.ramos@outlook.com,Uruguay,Punta del Este,Estándar,2023-02-09
+CLI-0132,Emiliano Silva,emiliano.silva@gmail.com,Brasil,São Paulo,Premium,2023-02-09
+CLI-0133,Elena Sánchez,elena.sanchez@outlook.com,Brasil,Rio de Janeiro,Estándar,2023-10-16
+CLI-0134,Ricardo Rojas,ricardo.rojas@outlook.com,Uruguay,Montevideo,Estándar,2023-09-19
+CLI-0135,Carlos Ramos,carlos.ramos@gmail.com,Argentina,Rosario,Premium,2023-08-04
+CLI-0136,Andrea Romero,andrea.romero@gmail.com,Argentina,La Plata,Estándar,2023-05-27
+CLI-0137,Roberto Gutiérrez,roberto.gutierrez@gmail.com,Brasil,São Paulo,Estándar,2023-12-02
+CLI-0138,Martín Campos,martin.campos@gmail.com,Argentina,Córdoba,Estándar,2023-06-17
+CLI-0139,Nicolás Delgado,nicolas.delgado@gmail.com,Brasil,Curitiba,Básico,2023-04-02
+CLI-0140,Mariana López,mariana.lopez@outlook.com,Chile,Valparaíso,Premium,2023-12-19
+CLI-0141,Mariana Díaz,mariana.diaz@outlook.com,México,CDMX,Premium,2024-07-24
+CLI-0142,Renata Ramos,renata.ramos@outlook.com,México,Guadalajara,Básico,2024-07-24
+CLI-0143,Benjamín Pérez,benjamin.perez@gmail.com,México,CDMX,Estándar,2024-11-11
+CLI-0144,Valentina Reyes,valentina.reyes@gmail.com,México,Guadalajara,Estándar,2023-12-29
+CLI-0145,Mariana Rivera,mariana.rivera@gmail.com,Uruguay,Montevideo,Estándar,2024-07-10
+CLI-0146,Lucas Castillo,lucas.castillo@gmail.com,Argentina,La Plata,Estándar,2023-12-11
+CLI-0147,Roberto Medina,roberto.medina@gmail.com,Brasil,São Paulo,Básico,2024-11-23
+CLI-0148,Eduardo Rojas,eduardo.rojas@outlook.com,Brasil,Curitiba,Básico,2023-06-19
+CLI-0149,Gabriela Sánchez,gabriela.sanchez@gmail.com,Argentina,Córdoba,Estándar,2023-12-22
+CLI-0150,Paula Ruiz,paula.ruiz@gmail.com,Brasil,Rio de Janeiro,Estándar,2023-07-10
+CLI-0151,Fernando Vargas,fernando.vargas@gmail.com,Brasil,Rio de Janeiro,Estándar,2024-10-28
+CLI-0152,Diego Silva,diego.silva@outlook.com,México,CDMX,Estándar,2024-02-26
+CLI-0153,Alejandro Silva,alejandro.silva@gmail.com,Ecuador,Guayaquil,Premium,2024-11-30
+CLI-0154,Camila Ortiz,camila.ortiz@gmail.com,Chile,Valparaíso,Básico,2023-01-07
+CLI-0155,Santiago Campos,santiago.campos@gmail.com,Argentina,La Plata,Premium,2023-05-13
+CLI-0156,Pedro Mendoza,pedro.mendoza@gmail.com,Argentina,Rosario,Básico,2024-07-10
+CLI-0157,Diego Aguilar,diego.aguilar@gmail.com,Perú,Lima,Estándar,2023-01-31
+CLI-0158,Roberto Hernández,roberto.hernandez@gmail.com,Perú,Arequipa,Estándar,2024-06-18
+CLI-0159,Emiliano Aguilar,emiliano.aguilar@outlook.com,Argentina,Buenos Aires,Estándar,2024-03-01
+CLI-0160,Elena Castro,elena.castro@gmail.com,Uruguay,Montevideo,Básico,2024-01-29
+CLI-0161,Andrea Silva,andrea.silva@gmail.com,Argentina,Buenos Aires,Básico,2024-11-02
+CLI-0162,Renata Herrera,renata.herrera@gmail.com,Argentina,Rosario,Básico,2023-12-29
+CLI-0163,Victoria Silva,victoria.silva@gmail.com,Argentina,La Plata,Estándar,2024-03-12
+CLI-0164,Valentina Gutiérrez,valentina.gutierrez@gmail.com,Argentina,Buenos Aires,Estándar,2024-10-31
+CLI-0165,Florencia Castro,florencia.castro@gmail.com,Ecuador,Guayaquil,Básico,2024-07-04
+CLI-0166,Valentina Soto,valentina.soto@gmail.com,Uruguay,Punta del Este,Estándar,2023-03-23
+CLI-0167,Roberto Moreno,roberto.moreno@outlook.com,Brasil,São Paulo,Estándar,2023-12-22
+CLI-0168,Jorge Herrera,jorge.herrera@gmail.com,México,CDMX,Estándar,2023-09-15
+CLI-0169,Adriana Castillo,adriana.castillo@gmail.com,Perú,Lima,Básico,2024-08-11
+CLI-0170,Victoria Rodríguez,victoria.rodriguez@outlook.com,Ecuador,Quito,Básico,2024-06-07
+CLI-0171,Paula Rodríguez,paula.rodriguez@gmail.com,Argentina,Mendoza,Premium,2023-10-22
+CLI-0172,Daniel Reyes,daniel.reyes@gmail.com,Brasil,Belo Horizonte,Básico,2023-08-12
+CLI-0173,Carlos Silva,carlos.silva@gmail.com,Argentina,Córdoba,Básico,2024-06-08
+CLI-0174,Isabella Guerrero,isabella.guerrero@gmail.com,Argentina,Mendoza,Estándar,2023-02-15
+CLI-0175,Carolina Álvarez,carolina.alvarez@outlook.com,Argentina,Córdoba,Estándar,2024-10-28
+CLI-0176,Emiliano Gómez,emiliano.gomez@outlook.com,Chile,Santiago,Básico,2023-04-23
+CLI-0177,Sofía Delgado,sofia.delgado@outlook.com,Brasil,Rio de Janeiro,Premium,2023-08-21
+CLI-0178,Gabriela Ramos,gabriela.ramos@gmail.com,Argentina,Rosario,Estándar,2023-01-17
+CLI-0179,Roberto Morales,roberto.morales@outlook.com,Argentina,Rosario,Estándar,2023-12-26
+CLI-0180,Tomás Rivera,tomas.rivera@outlook.com,Brasil,Belo Horizonte,Básico,2023-08-11
+CLI-0181,Victoria Cruz,victoria.cruz@outlook.com,Argentina,Rosario,Básico,2024-11-30
+CLI-0182,Alejandro Vega,alejandro.vega@gmail.com,Brasil,Belo Horizonte,Básico,2024-03-23
+CLI-0183,Martín Herrera,martin.herrera@gmail.com,Argentina,Rosario,Estándar,2023-12-31
+CLI-0184,Victoria Castillo,victoria.castillo@outlook.com,Argentina,Mendoza,Básico,2024-11-05
+CLI-0185,Florencia Castillo,florencia.castillo@outlook.com,Brasil,São Paulo,Básico,2023-11-22
+CLI-0186,Lucas Hernández,lucas.hernandez@gmail.com,Chile,Valparaíso,Estándar,2024-04-11
+CLI-0187,Catalina Fuentes,catalina.fuentes@gmail.com,Argentina,Córdoba,Básico,2024-02-18
+CLI-0188,Mariana Sánchez,mariana.sanchez@outlook.com,Argentina,Rosario,Premium,2024-03-30
+CLI-0189,Pedro González,pedro.gonzalez@gmail.com,Argentina,Rosario,Estándar,2024-08-08
+CLI-0190,Laura López,laura.lopez@outlook.com,Perú,Lima,Estándar,2023-08-21
+CLI-0191,Mateo Herrera,mateo.herrera@outlook.com,Brasil,Curitiba,Premium,2023-08-12
+CLI-0192,Diego Campos,diego.campos@gmail.com,Chile,Santiago,Premium,2024-02-16
+CLI-0193,Carlos Morales,carlos.morales@gmail.com,Perú,Lima,Estándar,2024-07-25
+CLI-0194,Mía Medina,mia.medina@gmail.com,Argentina,La Plata,Estándar,2023-12-01
+CLI-0195,Antonella Reyes,antonella.reyes@outlook.com,Colombia,Medellín,Básico,2023-08-10
+CLI-0196,Antonella Mendoza,antonella.mendoza@gmail.com,Chile,Concepción,Premium,2023-02-06
+CLI-0197,Daniel Fuentes,daniel.fuentes@gmail.com,Argentina,Buenos Aires,Estándar,2023-10-05
+CLI-0198,Daniel Jiménez,daniel.jimenez@outlook.com,Brasil,São Paulo,Estándar,2023-07-15
+CLI-0199,Isabella Rivera,isabella.rivera@gmail.com,México,Monterrey,Básico,2024-04-28
+CLI-0200,Lucía García,lucia.garcia@outlook.com,Brasil,Rio de Janeiro,Estándar,2023-08-30

@@ -1,0 +1,26 @@
+ProductID,Nombre_Producto,Categoría,SubCategoría,PrecioUnitario
+PRD-001,Laptop Pro 15'',Tecnología,Computadoras,1299.99
+PRD-002,Laptop Básica 14'',Tecnología,Computadoras,699.99
+PRD-003,Mouse Inalámbrico,Tecnología,Periféricos,29.99
+PRD-004,Teclado Mecánico RGB,Tecnología,Periféricos,89.99
+PRD-005,Monitor 27'' 4K,Tecnología,Monitores,449.99
+PRD-006,Monitor 24'' FHD,Tecnología,Monitores,249.99
+PRD-007,Auriculares Bluetooth,Tecnología,Audio,59.99
+PRD-008,Parlante Portátil,Tecnología,Audio,39.99
+PRD-009,Webcam HD 1080p,Accesorios,Video,74.99
+PRD-010,Hub USB-C 7 puertos,Accesorios,Conectividad,34.99
+PRD-011,Cable HDMI 2m,Accesorios,Conectividad,12.99
+PRD-012,Mousepad XL,Accesorios,Periféricos,19.99
+PRD-013,Soporte Notebook,Accesorios,Ergonomía,44.99
+PRD-014,Lámpara LED Escritorio,Muebles,Iluminación,34.99
+PRD-015,Silla Ergonómica Pro,Muebles,Mobiliario,399.99
+PRD-016,Silla Gamer,Muebles,Mobiliario,299.99
+PRD-017,Escritorio Ajustable,Muebles,Mobiliario,549.99
+PRD-018,Organizador Cables,Accesorios,Organización,14.99
+PRD-019,Disco SSD 1TB,Tecnología,Almacenamiento,109.99
+PRD-020,Memoria USB 64GB,Tecnología,Almacenamiento,15.99
+PRD-021,Cargador Universal,Accesorios,Energía,24.99
+PRD-022,UPS 600VA,Tecnología,Energía,89.99
+PRD-023,Tablet 10'',Tecnología,Tablets,349.99
+PRD-024,Funda Laptop 15'',Accesorios,Protección,29.99
+PRD-025,Kit Limpieza Electrónica,Accesorios,Mantenimiento,9.99

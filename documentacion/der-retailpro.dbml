@@ -1,0 +1,49 @@
+// DER — RetailPro_DB (SQL Server) · Semana 2 · Entregable M2
+// Pegá este código en https://dbdiagram.io para ver y editar el diagrama.
+// Refleja exactamente el script recursos/base-de-datos/retailpro_db_sqlserver.sql
+
+Table categorias [note: 'Subdimensión: separa la categoría del producto (3NF)'] {
+  id_categoria     int           [pk]
+  nombre_categoria nvarchar(50)  [not null, unique]
+  descripcion      nvarchar(200)
+}
+
+Table territorios [note: 'Dimensión: dónde ocurre la venta'] {
+  id_territorio int          [pk]
+  region        nvarchar(50) [not null]
+  pais          nvarchar(50) [not null]
+  zona          nvarchar(50)
+}
+
+Table clientes [note: 'Dimensión: quién compra'] {
+  id_cliente     int           [pk]
+  nombre         nvarchar(100) [not null]
+  email          nvarchar(120)
+  ciudad         nvarchar(80)
+  segmento       nvarchar(20)  [note: 'CHECK: Consumo / PyME / Corporativo']
+  fecha_registro date          [not null]
+}
+
+Table productos [note: 'Dimensión: qué se vende'] {
+  id_producto     int           [pk]
+  nombre_producto nvarchar(120) [not null]
+  id_categoria    int           [not null, ref: > categorias.id_categoria]
+  subcategoria    nvarchar(50)
+  precio          decimal(10,2) [not null, note: 'Precio actual de catálogo · CHECK >= 0']
+  costo           decimal(10,2) [note: 'CHECK >= 0']
+  stock           int           [not null, default: 0, note: 'CHECK >= 0']
+  activo          bit           [not null, default: 1]
+}
+
+Table ventas [note: 'Tabla de hechos: una fila por transacción'] {
+  id_venta        int           [pk, increment, note: 'IDENTITY(1,1)']
+  fecha_venta     date          [not null]
+  id_cliente      int           [not null, ref: > clientes.id_cliente]
+  id_producto     int           [not null, ref: > productos.id_producto]
+  id_territorio   int           [not null, ref: > territorios.id_territorio]
+  cantidad        int           [not null, note: 'CHECK > 0']
+  precio_unitario decimal(10,2) [not null, note: 'Precio real al momento de la venta · CHECK >= 0']
+  descuento       decimal(5,4)  [not null, default: 0, note: 'CHECK >= 0 AND < 1']
+  total_venta     decimal(12,2) [note: 'Columna calculada PERSISTED: cantidad * precio_unitario * (1 - descuento)']
+  canal           nvarchar(20)  [not null, note: 'CHECK: Online / Presencial']
+}

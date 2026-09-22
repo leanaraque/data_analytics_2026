@@ -43,7 +43,12 @@ Semana-XX-Nombre-del-Tema/
 
 > 💡 Todas las semanas tienen `README.md`, `material/` y `entregable/`. Las carpetas `ejercicios/` y `evaluacion/` aparecen solo en las semanas que las incluyen.
 
-La carpeta [`recursos/`](./recursos/) en la raíz contiene material transversal a todo el curso (instalaciones, cheatsheets, plantillas, etc.).
+Además, en la raíz conviven dos carpetas transversales:
+
+| Carpeta | Qué contiene |
+|---------|--------------|
+| [`recursos/`](./recursos/) | Material transversal a todo el curso: la [base de datos del proyecto integrador](./recursos/base-de-datos/) (`RetailPro_DB`, SQL Server) y el [material oficial del examen final](./recursos/ejemplo-examen-final/) (dataset, scripts y ejemplo de entrega). |
+| [`documentacion/`](./documentacion/) | Desarrollo propio de los entregables del proyecto RetailPro, semana a semana, con sus diagramas en [`assets/`](./documentacion/assets/). |
 
 ---
 
@@ -63,7 +68,7 @@ La carpeta [`recursos/`](./recursos/) en la raíz contiene material transversal 
 
 ## 🧰 Herramientas del curso
 
-- **SQL** — MySQL / SQL estándar para consultas y manipulación de datos.
+- **SQL** — **SQL Server** (SSMS) como motor principal del curso; los scripts del proyecto final vienen también en versión **MySQL / Workbench**.
 - **Power BI Desktop** — transformación (Power Query), modelado y visualización.
 - **DAX** — cálculos y medidas avanzadas.
 - **Estadística aplicada** — medidas de tendencia central y dispersión.

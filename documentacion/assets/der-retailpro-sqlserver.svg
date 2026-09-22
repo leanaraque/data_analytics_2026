@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 740" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1240" height="740" fill="#ffffff"/>
+  <text x="30" y="42" fill="#1f3b57" font-size="22" font-weight="700">DER — RetailPro_DB (SQL Server)</text>
+  <text x="30" y="66" fill="#6b7683" font-size="12.5">Modelo relacional normalizado a 3NF · Semana 2 · Entregable M2 · notación pata de gallo (crow's foot)</text>
+
+  <!-- ================= RELACIONES (debajo de las tablas) ================= -->
+  <g fill="none" stroke="#2d5075" stroke-width="1.6">
+    <!-- clientes (1) → ventas (0..N) -->
+    <path d="M350 151 H395 V315 H440"/>
+    <line x1="360" y1="144" x2="360" y2="158"/><line x1="366" y1="144" x2="366" y2="158"/>
+    <line x1="426" y1="315" x2="440" y2="307"/><line x1="426" y1="315" x2="440" y2="323"/>
+    <!-- territorios (1) → ventas (0..N) -->
+    <path d="M350 471 H395 V359 H440"/>
+    <line x1="360" y1="464" x2="360" y2="478"/><line x1="366" y1="464" x2="366" y2="478"/>
+    <line x1="426" y1="359" x2="440" y2="351"/><line x1="426" y1="359" x2="440" y2="367"/>
+    <!-- productos (1) → ventas (0..N) -->
+    <path d="M760 337 H805 V271 H850"/>
+    <line x1="840" y1="264" x2="840" y2="278"/><line x1="834" y1="264" x2="834" y2="278"/>
+    <line x1="774" y1="337" x2="760" y2="329"/><line x1="774" y1="337" x2="760" y2="345"/>
+    <!-- categorias (1) → productos (0..N) -->
+    <path d="M1170 315 H1215 V581 H1170"/>
+    <line x1="1180" y1="574" x2="1180" y2="588"/><line x1="1186" y1="574" x2="1186" y2="588"/>
+    <line x1="1184" y1="315" x2="1170" y2="307"/><line x1="1184" y1="315" x2="1170" y2="323"/>
+  </g>
+  <g fill="#ffffff" stroke="#2d5075" stroke-width="1.6">
+    <circle cx="416" cy="315" r="5"/>
+    <circle cx="416" cy="359" r="5"/>
+    <circle cx="784" cy="337" r="5"/>
+    <circle cx="1194" cy="315" r="5"/>
+  </g>
+  <g fill="#2d5075" font-size="11" font-weight="700" text-anchor="middle">
+    <text x="378" y="144">1</text><text x="402" y="306">N</text>
+    <text x="378" y="464">1</text><text x="402" y="352">N</text>
+    <text x="822" y="264">1</text><text x="790" y="355">N</text>
+    <text x="1194" y="303">N</text><text x="1200" y="574">1</text>
+  </g>
+
+  <!-- ================= clientes ================= -->
+  <g>
+    <rect x="30" y="110" width="320" height="172" rx="6" fill="#ffffff" stroke="#2d5075" stroke-width="1.5"/>
+    <rect x="30" y="110" width="320" height="30" rx="6" fill="#2d5075"/><rect x="30" y="126" width="320" height="14" fill="#2d5075"/>
+    <text x="42" y="130" fill="#ffffff" font-size="14" font-weight="700">clientes</text>
+    <text x="338" y="129" fill="#cfe0f0" font-size="10" text-anchor="end">DIMENSIÓN</text>
+    <rect x="31" y="140" width="318" height="22" fill="#e3ecf6"/>
+    <rect x="31" y="184" width="318" height="22" fill="#f6f8fb"/>
+    <rect x="31" y="228" width="318" height="22" fill="#f6f8fb"/>
+    <g font-size="12">
+      <text x="42" y="155" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="70" y="155" fill="#1f3b57" font-weight="700">id_cliente</text>
+      <text x="70" y="177" fill="#3a4552">nombre</text>
+      <text x="70" y="199" fill="#3a4552">email</text>
+      <text x="70" y="221" fill="#3a4552">ciudad</text>
+      <text x="70" y="243" fill="#3a4552">segmento</text>
+      <text x="70" y="265" fill="#3a4552">fecha_registro</text>
+    </g>
+    <g font-size="9.5" fill="#8a94a0">
+      <text x="198" y="177">NN</text>
+      <text x="198" y="243">CK</text>
+      <text x="198" y="265">NN</text>
+    </g>
+    <g font-size="11" fill="#6b7683" text-anchor="end">
+      <text x="338" y="155">INT</text>
+      <text x="338" y="177">NVARCHAR(100)</text>
+      <text x="338" y="199">NVARCHAR(120)</text>
+      <text x="338" y="221">NVARCHAR(80)</text>
+      <text x="338" y="243">NVARCHAR(20)</text>
+      <text x="338" y="265">DATE</text>
+    </g>
+  </g>
+
+  <!-- ================= territorios ================= -->
+  <g>
+    <rect x="30" y="430" width="320" height="128" rx="6" fill="#ffffff" stroke="#2d5075" stroke-width="1.5"/>
+    <rect x="30" y="430" width="320" height="30" rx="6" fill="#2d5075"/><rect x="30" y="446" width="320" height="14" fill="#2d5075"/>
+    <text x="42" y="450" fill="#ffffff" font-size="14" font-weight="700">territorios</text>
+    <text x="338" y="449" fill="#cfe0f0" font-size="10" text-anchor="end">DIMENSIÓN</text>
+    <rect x="31" y="460" width="318" height="22" fill="#e3ecf6"/>
+    <rect x="31" y="504" width="318" height="22" fill="#f6f8fb"/>
+    <g font-size="12">
+      <text x="42" y="475" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="70" y="475" fill="#1f3b57" font-weight="700">id_territorio</text>
+      <text x="70" y="497" fill="#3a4552">region</text>
+      <text x="70" y="519" fill="#3a4552">pais</text>
+      <text x="70" y="541" fill="#3a4552">zona</text>
+    </g>
+    <g font-size="9.5" fill="#8a94a0">
+      <text x="198" y="497">NN</text>
+      <text x="198" y="519">NN</text>
+    </g>
+    <g font-size="11" fill="#6b7683" text-anchor="end">
+      <text x="338" y="475">INT</text>
+      <text x="338" y="497">NVARCHAR(50)</text>
+      <text x="338" y="519">NVARCHAR(50)</text>
+      <text x="338" y="541">NVARCHAR(50)</text>
+    </g>
+  </g>
+
+  <!-- ================= ventas (hechos) ================= -->
+  <g>
+    <rect x="440" y="230" width="320" height="260" rx="6" fill="#ffffff" stroke="#c47f17" stroke-width="2"/>
+    <rect x="440" y="230" width="320" height="30" rx="6" fill="#c47f17"/><rect x="440" y="246" width="320" height="14" fill="#c47f17"/>
+    <text x="452" y="250" fill="#ffffff" font-size="14" font-weight="700">ventas</text>
+    <text x="748" y="249" fill="#fbe6c4" font-size="10" text-anchor="end">TABLA DE HECHOS</text>
+    <rect x="441" y="260" width="318" height="22" fill="#fcecd2"/>
+    <rect x="441" y="304" width="318" height="66" fill="#fff6e9"/>
+    <rect x="441" y="436" width="318" height="22" fill="#f6f8fb"/>
+    <g font-size="12">
+      <text x="452" y="275" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="480" y="275" fill="#1f3b57" font-weight="700">id_venta</text>
+      <text x="480" y="297" fill="#3a4552">fecha_venta</text>
+      <text x="452" y="319" fill="#b5561a" font-size="10" font-weight="700">FK</text><text x="480" y="319" fill="#b5561a" font-weight="700">id_cliente</text>
+      <text x="452" y="341" fill="#b5561a" font-size="10" font-weight="700">FK</text><text x="480" y="341" fill="#b5561a" font-weight="700">id_producto</text>
+      <text x="452" y="363" fill="#b5561a" font-size="10" font-weight="700">FK</text><text x="480" y="363" fill="#b5561a" font-weight="700">id_territorio</text>
+      <text x="480" y="385" fill="#3a4552">cantidad</text>
+      <text x="480" y="407" fill="#3a4552">precio_unitario</text>
+      <text x="480" y="429" fill="#3a4552">descuento</text>
+      <text x="480" y="451" fill="#3a4552" font-style="italic">total_venta</text>
+      <text x="480" y="473" fill="#3a4552">canal</text>
+    </g>
+    <g font-size="9.5" fill="#8a94a0">
+      <text x="600" y="297">NN</text>
+      <text x="600" y="319">NN</text>
+      <text x="600" y="341">NN</text>
+      <text x="600" y="363">NN</text>
+      <text x="600" y="385">NN CK</text>
+      <text x="600" y="407">NN CK</text>
+      <text x="600" y="429">NN CK</text>
+      <text x="600" y="451">calc</text>
+      <text x="600" y="473">NN CK</text>
+    </g>
+    <g font-size="11" fill="#6b7683" text-anchor="end">
+      <text x="748" y="275">INT IDENTITY</text>
+      <text x="748" y="297">DATE</text>
+      <text x="748" y="319">INT</text>
+      <text x="748" y="341">INT</text>
+      <text x="748" y="363">INT</text>
+      <text x="748" y="385">INT</text>
+      <text x="748" y="407">DECIMAL(10,2)</text>
+      <text x="748" y="429">DECIMAL(5,4)</text>
+      <text x="748" y="451">DECIMAL(12,2)</text>
+      <text x="748" y="473">NVARCHAR(20)</text>
+    </g>
+  </g>
+
+  <!-- ================= productos ================= -->
+  <g>
+    <rect x="850" y="230" width="320" height="216" rx="6" fill="#ffffff" stroke="#2d5075" stroke-width="1.5"/>
+    <rect x="850" y="230" width="320" height="30" rx="6" fill="#2d5075"/><rect x="850" y="246" width="320" height="14" fill="#2d5075"/>
+    <text x="862" y="250" fill="#ffffff" font-size="14" font-weight="700">productos</text>
+    <text x="1158" y="249" fill="#cfe0f0" font-size="10" text-anchor="end">DIMENSIÓN</text>
+    <rect x="851" y="260" width="318" height="22" fill="#e3ecf6"/>
+    <rect x="851" y="304" width="318" height="22" fill="#fff6e9"/>
+    <rect x="851" y="348" width="318" height="22" fill="#f6f8fb"/>
+    <rect x="851" y="392" width="318" height="22" fill="#f6f8fb"/>
+    <g font-size="12">
+      <text x="862" y="275" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="890" y="275" fill="#1f3b57" font-weight="700">id_producto</text>
+      <text x="890" y="297" fill="#3a4552">nombre_producto</text>
+      <text x="862" y="319" fill="#b5561a" font-size="10" font-weight="700">FK</text><text x="890" y="319" fill="#b5561a" font-weight="700">id_categoria</text>
+      <text x="890" y="341" fill="#3a4552">subcategoria</text>
+      <text x="890" y="363" fill="#3a4552">precio</text>
+      <text x="890" y="385" fill="#3a4552">costo</text>
+      <text x="890" y="407" fill="#3a4552">stock</text>
+      <text x="890" y="429" fill="#3a4552">activo</text>
+    </g>
+    <g font-size="9.5" fill="#8a94a0">
+      <text x="1018" y="297">NN</text>
+      <text x="1018" y="319">NN</text>
+      <text x="1018" y="363">NN CK</text>
+      <text x="1018" y="385">CK</text>
+      <text x="1018" y="407">NN CK</text>
+      <text x="1018" y="429">NN</text>
+    </g>
+    <g font-size="11" fill="#6b7683" text-anchor="end">
+      <text x="1158" y="275">INT</text>
+      <text x="1158" y="297">NVARCHAR(120)</text>
+      <text x="1158" y="319">INT</text>
+      <text x="1158" y="341">NVARCHAR(50)</text>
+      <text x="1158" y="363">DECIMAL(10,2)</text>
+      <text x="1158" y="385">DECIMAL(10,2)</text>
+      <text x="1158" y="407">INT</text>
+      <text x="1158" y="429">BIT</text>
+    </g>
+  </g>
+
+  <!-- ================= categorias ================= -->
+  <g>
+    <rect x="850" y="540" width="320" height="106" rx="6" fill="#ffffff" stroke="#2f7a73" stroke-width="1.5"/>
+    <rect x="850" y="540" width="320" height="30" rx="6" fill="#2f7a73"/><rect x="850" y="556" width="320" height="14" fill="#2f7a73"/>
+    <text x="862" y="560" fill="#ffffff" font-size="14" font-weight="700">categorias</text>
+    <text x="1158" y="559" fill="#cdeae6" font-size="10" text-anchor="end">SUBDIMENSIÓN</text>
+    <rect x="851" y="570" width="318" height="22" fill="#e1f0ee"/>
+    <g font-size="12">
+      <text x="862" y="585" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="890" y="585" fill="#1f3b57" font-weight="700">id_categoria</text>
+      <text x="890" y="607" fill="#3a4552">nombre_categoria</text>
+      <text x="890" y="629" fill="#3a4552">descripcion</text>
+    </g>
+    <g font-size="9.5" fill="#8a94a0">
+      <text x="1018" y="607">NN UQ</text>
+    </g>
+    <g font-size="11" fill="#6b7683" text-anchor="end">
+      <text x="1158" y="585">INT</text>
+      <text x="1158" y="607">NVARCHAR(50)</text>
+      <text x="1158" y="629">NVARCHAR(200)</text>
+    </g>
+  </g>
+
+  <!-- ================= Leyenda ================= -->
+  <g>
+    <rect x="30" y="590" width="320" height="130" rx="6" fill="#f7f8fa" stroke="#c9ced6"/>
+    <text x="44" y="613" fill="#1f3b57" font-size="12.5" font-weight="700">Cómo leer el diagrama</text>
+    <text x="44" y="636" fill="#1f3b57" font-size="10" font-weight="700">PK</text><text x="64" y="636" fill="#3a4552" font-size="11">clave primaria</text>
+    <text x="170" y="636" fill="#b5561a" font-size="10" font-weight="700">FK</text><text x="190" y="636" fill="#3a4552" font-size="11">clave foránea</text>
+    <text x="44" y="656" fill="#6b7683" font-size="10.5">NN = NOT NULL · UQ = UNIQUE · CK = CHECK · calc = calculada</text>
+    <g fill="none" stroke="#2d5075" stroke-width="1.6">
+      <line x1="44" y1="680" x2="130" y2="680"/>
+      <line x1="54" y1="673" x2="54" y2="687"/><line x1="60" y1="673" x2="60" y2="687"/>
+      <line x1="116" y1="680" x2="130" y2="672"/><line x1="116" y1="680" x2="130" y2="688"/>
+    </g>
+    <circle cx="106" cy="680" r="5" fill="#ffffff" stroke="#2d5075" stroke-width="1.6"/>
+    <text x="142" y="684" fill="#3a4552" font-size="11">uno (‖)  a  cero o muchos (○&lt;)</text>
+    <text x="44" y="706" fill="#6b7683" font-size="10.5">Ej.: un cliente tiene 0..N ventas; cada venta tiene 1 cliente.</text>
+  </g>
+
+  <!-- ================= Decisiones de diseño ================= -->
+  <g>
+    <rect x="440" y="520" width="320" height="200" rx="6" fill="#f7f8fa" stroke="#c9ced6"/>
+    <text x="454" y="543" fill="#1f3b57" font-size="12.5" font-weight="700">Decisiones de diseño (3NF)</text>
+    <g fill="#3a4552" font-size="11">
+      <text x="454" y="566">· categorias en tabla propia: evita la dependencia</text>
+      <text x="454" y="582">  transitiva id_producto → categoría → descripción.</text>
+      <text x="454" y="604">· precio_unitario ≠ productos.precio: precio real</text>
+      <text x="454" y="620">  de esa venta vs. precio actual de catálogo.</text>
+      <text x="454" y="642">· total_venta: columna calculada y persistida</text>
+      <text x="454" y="658">  = cantidad × precio_unitario × (1 − descuento).</text>
+      <text x="454" y="680">· id_territorio vive en ventas: la región es un</text>
+      <text x="454" y="696">  atributo del hecho (la venta), no del cliente.</text>
+    </g>
+  </g>
+</svg>

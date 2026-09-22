@@ -12,7 +12,7 @@ Vas a trabajar con un **dataset real de Kaggle** (elegido por vos) que incluya i
 - Elegí un **dataset empresarial público** disponible en Kaggle.
 - Debe permitir construir (o derivar) **al menos dos tablas**: `ventas` y `clientes`.
 - Si el dataset viene en **una sola tabla**, deberás **separarlo o estructurarlo** para representar ambas entidades.
-- 📎 *Si no encontrás un dataset adecuado, el curso provee un Excel de ejemplo ("Ejemplo de Ex Final") — pedí el enlace a tu tutor/a.*
+- 📎 *Si no encontrás un dataset adecuado*, usá el que provee el curso: [**Ejemplo de Examen Final — Ventas Retail**](../../recursos/ejemplo-examen-final/). Trae el Excel ("Ejemplo de Ex Final"), los CSV y los scripts de SQL Server y MySQL ya listos.
 
 ### Paso 2 · Preparación de datos *(obligatorio, antes de escribir la consulta)*
 - **Revisá y limpiá** lo necesario: valores vacíos, formatos de fecha, nombres de columnas.
@@ -22,7 +22,9 @@ Vas a trabajar con un **dataset real de Kaggle** (elegido por vos) que incluya i
   - **Total de la venta** (o una variable equivalente que permita calcularlo).
 - Asegurate de que la **columna de fecha** esté en un formato que permita filtrar "últimos 30 días".
 
-> 🗓️ **Ojo con "últimos 30 días":** se cuentan a partir de **la fecha de la última venta del dataset**, no de la fecha de hoy. (Los datasets suelen ser históricos; si filtraras contra `CURRENT_DATE`, probablemente no traerías ninguna fila.)
+> 🗓️ **Ojo con "últimos 30 días":** se cuentan a partir de **la fecha de la última venta del dataset**, no de la fecha de hoy. (Los datasets suelen ser históricos; si filtraras contra `CURRENT_DATE` / `GETDATE()`, probablemente no traerías ninguna fila.) En el dataset provisto por el curso, por ejemplo, la última venta es del **2025-04-07**: la ventana correcta va del **2025-03-08 al 2025-04-07** y devuelve **257 transacciones**.
+
+> 🧹 **Y ojo con los nulos y duplicados:** el dataset del curso está *sucio a propósito* (10 `MontoTotal` vacíos, 20 `Cantidad` vacías, 5 `TransactionID` repetidos). Tratarlos **y explicar qué criterio usaste** es parte de lo que se evalúa. El detalle completo está en el [README del material](../../recursos/ejemplo-examen-final/#-la-suciedad-del-dataset-es-intencional).
 
 ### Paso 3 · La consulta SQL
 Escribí una consulta que:

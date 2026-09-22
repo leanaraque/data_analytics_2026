@@ -8,8 +8,11 @@ Desarrollo propio de los **entregables** del proyecto RetailPro, semana a semana
 |--------|-----------|-----------|
 | 1 | M1 — Brief del proyecto | [Semana-01-Entregable-M1.md](./Semana-01-Entregable-M1.md) |
 | 2 | M2 — Modelo de datos (3NF) | [Semana-02-Entregable-M2.md](./Semana-02-Entregable-M2.md) |
+| 8 | M8 — Modelo + medidas DAX core | [Semana-08-Entregable-M8.md](./Semana-08-Entregable-M8.md) |
 
 Las imágenes (bocetos, diagramas ER) viven en [`assets/`](./assets/).
+
+La base de datos del proyecto (SQL Server) vive en [`recursos/base-de-datos/`](../recursos/base-de-datos/).
 
 ## Convención
 

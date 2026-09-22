@@ -36,8 +36,8 @@ Abrí con la **pregunta estratégica** que resolvés. Debe ser **diagnóstica y 
 > 🔗 *Es el brief que aprendiste a definir en [S1](../../Semana-01-Introduccion-al-Analisis-de-Datos/).*
 
 ### 2. Descripción del dataset y fuentes
-Explicá **de dónde vienen los datos** (Kaggle, Excel provisto…), qué **representan**, cuántas filas/columnas y qué **entidades** contienen (ventas, clientes, productos…).
-> 🔗 *Distinguí base de datos vs. dataset como en [S2](../../Semana-02-Modelos-y-Disenos-de-Bases-de-Datos/material/07-base-de-datos-vs-dataset.md).*
+Explicá **de dónde vienen los datos** (Kaggle, o el [Excel provisto por el curso](../../recursos/ejemplo-examen-final/)), qué **representan**, cuántas filas/columnas y qué **entidades** contienen (ventas, clientes, productos…).
+> 🔗 *Distinguí base de datos vs. dataset como en [S1](../../Semana-01-Introduccion-al-Analisis-de-Datos/material/07-base-de-datos-vs-dataset.md).*
 
 ### 3. Análisis Exploratorio de Datos (EDA)
 Mostrá tu primer contacto con los datos: **estadística descriptiva** (media, mediana, moda), **dispersión** y **detección de outliers**. ¿La media representa al grupo o está inflada por valores extremos?

@@ -19,6 +19,7 @@ Un analista de datos no *"hace SQL"* de 9 a 12 y *"hace estadística"* de 12 a 3
 | [📝 Sección 1 — Preguntas Teóricas](./entregable/seccion-1-preguntas-teoricas.md) | Las 4 preguntas + guía de qué debe incluir cada respuesta |
 | [🛠️ Sección 2 — Ejercicios Prácticos](./entregable/seccion-2-ejercicios-practicos.md) | Los 3 ejercicios (SQL, modelado y storytelling) con ayudas técnicas |
 | [🎨 Guía de Presentación y Checklist](./entregable/guia-de-presentacion.md) | Formato de entrega (Google Docs), la estructura recomendada de 7 secciones y el checklist maestro |
+| [🎓 Material de apoyo del examen](../recursos/ejemplo-examen-final/) | Dataset de ejemplo (Excel + CSV), scripts de SQL Server y MySQL, y un ejemplo de entrega resuelta |
 
 ---
 
