@@ -139,6 +139,23 @@ class Deck {
     return s;
   }
 
+  // Dibuja el titulo de una slide de contenido y devuelve la Y libre debajo.
+  // El alto se calcula segun cuantos renglones ocupa, asi un titulo largo
+  // empuja el contenido en vez de pisarlo.
+  _tituloSlide(s, titulo, opts = {}) {
+    const fs = opts.fontSize || 34;
+    const ancho = opts.ancho || G.anchoUtil;
+    const porRenglon = Math.floor((ancho / fs) * 108); // medido sobre el original
+    const renglones = Math.max(1, Math.ceil(titulo.length / porRenglon), titulo.split("\n").length);
+    const alto = (fs / 58) * renglones;
+    s.addText(titulo, Object.assign(this._f("extraBold"), {
+      x: G.margen, y: G.yTitulo, w: ancho, h: alto,
+      fontSize: fs, color: opts.color || COLOR.negro,
+      isTextBox: true, margin: 0, valign: "top", lineSpacingMultiple: 1.05,
+    }));
+    return G.yTitulo + alto + 0.1;
+  }
+
   // --- Plantillas -----------------------------------------------------------
 
   /** Portada con degradado calido, titulo grande y logo. */
@@ -285,22 +302,14 @@ class Deck {
   }
 
   _cuerpoTitulo(s, titulo, subtitulo, texto, ancho, opts) {
-    // Con el cuerpo de 40 pt entran unos 24 caracteres por renglon en la
-    // columna ancha y unos 15 en la media. Si el titulo se va a dos lineas hay
-    // que correr el subtitulo y el parrafo, o se superponen.
-    const porRenglon = ancho > 6 ? 24 : 15;
-    const renglones = Math.max(1, Math.ceil(titulo.length / porRenglon), titulo.split("\n").length);
-    const altoTitulo = 0.62 * renglones;
-    const ySub = G.yTitulo + altoTitulo + 0.18;
+    const ySub = this._tituloSlide(s, titulo, {
+      fontSize: 40, ancho,
+      color: opts.tituloNaranja ? COLOR.naranja : COLOR.negro,
+    }) + 0.08;
     const subPorRenglon = ancho > 6 ? 46 : 28;
     const renglonesSub = subtitulo ? Math.max(1, Math.ceil(subtitulo.length / subPorRenglon)) : 0;
     const yTexto = ySub + (subtitulo ? 0.36 * renglonesSub + 0.28 : 0.2);
 
-    s.addText(titulo, Object.assign(this._f("extraBold"), {
-      x: G.margen, y: G.yTitulo, w: ancho, h: altoTitulo,
-      fontSize: 40, color: opts.tituloNaranja ? COLOR.naranja : COLOR.negro,
-      isTextBox: true, margin: 0, valign: "top", lineSpacingMultiple: 1.05,
-    }));
     if (subtitulo) {
       const o = Object.assign(this._f("regular"), {
         x: G.margen + 0.15, y: ySub, w: ancho - 0.15, h: 0.36 * renglonesSub,
@@ -323,6 +332,184 @@ class Deck {
         })
       );
     }
+  }
+
+  /**
+   * Bloque de codigo sobre fondo oscuro, con explicacion opcional al costado.
+   * `resaltar` es una lista de fragmentos que se pintan en ambar dentro del codigo.
+   */
+  codigo(titulo, lineas, opts = {}) {
+    const s = this._slide(COLOR.blanco);
+    this._encabezado(s);
+    const yLibre = this._tituloSlide(s, titulo);
+    if (opts.bajada) {
+      s.addText(opts.bajada, Object.assign(this._f("regular"), {
+        x: G.margen + 0.02, y: yLibre, w: G.anchoUtil - 0.02, h: 0.3,
+        fontSize: 14, color: COLOR.naranjaOscuro, isTextBox: true, margin: 0,
+      }));
+    }
+    const yCod = yLibre + (opts.bajada ? 0.44 : 0.12);
+    const anchoCod = opts.nota ? 5.85 : G.anchoUtil;
+    const altoCod = G.alto - yCod - 0.4;
+    s.addShape(this.pres.ShapeType.roundRect, {
+      x: G.margen, y: yCod, w: anchoCod, h: altoCod,
+      rectRadius: 0.1, fill: { color: COLOR.naranjaOscuro }, line: { type: "none" },
+    });
+
+    const src = Array.isArray(lineas) ? lineas : String(lineas).split("\n");
+    const resaltar = opts.resaltar || [];
+    const runs = [];
+    src.forEach((linea, i) => {
+      const ultima = i === src.length - 1;
+      const comentario = linea.trim().startsWith("--");
+      if (comentario || !resaltar.length) {
+        runs.push({
+          text: linea || " ",
+          options: { fontFace: "Consolas", fontSize: opts.cuerpo || 13,
+            color: comentario ? "C9A491" : COLOR.blancoLienzo, breakLine: !ultima },
+        });
+        return;
+      }
+      // Parte la linea en los fragmentos a resaltar, conservando el orden.
+      const re = new RegExp("(" + resaltar.map((r) => r.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")");
+      const trozos = linea.split(re).filter((t) => t !== "");
+      trozos.forEach((t, j) => {
+        runs.push({
+          text: t,
+          options: { fontFace: "Consolas", fontSize: opts.cuerpo || 13,
+            color: resaltar.includes(t) ? COLOR.amarillo : COLOR.blancoLienzo,
+            bold: resaltar.includes(t),
+            breakLine: !ultima && j === trozos.length - 1 },
+        });
+      });
+    });
+    s.addText(runs, {
+      x: G.margen + 0.24, y: yCod + 0.2, w: anchoCod - 0.48, h: altoCod - 0.4,
+      isTextBox: true, margin: 0, lineSpacingMultiple: 1.22, valign: "top",
+    });
+
+    if (opts.nota) {
+      const items = Array.isArray(opts.nota) ? opts.nota : [opts.nota];
+      s.addText(
+        items.map((t, i) => ({ text: t, options: { bullet: true, breakLine: i < items.length - 1 } })),
+        Object.assign(this._f("light"), {
+          x: 6.82, y: yCod + 0.06, w: 2.83, h: altoCod,
+          fontSize: 11, color: COLOR.negro, isTextBox: true, margin: 0,
+          paraSpaceAfter: 9, lineSpacingMultiple: 1.3, valign: "top",
+        })
+      );
+    }
+    return this;
+  }
+
+  /** Dos columnas enfrentadas. Para PK vs FK, DELETE vs DROP, DDL vs DML. */
+  comparacion(titulo, izq, der, opts = {}) {
+    const s = this._slide(COLOR.blanco);
+    this._encabezado(s);
+    const y = this._tituloSlide(s, titulo) + 0.1;
+    const w = 4.15, h = G.alto - y - 0.4;
+
+    // Autoajuste: con columnas cargadas, achicar el cuerpo antes que desbordar.
+    const carga = Math.max(
+      izq.items.join(" ").length + izq.items.length * 34,
+      der.items.join(" ").length + der.items.length * 34
+    );
+    const espacio = (h - (izq.lema || der.lema ? 1.2 : 0.85) - 0.18) * 96; // px utiles
+    let cuerpo = 11.5, entre = 8;
+    if (carga * 4.6 > espacio * 3.0) { cuerpo = 10.5; entre = 6; }
+    if (carga * 4.6 > espacio * 3.6) { cuerpo = 9.8; entre = 4; }
+    [[izq, G.margen, opts.colorIzq || COLOR.naranjaOscuro],
+     [der, G.margen + w + 0.4, opts.colorDer || COLOR.naranja]].forEach(([col, x, c]) => {
+      s.addShape(this.pres.ShapeType.roundRect, {
+        x, y, w, h, rectRadius: 0.1,
+        fill: { color: COLOR.blancoLienzo }, line: { type: "none" },
+      });
+      s.addShape(this.pres.ShapeType.roundRect, {
+        x, y, w, h: 0.62, rectRadius: 0.1, fill: { color: c }, line: { type: "none" },
+      });
+      s.addText(col.titulo, Object.assign(this._f("extraBold"), {
+        x: x + 0.28, y, w: w - 0.5, h: 0.62,
+        fontSize: 18, color: COLOR.blancoLienzo, valign: "middle", isTextBox: true, margin: 0,
+      }));
+      if (col.lema) {
+        s.addText(col.lema, Object.assign(this._f("bold"), {
+          x: x + 0.28, y: y + 0.78, w: w - 0.5, h: 0.32,
+          fontSize: 13, color: c, isTextBox: true, margin: 0,
+        }));
+      }
+      const yl = y + (col.lema ? 1.2 : 0.85);
+      s.addText(
+        col.items.map((t, i) => ({ text: t, options: { bullet: true, breakLine: i < col.items.length - 1 } })),
+        Object.assign(this._f("light"), {
+          x: x + 0.34, y: yl, w: w - 0.62, h: h - (yl - y) - 0.18,
+          fontSize: cuerpo, color: COLOR.negro, isTextBox: true, margin: 0,
+          paraSpaceAfter: entre, lineSpacingMultiple: 1.28, valign: "top",
+        })
+      );
+    });
+    return this;
+  }
+
+  /** Pasos numerados en fila, para procesos de 3 a 5 etapas. */
+  pasos(titulo, items, opts = {}) {
+    const s = this._slide(COLOR.blancoLienzo);
+    this._encabezado(s);
+    const yLibre = this._tituloSlide(s, titulo);
+    if (opts.bajada) {
+      s.addText(opts.bajada, Object.assign(this._f("regular"), {
+        x: G.margen + 0.02, y: yLibre, w: G.anchoUtil - 0.02, h: 0.3,
+        fontSize: 14, color: COLOR.naranjaOscuro, isTextBox: true, margin: 0,
+      }));
+    }
+    const n = Math.min(items.length, 5);
+    const gap = 0.22;
+    const w = (G.anchoUtil - gap * (n - 1)) / n;
+    const y = yLibre + (opts.bajada ? 0.56 : 0.16);
+    const h = G.alto - y - 0.4;
+    items.slice(0, n).forEach((it, i) => {
+      const x = G.margen + i * (w + gap);
+      s.addShape(this.pres.ShapeType.roundRect, {
+        x, y, w, h, rectRadius: 0.1,
+        fill: { color: COLOR.blanco }, line: { color: "E0D7C9", width: 0.75 },
+      });
+      s.addText(String(i + 1), Object.assign(this._f("extraBold"), {
+        x: x + 0.26, y: y + 0.18, w: 0.7, h: 0.52,
+        fontSize: 30, color: COLOR.naranja, isTextBox: true, margin: 0,
+      }));
+      s.addText(it.titulo, Object.assign(this._f("bold"), {
+        x: x + 0.26, y: y + 0.78, w: w - 0.5, h: 0.5,
+        fontSize: 14, color: COLOR.negro, isTextBox: true, margin: 0, lineSpacingMultiple: 1.05,
+      }));
+      s.addText(it.texto, Object.assign(this._f("light"), {
+        x: x + 0.26, y: y + 1.34, w: w - 0.5, h: h - 1.5,
+        fontSize: 10.5, color: COLOR.negro, isTextBox: true, margin: 0,
+        lineSpacingMultiple: 1.28, valign: "top",
+      }));
+    });
+    return this;
+  }
+
+  /** Regla o advertencia a pantalla completa, sobre naranja. */
+  regla(texto, detalle, opts = {}) {
+    const s = this._slide(opts.fondo || COLOR.naranja);
+    this._encabezado(s, COLOR.blancoLienzo);
+    if (opts.etiqueta) {
+      s.addText(opts.etiqueta.toUpperCase(), Object.assign(this._f("light"), {
+        x: G.margen, y: 1.18, w: 8, h: 0.26,
+        fontSize: 11, color: COLOR.blancoLienzo, isTextBox: true, margin: 0, charSpacing: 1.5,
+      }));
+    }
+    s.addText(texto, Object.assign(this._f("extraBold"), {
+      x: G.margen, y: 1.55, w: 8.6, h: 1.65,
+      fontSize: 34, color: COLOR.blancoLienzo, isTextBox: true, margin: 0, lineSpacingMultiple: 1.12,
+    }));
+    if (detalle) {
+      s.addText(detalle, Object.assign(this._f("light"), {
+        x: G.margen + 0.02, y: 3.45, w: 7.4, h: 1.4,
+        fontSize: 13, color: COLOR.blancoLienzo, isTextBox: true, margin: 0, lineSpacingMultiple: 1.35,
+      }));
+    }
+    return this;
   }
 
   /** Frase a dos renglones sobre color o imagen de fondo. */

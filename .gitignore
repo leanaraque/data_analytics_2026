@@ -58,3 +58,4 @@ package-lock.json
 # ---- Presentaciones generadas ----
 *.pptx
 !recursos/ejemplo-examen-final/*.pptx
+!Semana-*/clase/*.pptx
