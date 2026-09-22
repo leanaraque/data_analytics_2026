@@ -24,16 +24,6 @@ Al finalizar esta semana serás capaz de:
 | 6 | Permisos y roles: introducción al DCL (`GRANT` / `REVOKE`) | [Leer](./material/06-permisos-y-roles-dcl.md) |
 | 7 | *Avanzado:* Data Warehousing — esquema estrella y copo de nieve | [Leer](./material/07-data-warehousing-estrella-copo-de-nieve.md) |
 
-## Material de clase
-
-| Recurso | Descripción |
-|---------|-------------|
-| [Presentación de la clase](./clase/clase-03-introduccion-a-sql.pptx) | 57 slides que recorren los seis bloques, del esquema al checkpoint |
-| [Esquemas para Excalidraw](./clase/esquemas-excalidraw.md) | Los 9 diagramas en Mermaid para dibujar en vivo |
-| [Guía del docente](./clase/guia-del-docente.md) | Cuándo usar la presentación, Excalidraw y SSMS, con el ritmo para tres horas |
-
----
-
 ## Prácticas guiadas *(no evaluables)*
 - [Práctica 1 — Diseño de tablas con `CREATE TABLE`](./ejercicios/practica-01-diseno-de-tablas.md)
 - [Práctica 2 — Construcción de `Ventas_Tech_DB` (DDL + constraints + INSERT)](./ejercicios/practica-02-ventas-tech-db.md) · [script SQL](./ejercicios/ventas_tech_db.sql)
@@ -68,7 +58,6 @@ Al finalizar esta semana serás capaz de:
 Semana-03-.../
 ├── README.md            → esta guía
 ├── material/            → las 7 unidades teóricas
-├── clase/               → presentación, esquemas de Excalidraw y guía del docente
 ├── ejercicios/          → prácticas guiadas + script SQL + repaso
 └── entregable/          → consigna del Checkpoint M3
 ```

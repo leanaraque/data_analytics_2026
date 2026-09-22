@@ -58,4 +58,8 @@ package-lock.json
 # ---- Presentaciones generadas ----
 *.pptx
 !recursos/ejemplo-examen-final/*.pptx
-!Semana-*/clase/*.pptx
+
+# ---- Material de dictado (NO se publica) ----
+# La carpeta clase/ de cada semana es material del docente: presentacion,
+# esquemas para Excalidraw y guia. Queda en local, no en el repositorio.
+clase/
