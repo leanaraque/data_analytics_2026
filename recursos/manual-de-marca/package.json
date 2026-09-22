@@ -1,0 +1,13 @@
+{
+  "name": "coderhouse-tema-ppt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tema de marca Coderhouse 4.0 para generar presentaciones de clase con pptxgenjs",
+  "main": "coderhouse-tema.js",
+  "scripts": {
+    "ejemplo": "node ejemplo-clase.js ejemplo-clase.pptx"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

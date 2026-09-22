@@ -50,3 +50,11 @@ secrets.*
 PENDIENTES.md
 *.local.md
 NOTAS-*.md
+
+# ---- Node (solo para generar las PPT de marca) ----
+node_modules/
+package-lock.json
+
+# ---- Presentaciones generadas ----
+*.pptx
+!recursos/ejemplo-examen-final/*.pptx
