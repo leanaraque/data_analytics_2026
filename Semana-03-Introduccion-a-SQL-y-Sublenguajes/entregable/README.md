@@ -50,7 +50,7 @@ Diseñá y creá las tablas para un modelo de **Ventas de Tecnología**. Debe in
 ---
 
 ## Criterios de aceptación
-- [ ] El script se ejecuta **sin errores** en PostgreSQL o SQL Server.
+- [ ] El script se ejecuta **sin errores** en SQL Server, desde SSMS.
 - [ ] Las **FK** están definidas correctamente en `productos` y `ventas`.
 - [ ] No hay valores nulos en columnas `NOT NULL`.
 - [ ] El `DROP TABLE` respeta el **orden inverso** de dependencias.

@@ -38,12 +38,12 @@ CREATE TABLE productos (
     id_producto INT,                -- entero: identificador del producto
     descripcion VARCHAR(255),       -- texto de hasta 255 caracteres
     precio      DECIMAL(10, 2),     -- DECIMAL para dinero (nunca FLOAT): 10 dígitos, 2 decimales
-    esta_activo BOOLEAN             -- verdadero/falso para indicar si está a la venta
+    esta_activo BIT                 -- verdadero/falso: en SQL Server el tipo es BIT
 );
 ```
 
 ## Criterios de aceptación
-- El script se ejecuta **sin errores de sintaxis** en PostgreSQL o SQL Server.
+- El script se ejecuta **sin errores de sintaxis** en SQL Server, desde SSMS.
 - Se usa `DECIMAL` / `NUMERIC` para el precio (**no `FLOAT`** para dinero).
 - Los nombres de columnas **no** contienen espacios ni caracteres especiales.
 - El repositorio queda organizado con el nuevo archivo `.sql`.

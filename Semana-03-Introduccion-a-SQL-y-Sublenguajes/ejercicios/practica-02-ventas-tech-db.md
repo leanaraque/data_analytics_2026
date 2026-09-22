@@ -38,27 +38,27 @@ DROP TABLE IF EXISTS categorias;
 | Columna | Tipo | Restricción |
 |---------|------|-------------|
 | `id_categoria` | INT | PRIMARY KEY |
-| `nombre_categoria` | VARCHAR(50) | NOT NULL |
-| `descripcion` | VARCHAR(200) | |
+| `nombre_categoria` | NVARCHAR(50) | NOT NULL |
+| `descripcion` | NVARCHAR(200) | |
 
 **`clientes`**
 | Columna | Tipo | Restricción |
 |---------|------|-------------|
 | `id_cliente` | INT | PRIMARY KEY |
-| `nombre` | VARCHAR(100) | NOT NULL |
-| `email` | VARCHAR(100) | UNIQUE |
-| `ciudad` | VARCHAR(50) | |
+| `nombre` | NVARCHAR(100) | NOT NULL |
+| `email` | NVARCHAR(100) | UNIQUE |
+| `ciudad` | NVARCHAR(50) | |
 | `fecha_registro` | DATE | NOT NULL |
 
 **`productos`**
 | Columna | Tipo | Restricción |
 |---------|------|-------------|
 | `id_producto` | INT | PRIMARY KEY |
-| `nombre_producto` | VARCHAR(100) | NOT NULL |
+| `nombre_producto` | NVARCHAR(100) | NOT NULL |
 | `id_categoria` | INT | FOREIGN KEY → `categorias` |
 | `precio` | DECIMAL(10,2) | NOT NULL |
 | `stock` | INT | DEFAULT 0 |
-| `activo` | TINYINT(1) | DEFAULT 1 |
+| `activo` | BIT | DEFAULT 1 |
 
 **`ventas`**
 | Columna | Tipo | Restricción |
@@ -84,7 +84,7 @@ SELECT * FROM ventas;
 ```
 
 ## Criterios de aceptación
-- El script se ejecuta **sin errores** en PostgreSQL o SQL Server.
+- El script se ejecuta **sin errores** en SQL Server, desde SSMS.
 - Las **foreign keys** están correctamente definidas en `productos` y `ventas`.
 - No hay valores nulos en columnas marcadas como `NOT NULL`.
 - El `DROP TABLE` respeta el **orden inverso** de dependencias.
@@ -95,7 +95,9 @@ SELECT * FROM ventas;
 - **Orden incorrecto en `INSERT`:** cargá `categorias` y `clientes` antes de `productos` y `ventas`.
 - **`FLOAT` para precios:** usá siempre `DECIMAL(10,2)` para valores monetarios.
 
-> **Nota de compatibilidad:** `TINYINT(1)` es sintaxis de **MySQL/SQL Server**. En **PostgreSQL** usá `BOOLEAN` (con `DEFAULT TRUE`). El [script](./ventas_tech_db.sql) incluye una nota sobre esto.
+> **Sobre los tipos de texto:** el script usa `NVARCHAR` en vez de `VARCHAR` y antepone `N` a cada literal (`N'Computación'`). Esa `N` marca el texto como Unicode, y es lo que hace que las tildes y las eñes se guarden bien en SQL Server. Con `VARCHAR` a secas es habitual que terminen como `Computaci├│n`.
+
+> **Otros motores:** el script está escrito para **SQL Server**, que es el motor del curso. Al final del archivo hay una nota con las cuatro cosas que habría que cambiar para llevarlo a MySQL o PostgreSQL.
 
 ---
 <p align="center">
