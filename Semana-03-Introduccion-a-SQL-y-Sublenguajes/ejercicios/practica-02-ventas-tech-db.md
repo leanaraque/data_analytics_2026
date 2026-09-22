@@ -1,6 +1,7 @@
 # Práctica 2 — Creando la base de datos `Ventas_Tech_DB`
 
-> Práctica guiada de la Semana 3: DDL + constraints + `INSERT`. El script completo está en [**`ventas_tech_db.sql`**](./ventas_tech_db.sql).
+> Práctica guiada de la Semana 3: DDL + constraints + `INSERT`.
+> Son los **bloques D y H** del guion de la clase, [`clase-03-paso-a-paso.sql`](./clase-03-paso-a-paso.sql), y el resultado consolidado está en [`ventas_tech_db.sql`](./ventas_tech_db.sql).
 
 ## Propósito
 Construir desde cero la base de datos **`Ventas_Tech_DB`** — el dataset que vas a usar durante **todo el curso**. Vas a definir cuatro tablas relacionadas, establecer las claves foráneas que garantizan la integridad y cargarla con datos iniciales listos para consultar.
@@ -11,6 +12,8 @@ Construir desde cero la base de datos **`Ventas_Tech_DB`** — el dataset que va
 Sos el **DBA de TechStore**, una cadena de tiendas de tecnología. Tu tarea es crear la base `Ventas_Tech_DB` con un modelo relacional correcto que soporte las operaciones de ventas.
 
 ## Modelo de datos esperado
+
+Es el mismo `clientes` y el mismo `productos` de la [Práctica 1](./practica-01-diseno-de-tablas.md), ahora con sus claves, más `categorias` y `ventas`.
 ```
 categorias (1) ── (N) productos (1) ── (N) ventas (N) ── (1) clientes
 ```
@@ -18,8 +21,16 @@ categorias (1) ── (N) productos (1) ── (N) ventas (N) ── (1) cliente
 ## Instrucciones
 
 ### Paso 1 — Crear la base de datos
+Es el **bloque A** del guion de la clase. Se crea solo si no existe, para poder repetirlo sin romper nada, y después hay que pararse adentro con `USE`:
+
 ```sql
-CREATE DATABASE Ventas_Tech_DB;
+IF DB_ID('Ventas_Tech_DB') IS NULL
+    CREATE DATABASE Ventas_Tech_DB;
+GO
+
+-- Sin este USE, las tablas se crearian en master. Es el error mas comun.
+USE Ventas_Tech_DB;
+GO
 ```
 
 ### Paso 2 — Desarrollar el script en 3 secciones

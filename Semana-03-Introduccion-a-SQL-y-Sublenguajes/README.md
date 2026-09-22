@@ -24,9 +24,18 @@ Al finalizar esta semana serás capaz de:
 | 6 | Permisos y roles: introducción al DCL (`GRANT` / `REVOKE`) | [Leer](./material/06-permisos-y-roles-dcl.md) |
 | 7 | *Avanzado:* Data Warehousing — esquema estrella y copo de nieve | [Leer](./material/07-data-warehousing-estrella-copo-de-nieve.md) |
 
-## Prácticas guiadas *(no evaluables)*
-- [Práctica 1 — Diseño de tablas con `CREATE TABLE`](./ejercicios/practica-01-diseno-de-tablas.md)
-- [Práctica 2 — Construcción de `Ventas_Tech_DB` (DDL + constraints + INSERT)](./ejercicios/practica-02-ventas-tech-db.md) · [script SQL](./ejercicios/ventas_tech_db.sql)
+## Scripts y prácticas
+
+Todo lo que se ejecuta en clase está en [`ejercicios/`](./ejercicios/), y es **un solo modelo de datos**: `Ventas_Tech_DB`.
+
+| Archivo | Qué es |
+|---------|--------|
+| [`clase-03-paso-a-paso.sql`](./ejercicios/clase-03-paso-a-paso.sql) | Todo el SQL de la clase, en el mismo orden, con los bloques numerados por slide |
+| [`ventas_tech_db.sql`](./ejercicios/ventas_tech_db.sql) | El mismo resultado consolidado en un script repetible. Es el modelo del Checkpoint M3 |
+
+**Prácticas guiadas** *(no evaluables)*
+- [Práctica 1 — Elegir los tipos de datos](./ejercicios/practica-01-diseno-de-tablas.md) (bloque C del guion)
+- [Práctica 2 — Construir `Ventas_Tech_DB`](./ejercicios/practica-02-ventas-tech-db.md) (bloques D y H)
 - [Repaso con flashcards](./ejercicios/repaso-flashcards.md)
 
 ---
