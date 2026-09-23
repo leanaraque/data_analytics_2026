@@ -21,6 +21,20 @@
    ARCHIVO GENERADO: no lo edites a mano.
    ===================================================================== */
 
+-- ---------------------------------------------------------------------
+-- BOTON DE PANICO
+-- Si algo se desordena en vivo, seleccionar las seis lineas de abajo y F5.
+-- Deja la base vacia pero creada, lista para volver a correr desde D.2.
+-- ---------------------------------------------------------------------
+--     USE Ventas_Tech_DB;
+--     DROP TABLE IF EXISTS ventas;
+--     DROP TABLE IF EXISTS productos;
+--     DROP TABLE IF EXISTS clientes;
+--     DROP TABLE IF EXISTS categorias;
+--     DROP TABLE IF EXISTS categorias_mal;
+--     DROP TABLE IF EXISTS productos_copia;
+-- ---------------------------------------------------------------------
+
 /* =====================================================================
    BLOQUE A  ·  [slide 13]  ·  Preparar el terreno
    ---------------------------------------------------------------------
@@ -100,8 +114,11 @@ GO
    Este es el modelo definitivo del proyecto.
    ===================================================================== */
 
--- D.1  Borrar los borradores. El orden importa: primero las que dependen
---      de otras. Todavia no hay FK, pero conviene acostumbrarse al orden.
+-- D.1  ESTE PASO NO SE SALTEA.
+--      Borra los borradores de los bloques B y C. Si no lo corres, los
+--      CREATE de D.2 a D.5 fallan con "There is already an object named...".
+--      El orden importa: primero las que dependen de otras. Todavia no hay
+--      FK, pero conviene acostumbrarse al orden.
 DROP TABLE IF EXISTS categorias_mal;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS clientes;
@@ -134,6 +151,9 @@ GO
 -- D.4  productos: PK propia, y FK que la ata a categorias.
 --      A partir de aca es imposible cargar un producto de una categoria
 --      que no existe.
+--      Necesita que D.2 ya se haya ejecutado: una FK solo puede apuntar a
+--      una PRIMARY KEY. Si categorias no existe, o si existe pero es el
+--      borrador del bloque B que no tiene PK, este CREATE falla.
 CREATE TABLE productos (
     id_producto      INT            NOT NULL,
     nombre_producto  NVARCHAR(100)  NOT NULL,
