@@ -28,11 +28,16 @@ Al finalizar esta semana serás capaz de:
 
 Todo el SQL que se ejecuta en clase está en [`ejercicios/`](./ejercicios/), sobre la base `Ventas_Tech_DB` de la Semana 3.
 
-| Archivo | Qué es |
-|---------|--------|
-| [`clase-04-paso-a-paso.sql`](./ejercicios/clase-04-paso-a-paso.sql) | Todo el SQL de la clase, en el mismo orden, con los bloques numerados por momento |
+| Archivo | Qué hace |
+|---------|----------|
+| [`00-preparar-base.sql`](./ejercicios/00-preparar-base.sql) | **Empezá por acá.** Deja la base lista |
+| [`01-consultar.sql`](./ejercicios/01-consultar.sql) | `SELECT`, alias y `DISTINCT` |
+| [`02-filtrar-y-ordenar.sql`](./ejercicios/02-filtrar-y-ordenar.sql) | `WHERE`, `ORDER BY` y `TOP` |
+| [`03-medir.sql`](./ejercicios/03-medir.sql) | Las cinco funciones de agregación |
+| [`04-agrupar.sql`](./ejercicios/04-agrupar.sql) | `GROUP BY`, `HAVING` y `CASE WHEN` |
+| [`05-entregable.sql`](./ejercicios/05-entregable.sql) | El punto de partida del Checkpoint M4 |
 
-> **Arranca de cero.** El primer bloque del script, `A.0`, crea la base y la deja con los datos de la Semana 3. Sirve igual si no tenés nada, si la tenés a medias o si ya hiciste la clase: borra y rehace.
+> **El `00` arranca de cero.** Crea la base y la deja con los datos de la Semana 3. Sirve igual si no tenés nada, si la tenés a medias o si ya hiciste la clase: borra y rehace. No necesitás el script de la Semana 3.
 
 > **Ojo con dos diferencias de motor.** El material usa `LIMIT` y `EXTRACT`, que son de MySQL y PostgreSQL. En **SQL Server**, que es el motor del curso, van `SELECT TOP n` y `MONTH(fecha)`.
 
@@ -66,7 +71,7 @@ Más un **bloque de comentarios** al final con **3 hallazgos** concretos que enc
 Semana-04-.../
 ├── README.md            → esta guía
 ├── material/            → las 5 unidades teóricas
-├── ejercicios/          → el SQL de la clase, paso a paso
+├── ejercicios/          → el SQL de la clase, en seis archivos numerados
 └── entregable/          → consigna de las Consultas SQL de negocio (M4)
 ```
 

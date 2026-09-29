@@ -16,7 +16,7 @@ El **enlace a tu repositorio GitHub público** con el archivo **`m4_consultas_ne
 ## Instrucciones
 Sobre la base **`Ventas_Tech_DB`** creada en M3, escribí las consultas en `m4_consultas_negocio.sql`.
 
-> **Antes de empezar:** la base de M3 tiene las diez ventas en un solo mes, así que el análisis mensual de las consultas 1 y 4 no tendría sentido. En clase ampliamos el dataset a **34 ventas repartidas en seis meses** con el bloque `G1.1` de [`clase-04-paso-a-paso.sql`](../ejercicios/clase-04-paso-a-paso.sql). Ejecutalo antes de resolver el entregable. Trabajamos solo sobre la tabla **`ventas`** (recordá que tiene `id_cliente`, `id_producto`, `cantidad`, `precio_unitario` y `fecha_venta`). Los nombres de productos y clientes los vas a poder traer **cruzando tablas con `JOIN` en el Módulo 5**; por ahora trabajamos con los **IDs**.
+> **Antes de empezar:** la base de M3 tiene las diez ventas en un solo mes, así que el análisis mensual de las consultas 1 y 4 no tendría sentido. En clase ampliamos el dataset a **34 ventas repartidas en seis meses** con el paso `G1.1` de [`04-agrupar.sql`](../ejercicios/04-agrupar.sql). Ejecutalo antes de resolver el entregable, después de [`00-preparar-base.sql`](../ejercicios/00-preparar-base.sql). Trabajamos solo sobre la tabla **`ventas`** (recordá que tiene `id_cliente`, `id_producto`, `cantidad`, `precio_unitario` y `fecha_venta`). Los nombres de productos y clientes los vas a poder traer **cruzando tablas con `JOIN` en el Módulo 5**; por ahora trabajamos con los **IDs**.
 
 ### Consulta 1 — Resumen ejecutivo mensual
 Total facturado, cantidad de pedidos y ticket promedio, **agrupados por mes**.
