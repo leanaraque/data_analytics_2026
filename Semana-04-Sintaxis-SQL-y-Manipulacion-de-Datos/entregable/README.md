@@ -14,7 +14,9 @@ El **enlace a tu repositorio GitHub público** con el archivo **`m4_consultas_ne
 ---
 
 ## Instrucciones
-Sobre la base **`Ventas_Tech_DB`** creada en M3, escribí las consultas en `m4_consultas_negocio.sql`. Trabajamos solo sobre la tabla **`ventas`** (recordá que tiene `id_cliente`, `id_producto`, `cantidad`, `precio_unitario` y `fecha_venta`). Los nombres de productos y clientes los vas a poder traer **cruzando tablas con `JOIN` en el Módulo 5**; por ahora trabajamos con los **IDs**.
+Sobre la base **`Ventas_Tech_DB`** creada en M3, escribí las consultas en `m4_consultas_negocio.sql`.
+
+> **Antes de empezar:** la base de M3 tiene las diez ventas en un solo mes, así que el análisis mensual de las consultas 1 y 4 no tendría sentido. En clase ampliamos el dataset a **34 ventas repartidas en seis meses** con el bloque `G1.1` de [`clase-04-paso-a-paso.sql`](../ejercicios/clase-04-paso-a-paso.sql). Ejecutalo antes de resolver el entregable. Trabajamos solo sobre la tabla **`ventas`** (recordá que tiene `id_cliente`, `id_producto`, `cantidad`, `precio_unitario` y `fecha_venta`). Los nombres de productos y clientes los vas a poder traer **cruzando tablas con `JOIN` en el Módulo 5**; por ahora trabajamos con los **IDs**.
 
 ### Consulta 1 — Resumen ejecutivo mensual
 Total facturado, cantidad de pedidos y ticket promedio, **agrupados por mes**.
@@ -25,6 +27,7 @@ Total facturado, cantidad de pedidos y ticket promedio, **agrupados por mes**.
 ### Consulta 2 — Ranking de productos
 **Top 5** de `id_producto` por total facturado, mostrando las **unidades vendidas** (`SUM(cantidad)`) y el total generado.
 - Usá `GROUP BY id_producto`, `ORDER BY` y limitá el resultado a **5**.
+- En SQL Server se limita con `SELECT TOP 5`, no con `LIMIT 5`.
 
 ### Consulta 3 — Clientes recurrentes
 `id_cliente` que hayan realizado **más de un pedido**, mostrando la cantidad de pedidos y el total gastado.
@@ -43,11 +46,18 @@ Al final del archivo, agregá un bloque de comentarios `--` con **3 hallazgos co
 Estas piezas nuevas aparecen en la consigna. Acá tenés la **sintaxis** para que las incorpores vos:
 
 **Extraer el mes de una fecha:**
+
+> **Atención:** `EXTRACT` es sintaxis de PostgreSQL y **no existe en SQL Server**, que es el motor del curso. Si lo copiás tal cual, el script no corre. El equivalente es `MONTH(fecha)` o `DATEPART(MONTH, fecha)`.
+
 ```sql
-SELECT EXTRACT(MONTH FROM fecha_venta) AS mes, ...
+-- SQL Server (el del curso)
+SELECT YEAR(fecha_venta)  AS anio,
+       MONTH(fecha_venta) AS mes, ...
 FROM ventas
-GROUP BY EXTRACT(MONTH FROM fecha_venta);
+GROUP BY YEAR(fecha_venta), MONTH(fecha_venta);
 ```
+
+Conviene agrupar también por año, para no mezclar el mismo mes de dos años distintos.
 
 **Filtrar sobre un resultado agrupado (`HAVING`):** `WHERE` filtra filas *antes* de agrupar; `HAVING` filtra *después* de agrupar.
 ```sql

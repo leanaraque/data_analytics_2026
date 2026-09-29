@@ -358,6 +358,20 @@ class Deck {
 
     const src = Array.isArray(lineas) ? lineas : String(lineas).split("\n");
     const resaltar = opts.resaltar || [];
+
+    // Autoajuste: Consolas es monoespaciada, asi que se puede calcular cuantos
+    // caracteres entran por renglon y cuantos renglones entran a lo alto.
+    // Se prueba de mayor a menor y se toma el primer cuerpo que entre.
+    const anchoTexto = anchoCod - 0.48;
+    const altoTexto = altoCod - 0.4;
+    let cuerpo = opts.cuerpo || 13;
+    for (let f = cuerpo; f >= 7.5; f -= 0.5) {
+      const porRenglon = Math.floor((anchoTexto * 72) / (0.60 * f));
+      const renglones = src.reduce((a, l) => a + Math.max(1, Math.ceil(l.length / porRenglon)), 0);
+      cuerpo = f;
+      if ((renglones * f * 1.22) / 72 <= altoTexto) break;
+    }
+
     const runs = [];
     src.forEach((linea, i) => {
       const ultima = i === src.length - 1;
@@ -365,7 +379,7 @@ class Deck {
       if (comentario || !resaltar.length) {
         runs.push({
           text: linea || " ",
-          options: { fontFace: "Consolas", fontSize: opts.cuerpo || 13,
+          options: { fontFace: "Consolas", fontSize: cuerpo,
             color: comentario ? "C9A491" : COLOR.blancoLienzo, breakLine: !ultima },
         });
         return;
@@ -376,7 +390,7 @@ class Deck {
       trozos.forEach((t, j) => {
         runs.push({
           text: t,
-          options: { fontFace: "Consolas", fontSize: opts.cuerpo || 13,
+          options: { fontFace: "Consolas", fontSize: cuerpo,
             color: resaltar.includes(t) ? COLOR.amarillo : COLOR.blancoLienzo,
             bold: resaltar.includes(t),
             breakLine: !ultima && j === trozos.length - 1 },

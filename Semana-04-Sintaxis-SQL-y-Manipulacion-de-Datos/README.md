@@ -24,6 +24,18 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
+## Scripts de la clase
+
+Todo el SQL que se ejecuta en clase está en [`ejercicios/`](./ejercicios/), sobre la base `Ventas_Tech_DB` de la Semana 3.
+
+| Archivo | Qué es |
+|---------|--------|
+| [`clase-04-paso-a-paso.sql`](./ejercicios/clase-04-paso-a-paso.sql) | Todo el SQL de la clase, en el mismo orden, con los bloques numerados por momento |
+
+> **Ojo con dos diferencias de motor.** El material usa `LIMIT` y `EXTRACT`, que son de MySQL y PostgreSQL. En **SQL Server**, que es el motor del curso, van `SELECT TOP n` y `MONTH(fecha)`.
+
+---
+
 ## Entregable de la semana (¡esto cuenta para la nota!)
 
 > **M4 — Pre-entrega: Consultas SQL de negocio** · [Ver consigna completa →](./entregable/README.md)
@@ -52,6 +64,7 @@ Más un **bloque de comentarios** al final con **3 hallazgos** concretos que enc
 Semana-04-.../
 ├── README.md            → esta guía
 ├── material/            → las 5 unidades teóricas
+├── ejercicios/          → el SQL de la clase, paso a paso
 └── entregable/          → consigna de las Consultas SQL de negocio (M4)
 ```
 
