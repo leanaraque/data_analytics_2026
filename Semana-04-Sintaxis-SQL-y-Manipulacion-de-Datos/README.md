@@ -32,6 +32,8 @@ Todo el SQL que se ejecuta en clase está en [`ejercicios/`](./ejercicios/), sob
 |---------|--------|
 | [`clase-04-paso-a-paso.sql`](./ejercicios/clase-04-paso-a-paso.sql) | Todo el SQL de la clase, en el mismo orden, con los bloques numerados por momento |
 
+> **Arranca de cero.** El primer bloque del script, `A.0`, crea la base y la deja con los datos de la Semana 3. Sirve igual si no tenés nada, si la tenés a medias o si ya hiciste la clase: borra y rehace.
+
 > **Ojo con dos diferencias de motor.** El material usa `LIMIT` y `EXTRACT`, que son de MySQL y PostgreSQL. En **SQL Server**, que es el motor del curso, van `SELECT TOP n` y `MONTH(fecha)`.
 
 ---

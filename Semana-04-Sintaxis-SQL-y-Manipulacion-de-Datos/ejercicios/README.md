@@ -8,6 +8,20 @@ Todo el SQL que se ejecuta en la clase, en el mismo orden. Se trabaja sobre **`V
 
 ---
 
+## Empezá por el bloque A.0
+
+El script arranca con un bloque que **deja la base lista**, pase lo que pase:
+
+- **No tenés la base**: la crea desde cero.
+- **La tenés a medias**, o le hiciste pruebas: la borra y la rehace.
+- **Ya hiciste esta clase**: vuelve a dejarla en el punto de partida.
+
+Es repetible: podés ejecutarlo las veces que haga falta. No necesitás el script de la Semana 3 ni nada previo.
+
+Después de A.0 la base queda con **10 ventas, todas en marzo de 2024**. Ese es el estado con el que termina la Semana 3, y el punto donde arranca esta clase.
+
+---
+
 ## Cómo usarlo
 
 No ejecutes el archivo entero de una. Cada paso se selecciona con el mouse y se corre con **F5**, igual que en la clase.
@@ -16,7 +30,8 @@ Los bloques están numerados por momento:
 
 | Bloque | Momento de la clase |
 |--------|---------------------|
-| A | Preparación: pararse en la base y confirmar que hay datos |
+| A.0 | Poner la base en condiciones: borra y rehace todo |
+| A.1 | Confirmar el punto de partida: 10 ventas en 1 mes |
 | B | `SELECT` y alias |
 | C | `DISTINCT` |
 | D | `WHERE` y operadores lógicos |
@@ -46,7 +61,9 @@ Los dos primeros son los peligrosos, porque el motor no avisa.
 
 La base de la Semana 3 tiene las diez ventas **en marzo**. Para poder analizar por mes hacen falta varios meses, así que el bloque `G1.1` carga 24 ventas más y deja **34 ventas repartidas en seis meses**.
 
-Es repetible: borra lo que haya cargado antes y vuelve a insertar. Si alguna vez volvés a correr `ventas_tech_db.sql` de la Semana 3, corré `G1.1` otra vez.
+Es repetible: borra lo que haya cargado antes y vuelve a insertar.
+
+**Si querés volver al principio**, ejecutá de nuevo el bloque `A.0`: deja las 10 ventas originales. Y si después querés recuperar los seis meses, corré `G1.1` otra vez.
 
 ---
 
