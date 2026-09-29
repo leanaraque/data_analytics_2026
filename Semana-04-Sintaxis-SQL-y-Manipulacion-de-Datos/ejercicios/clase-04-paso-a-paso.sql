@@ -29,7 +29,6 @@
 
 -- A.0  PONER LA BASE EN CONDICIONES
 --      Borra todo y deja la base tal como termino la Semana 3.
---      Es el punto de partida de la clase de hoy.
 
 IF DB_ID('Ventas_Tech_DB') IS NULL
     CREATE DATABASE Ventas_Tech_DB;
@@ -38,14 +37,12 @@ GO
 USE Ventas_Tech_DB;
 GO
 
--- Borrar en orden inverso a las dependencias
 DROP TABLE IF EXISTS ventas;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS clientes;
 DROP TABLE IF EXISTS categorias;
 GO
 
--- Las cuatro tablas, con sus claves
 CREATE TABLE categorias (
     id_categoria     INT            NOT NULL,
     nombre_categoria NVARCHAR(50)   NOT NULL,
@@ -90,7 +87,6 @@ CREATE TABLE ventas (
 );
 GO
 
--- Los datos, en orden de dependencias
 INSERT INTO categorias (id_categoria, nombre_categoria, descripcion) VALUES
     (1, N'Computación',    N'Laptops, PCs y monitores'),
     (2, N'Accesorios',     N'Periféricos y complementos'),
@@ -125,7 +121,7 @@ INSERT INTO ventas (id_venta, id_cliente, id_producto, cantidad, precio_unitario
     (10, 5, 3, 2,  450.00, '2024-03-15');
 GO
 
--- A.1  Confirmar el punto de partida
+-- A.1  Confirmar el punto de partida: 10 ventas, todas en marzo
 SELECT COUNT(*)                            AS ventas,
        COUNT(DISTINCT MONTH(fecha_venta))  AS meses,
        MIN(fecha_venta)                    AS desde,
@@ -137,34 +133,25 @@ GO
 SELECT * FROM ventas;
 GO
 
--- B.2  Pedir solo las columnas que interesan
-SELECT id_venta, fecha_venta, cantidad, precio_unitario
-FROM   ventas;
-GO
-
--- B.3  Una columna que NO existe en la tabla: el motor la calcula al vuelo
+-- B.2  Solo las columnas que interesan, y una que NO existe en la tabla:
+--      el motor la calcula al vuelo.
 SELECT id_venta,
+       fecha_venta,
        cantidad,
        precio_unitario,
        cantidad * precio_unitario
 FROM   ventas;
 GO
 
--- B.4  Alias: ponerle nombre a todo, sobre todo a la columna calculada
+-- B.3  Alias: ponerle nombre a todo, sobre todo a la columna calculada
 SELECT id_venta                   AS venta,
        fecha_venta                AS fecha,
        cantidad                   AS unidades,
-       precio_unitario            AS precio,
        cantidad * precio_unitario AS total_linea
 FROM   ventas;
 GO
 
--- B.5  El alias tambien se puede escribir sin la palabra AS, pero se lee peor
-SELECT id_venta venta, cantidad unidades
-FROM   ventas;
-GO
-
--- B.6  EL ERROR SILENCIOSO: falta la coma entre las dos columnas.
+-- B.4  EL ERROR SILENCIOSO: falta la coma entre las dos columnas.
 --      No da error. Devuelve UNA columna, no dos.
 SELECT id_venta cantidad
 FROM   ventas;
@@ -174,18 +161,8 @@ GO
 SELECT id_cliente FROM ventas;
 GO
 
--- C.2  Ahora si: DISTINCT saca los repetidos
+-- C.2  Asi si
 SELECT DISTINCT id_cliente FROM ventas;
-GO
-
--- C.3  Con dos columnas, mira la COMBINACION completa
-SELECT DISTINCT id_cliente, id_producto FROM ventas;
-GO
-
--- C.4  Lo mismo, con GROUP BY. Devuelve la misma lista.
-SELECT id_cliente
-FROM   ventas
-GROUP BY id_cliente;
 GO
 
 -- D.1  Una comparacion simple
@@ -194,68 +171,46 @@ FROM   ventas
 WHERE  precio_unitario > 100;
 GO
 
--- D.2  AND: se tienen que cumplir las dos condiciones
+-- D.2  AND achica el resultado; OR lo agranda
 SELECT id_venta, id_cliente, cantidad, precio_unitario
 FROM   ventas
 WHERE  precio_unitario > 100 AND cantidad >= 2;
 GO
 
--- D.3  OR: alcanza con que se cumpla una
-SELECT id_venta, id_cliente
-FROM   ventas
-WHERE  id_cliente = 1 OR id_cliente = 5;
-GO
-
--- D.4  IN: el mismo pedido, mucho mas legible
+-- D.3  IN: el mismo pedido que una cadena de OR, mucho mas legible
 SELECT id_venta, id_cliente
 FROM   ventas
 WHERE  id_cliente IN (1, 3, 5);
 GO
 
--- D.5  EL ERROR LOGICO: una venta no puede ser de dos clientes a la vez.
+-- D.4  EL ERROR LOGICO: una venta no puede ser de dos clientes a la vez.
 --      No falla. Devuelve CERO filas, que es peor.
 SELECT id_venta
 FROM   ventas
 WHERE  id_cliente = 1 AND id_cliente = 5;
 GO
 
--- D.6  EL ERROR DE SINTAXIS: usar en el WHERE un alias creado en el SELECT.
+-- D.5  EL ERROR DE SINTAXIS: un alias del SELECT usado en el WHERE.
 --      Invalid column name 'total_linea'.
+--      La forma correcta es repetir la expresion completa:
+--      WHERE cantidad * precio_unitario > 500
 SELECT id_venta, cantidad * precio_unitario AS total_linea
 FROM   ventas
 WHERE  total_linea > 500;
 GO
 
--- D.7  La forma correcta: repetir la expresion completa
-SELECT id_venta, cantidad * precio_unitario AS total_linea
-FROM   ventas
-WHERE  cantidad * precio_unitario > 500;
-GO
-
--- E.1  Ordenar de mayor a menor
-SELECT id_venta, precio_unitario
-FROM   ventas
-ORDER BY precio_unitario DESC;
-GO
-
--- E.2  Por dos columnas: la segunda desempata a la primera
-SELECT id_cliente, fecha_venta, cantidad
-FROM   ventas
-ORDER BY id_cliente ASC, fecha_venta DESC;
-GO
-
--- E.3  El alias SI se puede usar en el ORDER BY
+-- E.1  Ordenar de mayor a menor. El alias SI se puede usar aca.
 SELECT id_venta, cantidad * precio_unitario AS total_linea
 FROM   ventas
 ORDER BY total_linea DESC;
 GO
 
--- E.4  TOP sin ORDER BY: devuelve 3 filas, pero cuales? Las que el motor quiera.
+-- E.2  TOP sin ORDER BY: devuelve 3 filas, pero cuales? Las que el motor quiera.
 SELECT TOP 3 id_venta, precio_unitario
 FROM   ventas;
 GO
 
--- E.5  Ahora si: las 3 ventas de mayor precio unitario
+-- E.3  Ahora si: las 3 ventas de mayor precio unitario
 SELECT TOP 3 id_venta, id_producto, precio_unitario
 FROM   ventas
 ORDER BY precio_unitario DESC;
@@ -266,27 +221,14 @@ SELECT COUNT(*) AS cantidad_de_ventas
 FROM   ventas;
 GO
 
--- F.2  COUNT(*) frente a COUNT(columna): la diferencia esta en los NULL
-SELECT COUNT(*)          AS todas_las_filas,
-       COUNT(id_cliente) AS filas_con_cliente
-FROM   ventas;
-GO
-
--- F.3  SUM y AVG
+-- F.2  SUM y AVG sobre la columna calculada
 SELECT SUM(cantidad)                   AS unidades_vendidas,
        SUM(cantidad * precio_unitario) AS facturacion_total,
        AVG(cantidad * precio_unitario) AS ticket_promedio
 FROM   ventas;
 GO
 
--- F.4  MIN, MAX, y la brecha entre los extremos
-SELECT MIN(cantidad * precio_unitario) AS venta_mas_chica,
-       MAX(cantidad * precio_unitario) AS venta_mas_grande,
-       MAX(cantidad * precio_unitario) - MIN(cantidad * precio_unitario) AS brecha
-FROM   ventas;
-GO
-
--- F.5  Todas juntas: el resumen del negocio en una fila
+-- F.3  Las cinco juntas: el resumen del negocio en una sola fila
 SELECT COUNT(*)                        AS cantidad_de_ventas,
        SUM(cantidad)                   AS unidades_vendidas,
        SUM(cantidad * precio_unitario) AS facturacion_total,
@@ -296,7 +238,7 @@ SELECT COUNT(*)                        AS cantidad_de_ventas,
 FROM   ventas;
 GO
 
--- F.6  EL ERROR QUE ABRE EL PROXIMO TEMA:
+-- F.4  EL ERROR QUE ABRE EL PROXIMO TEMA:
 --      mezclar una columna suelta con una agregacion.
 --      Column 'ventas.id_cliente' is invalid in the select list because it is
 --      not contained in either an aggregate function or the GROUP BY clause.
@@ -305,10 +247,9 @@ SELECT id_cliente,
 FROM   ventas;
 GO
 
--- G1.1  Ampliar el dataset a seis meses.
+-- G1.1  Ampliar el dataset a seis meses. De paso, repaso del INSERT.
 --       Repetible: primero borra lo que haya agregado antes.
 DELETE FROM ventas WHERE id_venta > 10;
-GO
 
 INSERT INTO ventas (id_venta, id_cliente, id_producto, cantidad, precio_unitario, fecha_venta) VALUES
     (11, 2, 2,  3,   28.00, '2024-01-12'),
@@ -335,38 +276,25 @@ INSERT INTO ventas (id_venta, id_cliente, id_producto, cantidad, precio_unitario
     (32, 2, 2, 10,   28.00, '2024-06-11'),
     (33, 4, 4,  2,  120.00, '2024-06-18'),
     (34, 5, 3,  1,  450.00, '2024-06-25');
-GO
 
--- G1.2  Confirmar: 34 ventas repartidas en 6 meses
-SELECT COUNT(*)                        AS ventas,
-       COUNT(DISTINCT MONTH(fecha_venta)) AS meses,
-       MIN(fecha_venta)                AS desde,
-       MAX(fecha_venta)                AS hasta
+-- Confirmar: 34 ventas en 6 meses
+SELECT COUNT(*) AS ventas, COUNT(DISTINCT MONTH(fecha_venta)) AS meses
 FROM   ventas;
 GO
 
--- G.1  La consulta del bloque F, mas UNA linea: GROUP BY
+-- G.1  La consulta del bloque F, mas UNA linea
 SELECT id_cliente,
-       COUNT(*)                        AS pedidos,
+       COUNT(*)      AS pedidos,
        SUM(cantidad * precio_unitario) AS total_gastado
 FROM   ventas
 GROUP BY id_cliente
 ORDER BY total_gastado DESC;
 GO
 
--- G.2  Por producto: que se vende mas
-SELECT id_producto,
-       SUM(cantidad)                   AS unidades,
-       SUM(cantidad * precio_unitario) AS facturacion
-FROM   ventas
-GROUP BY id_producto
-ORDER BY facturacion DESC;
-GO
-
--- G.3  Por mes. Esta ES la Consulta 1 del entregable.
-SELECT YEAR(fecha_venta)               AS anio,
-       MONTH(fecha_venta)              AS mes,
-       COUNT(*)                        AS pedidos,
+-- G.2  Por mes. ES la Consulta 1 del entregable.
+SELECT YEAR(fecha_venta)   AS anio,
+       MONTH(fecha_venta)  AS mes,
+       COUNT(*)            AS pedidos,
        SUM(cantidad * precio_unitario) AS facturacion,
        AVG(cantidad * precio_unitario) AS ticket_promedio
 FROM   ventas
@@ -374,26 +302,9 @@ GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)
 ORDER BY anio, mes;
 GO
 
--- G.4  Y el error de F.6, ahora resuelto
+-- H.1  HAVING filtra grupos. ES la Consulta 3 del entregable.
 SELECT id_cliente,
-       SUM(cantidad * precio_unitario) AS total
-FROM   ventas
-GROUP BY id_cliente;
-GO
-
--- H.1  WHERE filtra filas: solo las ventas de mas de 200 pesos
-SELECT id_cliente,
-       COUNT(*)                        AS pedidos,
-       SUM(cantidad * precio_unitario) AS total
-FROM   ventas
-WHERE  cantidad * precio_unitario > 200
-GROUP BY id_cliente;
-GO
-
--- H.2  HAVING filtra grupos: solo los clientes con mas de un pedido.
---      ES la Consulta 3 del entregable.
-SELECT id_cliente,
-       COUNT(*)                        AS pedidos,
+       COUNT(*)      AS pedidos,
        SUM(cantidad * precio_unitario) AS total_gastado
 FROM   ventas
 GROUP BY id_cliente
@@ -401,7 +312,7 @@ HAVING COUNT(*) > 1
 ORDER BY pedidos DESC;
 GO
 
--- H.3  Antes del CASE WHEN: ejecutar SOLO la subconsulta del medio,
+-- H.2  Antes del CASE WHEN: ejecutar SOLO la subconsulta,
 --      para ver que devuelve un unico numero.
 SELECT AVG(total_mes) AS promedio_mensual
 FROM  (SELECT SUM(cantidad * precio_unitario) AS total_mes
@@ -409,9 +320,9 @@ FROM  (SELECT SUM(cantidad * precio_unitario) AS total_mes
        GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)) t;
 GO
 
--- H.4  CASE WHEN: etiquetar cada mes. ES la Consulta 4 del entregable.
-SELECT YEAR(fecha_venta)               AS anio,
-       MONTH(fecha_venta)              AS mes,
+-- H.3  CASE WHEN. ES la Consulta 4 del entregable.
+SELECT YEAR(fecha_venta)   AS anio,
+       MONTH(fecha_venta)  AS mes,
        SUM(cantidad * precio_unitario) AS facturacion,
        CASE WHEN SUM(cantidad * precio_unitario) >
                  (SELECT AVG(total_mes)
@@ -420,14 +331,13 @@ SELECT YEAR(fecha_venta)               AS anio,
                          GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)) t)
             THEN 'Por encima'
             ELSE 'Por debajo'
-       END                             AS comparativa
+       END                 AS comparativa
 FROM   ventas
 GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)
 ORDER BY anio, mes;
 GO
 
--- H.5  La consulta completa de la clase: SELECT, FROM, WHERE, GROUP BY,
---      HAVING y ORDER BY, todas juntas. Y TOP, para el ranking.
+-- H.4  CIERRE: las seis clausulas de la clase, en una sola consulta.
 SELECT TOP 5 id_producto,
        SUM(cantidad)                   AS unidades,
        SUM(cantidad * precio_unitario) AS facturacion
@@ -439,7 +349,7 @@ ORDER BY facturacion DESC;
 GO
 
 -- I.1  La unica que queda por armar: Consulta 2, el Top 5 de productos.
---      Es G.2 con TOP. Mostrar el esqueleto, NO resolverlo entero.
+--      Mostrar el esqueleto, NO resolverlo entero.
 SELECT TOP 5 id_producto,
        SUM(cantidad)                   AS unidades_vendidas,
        SUM(cantidad * precio_unitario) AS facturacion
@@ -450,5 +360,4 @@ GO
 
 -- RESTAURAR  ·  NO se ejecuta durante la clase.
 --              Deja solo las 10 ventas de la Semana 3, sin tocar las tablas.
---              Es el atajo cuando solo hace falta deshacer G1.1.
 -- DELETE FROM ventas WHERE id_venta > 10;

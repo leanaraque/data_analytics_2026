@@ -32,14 +32,11 @@ Los bloques están numerados por momento:
 |--------|---------------------|
 | A.0 | Poner la base en condiciones: borra y rehace todo |
 | A.1 | Confirmar el punto de partida: 10 ventas en 1 mes |
-| B | `SELECT` y alias |
-| C | `DISTINCT` |
-| D | `WHERE` y operadores lógicos |
-| E | `ORDER BY` y `TOP` |
-| F | Funciones de agregación |
+| B, C | Consultar: `SELECT`, alias y `DISTINCT` |
+| D, E | Filtrar y ordenar: `WHERE`, `ORDER BY` y `TOP` |
+| F | Medir: las cinco funciones de agregación |
 | G1 | Ampliar el dataset a seis meses |
-| G | `GROUP BY` |
-| H | `HAVING` y `CASE WHEN` |
+| G, H | Agrupar: `GROUP BY`, `HAVING` y `CASE WHEN` |
 | I | El entregable M4 |
 
 ### Los pasos que fallan a propósito
@@ -48,12 +45,13 @@ Algunos están ahí para que veas el problema real. El comentario siempre lo avi
 
 | Paso | Qué muestra |
 |------|-------------|
-| `B.6` | La coma olvidada. **No da error**: devuelve una columna de menos |
-| `D.5` | Un `AND` imposible. **No da error**: devuelve cero filas |
-| `D.6` | Un alias del `SELECT` usado en el `WHERE`. Este sí falla |
-| `F.6` | Una columna suelta junto a una agregación. Falla, y el mensaje nombra la solución: `GROUP BY` |
+| `B.4` | La coma olvidada. **No da error**: devuelve una columna de menos |
+| `D.4` | Un `AND` imposible. **No da error**: devuelve cero filas |
+| `D.5` | Un alias del `SELECT` usado en el `WHERE`. Este sí falla |
+| `E.2` | Un `TOP` sin `ORDER BY`: devuelve filas al azar |
+| `F.4` | Una columna suelta junto a una agregación. Falla, y el mensaje nombra la solución: `GROUP BY` |
 
-Los dos primeros son los peligrosos, porque el motor no avisa.
+Los tres primeros son los peligrosos, porque el motor no avisa.
 
 ---
 
@@ -80,7 +78,7 @@ El material de la semana usa sintaxis de otros motores. En **SQL Server**, que e
 
 ## Y después
 
-La [consigna del Checkpoint M4](../entregable/README.md), que es lo que se entrega. Tres de las cuatro consultas se resuelven en clase: la 1 es el bloque `G.3`, la 3 es `H.2` y la 4 es `H.4`.
+La [consigna del Checkpoint M4](../entregable/README.md), que es lo que se entrega. Tres de las cuatro consultas se resuelven en clase: la 1 es el bloque `G.2`, la 3 es `H.1` y la 4 es `H.3`.
 
 > **Requisito:** SQL Server 2016 o superior, y SSMS. El script usa separadores `GO`, así que hay que ejecutarlo desde SSMS o Azure Data Studio.
 
